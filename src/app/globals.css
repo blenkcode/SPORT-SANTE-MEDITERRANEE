@@ -13,6 +13,11 @@
     --foreground: #ededed;
   }
 }
+@media (max-width: 768px) {
+  .your-background-class {
+    background-attachment: scroll;
+  }
+}
 
 body {
   color: var(--foreground);
@@ -31,3 +36,77 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.a {
+}
+.n {
+  color: rgb(235, 248, 255);
+}
+.t {
+  color: rgb(219, 242, 255);
+}
+.é {
+  color: rgb(203, 231, 247);
+}
+.m {
+  color: rgb(152, 186, 205);
+}
+.e {
+  color: rgb(134, 170, 189);
+}
+.d {
+  color: rgb(111, 152, 174);
+}
+.i {
+  color: rgb(84, 133, 160);
+}
+.tt {
+  color: rgb(87, 134, 160);
+}
+.ee {
+  color: rgb(79, 125, 150);
+}
+.r {
+  color: rgb(69, 125, 156);
+}
+.rr {
+  color: rgb(57, 119, 152);
+}
+.aa {
+  color: rgb(45, 121, 161);
+}
+.nn {
+  color: rgb(34, 116, 161);
+}
+.éé {
+  color: rgb(15, 111, 162);
+}
+.eee {
+  color: rgb(3, 105, 161);
+}
+/* .ma {
+}
+
+.rs {
+  color: rgb(219, 242, 255);
+}
+.se {
+  color: rgb(203, 223, 235);
+}
+.ei {
+  color: rgb(178, 199, 211);
+}
+.il {
+  color: rgb(152, 186, 205);
+}
+.ll {
+  color: rgb(152, 186, 205);
+}
+.la {
+  color: rgb(134, 170, 189);
+}
+.an {
+  color: rgb(111, 152, 174);
+}
+.nnn {
+  color: rgb(87, 134, 160);
+} */

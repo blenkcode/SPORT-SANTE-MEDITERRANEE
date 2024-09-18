@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./header";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css"; // Importer les styles de FontAwesome
+
 config.autoAddCss = false;
 
 const geistSans = localFont({
