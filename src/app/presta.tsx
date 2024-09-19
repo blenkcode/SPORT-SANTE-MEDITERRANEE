@@ -63,7 +63,7 @@ const Presta = () => {
   }, []);
 
   return (
-    <div className="lg:pt-20 bg-sky-50 overflow-x-hidden">
+    <div className="lg:pt-20 bg-sky-50 overflow-x-hidden lg:overflow-x-visible ">
       <div className="lg:text-5xl text-2xl lg:h-700 h-fit text-sky-50 bg-sky-900 lg:py-20 flex flex-col items-center justify-center font-Manrope w-full relative ">
         <div
           className={`lg:w-circle lg:h-circle w-0 h-0 rounded-full bg-sky-900 border-2 border-solid border-sky-50 absolute transition-all delay-300 duration-1000 lg:-top-20 -top-10 z-10 ${
@@ -71,9 +71,9 @@ const Presta = () => {
           }`}
         ></div>
         <h3 className="mb-20 z-20 lg:absolute relative top-10">
-          NOS PRESTATIONS
+          Nos Prestations
         </h3>
-        <div className="flex z-30 lg:flex-row flex-col lg:mt-32">
+        <div className="flex z-30 lg:flex-row flex-col lg:mt-32 items-center">
           <div
             className={`w-fit flex z-20  mt-0 lg:mt-0 flex-col text-lg lg:-translate-x-56 transition-all duration-2000 ease-in-out items-center rounded-lg lg:pb-20 pb-10 lg:-translate-y-20 ${
               isVisible

@@ -108,7 +108,7 @@ const Landing = () => {
       </div>
 
       <div className="   lg:pb-0 h-fit lg:h-2/5 bg-sky-50  text-sky-900 lg:px-10 px-5  flex flex-col w-full items-center  lg:justify-center justify-start py-6 lg:py-0 relative overflow-x-hidden ">
-        <h2 className="lg:mt-10 text-2xl font-extrabold lg:font-normal lg:text-3xl mt-0 flex flex-col lg:flex-row items-center justify-center ">
+        <h2 className="lg:mt-0 text-2xl font-extrabold lg:font-normal lg:text-3xl mt-0 flex flex-col lg:flex-row items-center justify-center ">
           <span className="lg:mr-3 mr-0">Kinésithérapie & </span>Ostéopathie du
           sport
         </h2>

@@ -22,54 +22,75 @@ const Equipe = () => {
         </div>
       </div>
       <div className=" h-fit bg-sky-50 text-sky-900 lg:px-10 flex z-20 flex-col w-full items-center justify-center  relative pb-20">
-        <h2 className=" lg:mt-20 mt-10 lg:text-5xl text-3xl">A votre écoute</h2>
-        <p className="text-xl mt-10 lg:w-3/5 px-10">
-          Notre équipe de soignants, agrée par la clinique du coureur est à
-          votre disposition pour vous accompagner dans votre parcours de soins.
-          <br></br> <br></br>
-          Ils mettent leur expertise et leur bienveillance au service de votre
-          bien-être.
-        </p>
-        <div className="grid grid-cols-1 lg:mt-20 mt-10 lg:grid-cols-2 lg:gap-20 gap-10 z-20">
-          {" "}
-          <div className="w-72 h-80 overflow-hidden rounded-tl-xl rounded-br-xl relative">
-            {" "}
-            <img
-              src="/laureen.png"
-              className=" grayscale hover:scale-110 transition-all duration-300 "
-            ></img>
-            <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
-              Laureen Pépin
+        <h2 className=" lg:mt-20 mt-10 lg:text-5xl text-2xl">
+          Notre équipe à votre écoute
+        </h2>
+        <div className="flex  justify-center lg:flex-row flex-col">
+          <div className="mt-10 lg:w-1/3 lg:pr-20 lg:mt-20 flex flex-col justify-evenly">
+            <p className="text-xl px-5 lg:px-0 ">
+              Notre équipe de soignants, agrée par la clinique du coureur est à
+              votre disposition pour vous accompagner dans votre parcours de
+              soins.
+              <br></br> <br></br>
+              Ils mettent leur expertise et leur bienveillance au service de
+              votre bien-être.
+              <br></br> <br></br>
+            </p>
+            <div className="w-full flex flex-col items-center justify center ">
+              <div className="rounded-xl pb-8  bg-zinc-300 bg-opacity-20 w-fit px-10 flex flex-col items-center justify center">
+                <span className="text-3xl mb-8 mt-8 font-extrabold">
+                  Nos Valeurs
+                </span>
+                <ul className="flex flex-col items-center lg:text-3xl text-2xl justify center ">
+                  <li className="mb-3">Qualité du soin</li>
+                  <li className="mb-3">Prévention</li>
+                  <li className="mb-3">Respect de l’Humain </li>
+                  <li>Convivialité</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="w-72 h-80 overflow-hidden rounded-tl-xl rounded-br-xl relative">
-            {" "}
-            <img
-              src="/cyril.png"
-              className=" grayscale hover:scale-110 transition-all duration-300 "
-            ></img>
-            <div className="text-sky-200 text-3xl  absolute z-30 bottom-5 right-5">
-              Cyril Portal
+
+          <div className="grid grid-cols-1 lg:mt-20 mt-10 lg:grid-cols-2 lg:gap-20 gap-10 z-20 justify-items-center">
+            <div className="w-64 h-72  overflow-hidden rounded-tl-xl rounded-br-xl relative">
+              {" "}
+              <img
+                src="/laureen.png"
+                className=" grayscale hover:scale-110 transition-all duration-300 "
+              ></img>
+              <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
+                Laureen Pépin
+              </div>
             </div>
-          </div>
-          <div className="w-72 h-80 overflow-hidden rounded-tl-xl rounded-br-xl relative">
-            {" "}
-            <img
-              src="/mart.png"
-              className=" grayscale hover:scale-110 w-full transition-all duration-300 "
-            ></img>
-            <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
-              Martin Larivière
+            <div className="w-64 h-72 overflow-hidden rounded-tl-xl rounded-br-xl relative">
+              {" "}
+              <img
+                src="/cyril.png"
+                className=" grayscale hover:scale-110 transition-all duration-300 "
+              ></img>
+              <div className="text-sky-200 text-3xl  absolute z-30 bottom-5 right-5">
+                Cyril Portal
+              </div>
             </div>
-          </div>
-          <div className="w-72 h-80 overflow-hidden rounded-tl-xl rounded-br-xl relative">
-            {" "}
-            <img
-              src="/autre.png"
-              className=" grayscale hover:scale-110 transition-all duration-300 "
-            ></img>
-            <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
-              Ewen Gbick
+            <div className="w-64 h-72  overflow-hidden rounded-tl-xl rounded-br-xl relative">
+              {" "}
+              <img
+                src="/mart.png"
+                className=" grayscale hover:scale-110 w-full transition-all duration-300 "
+              ></img>
+              <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
+                Martin Larivière
+              </div>
+            </div>
+            <div className="w-64 h-72  overflow-hidden rounded-tl-xl rounded-br-xl relative">
+              {" "}
+              <img
+                src="/autre.png"
+                className=" grayscale hover:scale-110 transition-all duration-300 "
+              ></img>
+              <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
+                Ewen Gbick
+              </div>
             </div>
           </div>
         </div>
