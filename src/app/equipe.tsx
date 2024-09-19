@@ -27,7 +27,7 @@ const Equipe = () => {
         </h2>
         <div className="flex  justify-center lg:flex-row flex-col">
           <div className="mt-10 lg:w-1/3 lg:pr-20 lg:mt-20 flex flex-col justify-evenly">
-            <p className="text-xl px-5 lg:px-0 ">
+            <p className="xl:text-xl lg:text-lg px-5 lg:px-0 ">
               Notre équipe de soignants, agrée par la clinique du coureur est à
               votre disposition pour vous accompagner dans votre parcours de
               soins.
@@ -38,10 +38,10 @@ const Equipe = () => {
             </p>
             <div className="w-full flex flex-col items-center justify center ">
               <div className="rounded-xl pb-8  bg-zinc-300 bg-opacity-20 w-fit px-10 flex flex-col items-center justify center">
-                <span className="text-3xl mb-8 mt-8 font-extrabold">
+                <span className="xl:text-3xl lg:text-2xl mb-8 mt-8 font-extrabold">
                   Nos Valeurs
                 </span>
-                <ul className="flex flex-col items-center lg:text-3xl text-2xl justify center ">
+                <ul className="flex flex-col items-center 2xl:text-3xl xl:text-2xl lg:text-  text-xl justify center ">
                   <li className="mb-3">Qualité du soin</li>
                   <li className="mb-3">Prévention</li>
                   <li className="mb-3">Respect de l’Humain </li>
@@ -51,8 +51,8 @@ const Equipe = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:mt-20 mt-10 lg:grid-cols-2 lg:gap-20 gap-10 z-20 justify-items-center">
-            <div className="w-64 h-72  overflow-hidden rounded-tl-xl rounded-br-xl relative">
+          <div className="grid grid-cols-1 lg:mt-20 mt-10 lg:grid-cols-2 xl:gap-20 gap-10 z-20 justify-items-center ">
+            <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
               {" "}
               <img
                 src="/laureen.png"
@@ -62,7 +62,7 @@ const Equipe = () => {
                 Laureen Pépin
               </div>
             </div>
-            <div className="w-64 h-72 overflow-hidden rounded-tl-xl rounded-br-xl relative">
+            <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
               {" "}
               <img
                 src="/cyril.png"
@@ -72,7 +72,7 @@ const Equipe = () => {
                 Cyril Portal
               </div>
             </div>
-            <div className="w-64 h-72  overflow-hidden rounded-tl-xl rounded-br-xl relative">
+            <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64  overflow-hidden rounded-tl-xl rounded-br-xl relative">
               {" "}
               <img
                 src="/mart.png"
@@ -82,7 +82,7 @@ const Equipe = () => {
                 Martin Larivière
               </div>
             </div>
-            <div className="w-64 h-72  overflow-hidden rounded-tl-xl rounded-br-xl relative">
+            <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64   overflow-hidden rounded-tl-xl rounded-br-xl relative">
               {" "}
               <img
                 src="/autre.png"
