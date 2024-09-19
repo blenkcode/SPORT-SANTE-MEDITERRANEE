@@ -36,6 +36,13 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Play";
+  src: url("../app/fonts/PlaywriteNL-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 .a {
 }
 .n {

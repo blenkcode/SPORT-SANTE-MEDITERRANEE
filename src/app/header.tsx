@@ -22,7 +22,9 @@ export default function Header() {
     <header className="bg-sky-50 font-Manrope tracking-widest text-sky-900 h-20 flex pl-8 justify-between items-center fixed top-0 left-0 w-full z-50 lg:-translate-y-0 -translate-y-full">
       <div className="flex items-center">
         <img src="/logomain.png" className="h-14 mr-8"></img>
-        <div className="text-md font-bold">SPORT - SANTE MEDITERRANEE </div>
+        <div className="text-md font-Play font-bold">
+          Sport - Santé Mediterranée{" "}
+        </div>
       </div>
       <div className="flex justify-between items-center w-fit h-full text-sm font-semibold">
         <Link

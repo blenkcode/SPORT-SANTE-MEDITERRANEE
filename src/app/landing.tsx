@@ -13,7 +13,7 @@ const Landing = () => {
   }, []);
   return (
     <main className="lg:h-lvh h-auto min-h-lvh w-full">
-      <div className="bg-[url('/bc.jpg')]  bg-center bg-fixed w-full bg-cover lg:h-3/5 h-lvh text-sky-50  lg:text-4xl text-3xl ">
+      <div className="bg-[url('/bc.jpg')] bg-center lg:bg-fixed bg-scroll w-full bg-cover lg:h-3/5 h-lvh text-sky-50 lg:text-4xl text-2xl">
         <div className="w-full h-full items-center justify-center font-Manrope flex flex-col bg-gradient-to-r from-sky-700/80 to-sky-700/0">
           <div className="items-center flex  flex-col justify-center">
             <img
@@ -28,12 +28,14 @@ const Landing = () => {
                     : "-translate-x-56 opacity-0 blur-sm"
                 }`}
               >
-                <div className="bg-zinc-700 bg-opacity-25 px-5 py-2 rounded-full items-center justify-center flex flex-col lg:flex-row">
-                  SPORT - SANTÉ{" "}
-                  <span className="ml-2 text-sky-200">MEDITERRANÉE</span>
+                <div className="bg-zinc-700 bg-opacity-25 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col lg:flex-row font-Play ">
+                  Sport - Santé{" "}
+                  <span className="lg:ml-5 mt-10 lg:mt-0 text-sky-200">
+                    Mediterranée
+                  </span>
                 </div>
               </h1>
-              <h2
+              {/* <h2
                 className={`ease-in-out duration-title bg-zinc-700 bg-opacity-25 px-5 py-2 rounded-full font-extrabold mt-5 transition-all  ${
                   titleVisible
                     ? "translate-x-0 opacity-100 blur-none"
@@ -41,7 +43,7 @@ const Landing = () => {
                 }`}
               >
                 MARSEILLAN
-              </h2>
+              </h2> */}
             </div>
             <div
               className={`duration-title transition-all flex items-center justify-center text-lg lg:text-xl ease-in-out delay-500 ${
