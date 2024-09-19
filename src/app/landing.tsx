@@ -11,6 +11,40 @@ const Landing = () => {
   useEffect(() => {
     setTitleVisible(true);
   }, []);
+
+  const [isVisible, setIsVisible] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+
+  console.log(scrollY);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 550) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Nettoyer l'écouteur d'événements lors du démontage du composant
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <main className="lg:h-lvh h-auto min-h-lvh w-full">
       <div className="bg-[url('/bc.jpg')] bg-center lg:bg-fixed bg-scroll w-full bg-cover lg:h-3/5 h-lvh text-sky-50 lg:text-4xl text-2xl">
@@ -73,7 +107,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="   lg:pb-0 h-fit lg:h-2/5 bg-sky-50  text-sky-900 lg:px-10 px-5  flex flex-col w-full items-center  lg:justify-center justify-start py-6 lg:py-0 relative ">
+      <div className="   lg:pb-0 h-fit lg:h-2/5 bg-sky-50  text-sky-900 lg:px-10 px-5  flex flex-col w-full items-center  lg:justify-center justify-start py-6 lg:py-0 relative overflow-x-hidden ">
         <h2 className="lg:mt-10 text-2xl font-extrabold lg:font-normal lg:text-3xl mt-0 flex flex-col lg:flex-row items-center justify-center ">
           <span className="lg:mr-3 mr-0">Kinésithérapie & </span>Ostéopathie du
           sport
@@ -89,11 +123,15 @@ const Landing = () => {
             personnalisés, visent à restaurer et améliorer la mobilité, afin
             d&apos;atteindre vos objectifs de santé et de bien-être durable.
           </div>
-          <div className="lg:w-1/3 w-1/2 flex items-center justify-center">
+          <div className="lg:w-1/3 w-1/2 flex items-center justify-center ">
             {" "}
             <img
               src="/logocourse.png"
-              className="w-56 mt-10 rounded-full border-2 border-solid border-sky-900"
+              className={`w-56 mt-10 rounded-full border-2 border-solid border-sky-900  transition-all duration-1000 ${
+                isVisible
+                  ? "-translate-x-0 opacity-100 rotate-0"
+                  : "-translate-x-full opacity-0 rotate-180 lg:-translate-x-0 lg:opacity-100 lg:rotate-0"
+              }`}
             ></img>
           </div>
         </div>
