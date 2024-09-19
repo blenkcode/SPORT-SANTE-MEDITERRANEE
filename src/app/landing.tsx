@@ -85,7 +85,7 @@ const Landing = () => {
             thérapeutique, convaincue que l’activité physique, adaptée à chacun,
             est la clé de la guérison et de la prévention. Nos traitements
             personnalisés, visent à restaurer et améliorer la mobilité, afin
-            d'atteindre vos objectifs de santé et de bien-être durable.
+            d&apos;atteindre vos objectifs de santé et de bien-être durable.
           </div>
           <div className="lg:w-1/3 w-1/2 flex items-center justify-center">
             {" "}
