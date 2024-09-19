@@ -23,6 +23,8 @@ const config: Config = {
       },
       height: {
         circle: "1000px",
+        circle2: "800px",
+        circle3: "650px",
         "200": "480px",
         "700": "600px",
         "600": "600px",
@@ -34,6 +36,8 @@ const config: Config = {
       width: {
         "200": "1000px",
         circle: "1000px",
+        circle2: "800px",
+        circle3: "650px",
       },
       transitionDuration: {
         "2000": "1700ms",
