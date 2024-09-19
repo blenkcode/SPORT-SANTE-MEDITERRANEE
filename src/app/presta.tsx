@@ -52,7 +52,7 @@ const Presta = () => {
   }, []);
 
   return (
-    <div>
+    <div className="lg:pt-20 bg-sky-50">
       <div className="lg:text-5xl text-2xl lg:h-700 h-fit text-sky-50 bg-sky-900 lg:py-20 flex flex-col items-center justify-center font-Manrope w-full relative ">
         <div
           className={`lg:w-circle lg:h-circle w-0 h-0 rounded-full bg-sky-900 border-2 border-solid border-sky-50 absolute transition-all delay-300 duration-1000 lg:-top-20 -top-10 z-10 ${

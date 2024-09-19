@@ -19,12 +19,12 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-sky-700 font-Manrope tracking-widest text-sky-50 h-20 flex pl-8 justify-between items-center fixed top-0 left-0 w-full z-50 lg:-translate-y-0 -translate-y-full">
+    <header className="bg-sky-50 font-Manrope tracking-widest text-sky-900 h-20 flex pl-8 justify-between items-center fixed top-0 left-0 w-full z-50 lg:-translate-y-0 -translate-y-full">
       <div className="flex items-center">
-        <img src="/logokine.png" className="h-14 mr-8"></img>
-        <div className="text-lg font-bold">SPORT - SANTE MEDITERRANEE </div>
+        <img src="/logomain.png" className="h-14 mr-8"></img>
+        <div className="text-md font-bold">SPORT - SANTE MEDITERRANEE </div>
       </div>
-      <div className="flex justify-between items-center w-fit h-full text-md font-semibold">
+      <div className="flex justify-between items-center w-fit h-full text-sm font-semibold">
         <Link
           className="px-8 flex justify-center  relative items-center   h-full w-fit transition-all"
           href="/"
