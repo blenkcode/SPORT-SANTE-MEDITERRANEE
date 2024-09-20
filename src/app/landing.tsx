@@ -8,7 +8,7 @@ import {
   faStar,
   faPersonRunning,
 } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
+
 import { useState, useEffect } from "react";
 import "./globals.css";
 const Landing = () => {
