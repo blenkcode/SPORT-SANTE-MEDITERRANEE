@@ -24,7 +24,7 @@ export default function Header() {
 
   return (
     <header
-      className={`bg-sky-50 font-Manrope tracking-widest transition-all duration-500 text-sky-900 2xl:h-20 xl:h-16 lg:h-14   flex lg:pl-8 lg:justify-between justify-evenly items-center fixed top-0 left-0 w-full z-50 lg:-translate-y-0 h-lvh lg:flex-row flex-col ${
+      className={`bg-sky-50 font-Straw tracking-widest transition-all duration-500 text-sky-900 2xl:h-20 xl:h-16 lg:h-14   flex lg:pl-8 lg:justify-between justify-evenly items-center fixed top-0 left-0 w-full z-50 lg:-translate-y-0 h-lvh lg:flex-row flex-col ${
         isMenuOpen
           ? "translate-x-0 lg:translate-0"
           : "lg:translate-x-0 translate-x-full"

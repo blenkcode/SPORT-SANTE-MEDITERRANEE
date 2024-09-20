@@ -54,7 +54,7 @@ const Landing = () => {
   return (
     <main className="lg:h-lvh h-auto min-h-lvh w-full flex flex-col">
       <div className="bg-[url('/bc.jpg')] bg-center lg:bg-fixed bg-scroll w-full bg-cover lg:h-3/5 h-lvh text-sky-50 ">
-        <div className="w-full h-full items-center justify-center font-Manrope flex flex-col bg-gradient-to-r from-sky-700/80 to-sky-700/0">
+        <div className="w-full h-full items-center justify-center font-Straw flex flex-col bg-gradient-to-r from-sky-700/80 to-sky-700/0">
           <div className="items-center flex  flex-col justify-center">
             <img
               src="/logomain.png"
@@ -68,7 +68,7 @@ const Landing = () => {
                     : "-translate-x-56 opacity-0 blur-sm"
                 }`}
               >
-                <div className="bg-zinc-700 bg-opacity-25 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col sm:flex-row font-Play 2xl:text-4xl lg:text-2xl sm:text-3xl text-2xl ">
+                <div className="bg-zinc-700 bg-opacity-25 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col  sm:flex-row font-Straw 2xl:text-6xl lg:text-5xl sm:text-3xl text-4xl ">
                   Sport - Santé{" "}
                   <span className="sm:ml-5 mt-10 sm:mt-0 text-sky-200">
                     Mediterranée
@@ -77,7 +77,7 @@ const Landing = () => {
               </h1>
             </div>
             <h2
-              className={` lg:font-extrabold transition-all  ease-in-out delay-500 duration-1000 font-normal  flex sm:flex-row flex-col sm:text-3xl  2xl:text-3xl xl:text-2xl lg:text-2xl text-2xl 2xl:mt-0  ${
+              className={` lg:font-extrabold font-Straw transition-all  ease-in-out delay-500 duration-1000 font-normal   flex sm:flex-row flex-col sm:text-3xl  2xl:text-3xl xl:text-2xl lg:text-2xl text-2xl 2xl:mt-0  ${
                 titleVisible ? "opacity-100 " : "opacity-0 "
               }`}
             >
@@ -100,7 +100,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="lg:flex-grow flex-grow-0 h-20 lg:h-0 bg-slate-200 flex items-center justify-center text-slate-700 2xl:text-lg lg:text-md overflow-hidden">
+      <div className="lg:flex-grow flex-grow-0 h-20 lg:h-0 bg-slate-200 flex items-center justify-center text-slate-700 2xl:text-lg lg:text-md overflow-hidden font-Straw font-thin">
         <div className="animate-scroll lg:animate-none whitespace-nowrap flex">
           <div className="2xl:px-20 lg:px-10 px-10">
             Avis Google : 4,7/5{" "}
@@ -137,7 +137,7 @@ const Landing = () => {
       </div>
       <div className="lg:h-2/6 h-fit bg-sky-50  text-sky-900 flex flex-col items-center justify-evenly ">
         <div className="flex items-center lg:flex-row flex-col justify-evenly w-10/12">
-          <p className="2xl:text-xl xl:text-lg lg:text-md  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 mt-10 lg:mt-0">
+          <p className=" font-Straw 2xl:text-xl xl:text-lg lg:text-md  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 mt-10 lg:mt-0">
             {" "}
             Notre équipe pluridisciplinaire place{" "}
             <span className="font-bold">le mouvement </span>au centre de chaque

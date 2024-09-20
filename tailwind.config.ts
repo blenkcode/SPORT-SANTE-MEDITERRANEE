@@ -25,6 +25,7 @@ const config: Config = {
       fontFamily: {
         Manrope: ["Manrope", "sans-serif"],
         Play: ["Play", "sans-serif"],
+        Straw: ["strawfordregular"],
       },
       borderWidth: {
         // Ajoute ou modifie la classe 'border-1'
