@@ -16,18 +16,18 @@ const Equipe = () => {
             href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
             className={`lg:text-xl text-md text-sky-50 bg-sky-600 py-2 px-4 rounded-full lg:ml-10 lg:w-80 transition-all flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:bg-sky-50 lg:mt-0 mt-10 `}
           >
-            PRENDRE RENDEZ-VOUS
+            Rendez-vous en ligne
             <FontAwesomeIcon className="ml-3 text-xl" icon={faCalendar} />
           </Link>
         </div>
       </div>
       <div className=" h-fit bg-sky-50 text-sky-900 lg:px-10 flex z-20 flex-col w-full items-center justify-center  relative pb-20">
-        <h2 className=" lg:mt-20 mt-10 lg:text-5xl text-2xl">
+        <h2 className=" lg:mt-20 mt-10 lg:text-3xl font-bold text-xl">
           Notre équipe à votre écoute
         </h2>
         <div className="flex  justify-center lg:flex-row flex-col">
           <div className="mt-10 lg:w-1/3 lg:pr-20 lg:mt-20 flex flex-col justify-evenly">
-            <p className="xl:text-xl lg:text-lg px-5 lg:px-0 ">
+            <p className="2xl:text-xl xl:text-lg lg:text-md  text-md px-5  2xl:px-12 xl:px-10 lg:px-7 ">
               Notre équipe de soignants, agrée par la clinique du coureur est à
               votre disposition pour vous accompagner dans votre parcours de
               soins.
@@ -41,7 +41,7 @@ const Equipe = () => {
                 <span className="xl:text-3xl lg:text-2xl mb-8 mt-8 font-extrabold">
                   Nos Valeurs
                 </span>
-                <ul className="flex flex-col items-center 2xl:text-3xl xl:text-2xl lg:text-  text-xl justify center ">
+                <ul className="flex flex-col items-center 2xl:text-2xl xl:text-xl lg:text-lg  text-xl justify center ">
                   <li className="mb-3">Qualité du soin</li>
                   <li className="mb-3">Prévention</li>
                   <li className="mb-3">Respect de l’Humain </li>

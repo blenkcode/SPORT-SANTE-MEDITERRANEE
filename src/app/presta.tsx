@@ -64,7 +64,7 @@ const Presta = () => {
 
   return (
     <div className="lg:pt-20 bg-sky-50 overflow-x-hidden lg:overflow-x-visible ">
-      <div className="lg:text-5xl text-2xl lg:h-700 h-fit text-sky-50 bg-sky-900 lg:py-20 flex flex-col items-center justify-center font-Manrope w-full relative ">
+      <div className="lg:text-3xl text-2xl lg:h-700 h-fit text-sky-50 bg-sky-900 lg:py-20 flex flex-col items-center justify-center font-Manrope w-full relative ">
         <div
           className={`xl:w-circle xl:h-circle lg:w-circle2 lg:h-circle2 w-0 h-0 rounded-full bg-sky-900 border-2 border-solid border-sky-50 absolute transition-all delay-300 duration-1000 lg:-top-20 -top-10 z-10 ${
             isVisible ? "border-opacity-100" : "border-opacity-0"
@@ -93,7 +93,7 @@ const Presta = () => {
               className=" rounded-full border-2 border-solid border-sky-50 w-40 h-40 shadow-2xl hover:-rotate-12 transition-all ease-in-out duration-300 "
             ></img>
             <Link
-              href="/Kinesitherapie"
+              href="/bikefiting"
               className=" text-sm hover:bg-newblue shadow-2xl text-sky-900 rounded-full py-2 px-3 mt-5 cursor-pointer bg-sky-50  transition-colors"
             >
               EN SAVOIR PLUS
@@ -116,7 +116,7 @@ const Presta = () => {
               className=" rounded-full border-2 border-solid shadow-2xl border-sky-50 w-40 h-40 hover:rotate-12 transition-all ease-in-out duration-300 "
             ></img>
             <Link
-              href="/Kinesitherapie"
+              href="/kinesitherapie"
               className=" text-sm hover:bg-newblue shadow-2xl text-sky-900 rounded-full py-2 px-3 mt-5 cursor-pointer bg-sky-50  transition-colors"
             >
               EN SAVOIR PLUS
@@ -139,7 +139,7 @@ const Presta = () => {
               className=" rounded-full border-2 border-solid shadow-2xl border-sky-50 w-40 h-40 hover:-rotate-12 transition-all ease-in-out duration-300 "
             ></img>
             <Link
-              href="/Kinesitherapie"
+              href="/osteopathie"
               className=" text-sm hover:bg-newblue shadow-2xl text-sky-900 rounded-full py-2 px-3 mt-5 cursor-pointer bg-sky-50  transition-colors"
             >
               EN SAVOIR PLUS
@@ -164,7 +164,7 @@ const Presta = () => {
               className=" rounded-full border-2 border-solid shadow-2xl border-sky-50 w-40 h-40 hover:rotate-12 ease-in-out duration-300 transition-all"
             ></img>
             <Link
-              href="/Kinesitherapie"
+              href="/massage"
               className=" text-sm hover:bg-newblue shadow-2xl text-sky-900 rounded-full py-2 px-3 mt-5 cursor-pointer bg-sky-50  transition-colors"
             >
               EN SAVOIR PLUS

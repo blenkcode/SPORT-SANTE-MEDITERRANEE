@@ -1,7 +1,13 @@
 "use client";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendar, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCalendar,
+  faPhone,
+  faEuroSign,
+  faStar,
+  faPersonRunning,
+} from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import "./globals.css";
@@ -46,7 +52,7 @@ const Landing = () => {
     };
   }, []);
   return (
-    <main className="lg:h-lvh h-auto min-h-lvh w-full">
+    <main className="lg:h-lvh h-auto min-h-lvh w-full flex flex-col">
       <div className="bg-[url('/bc.jpg')] bg-center lg:bg-fixed bg-scroll w-full bg-cover lg:h-3/5 h-lvh text-sky-50 ">
         <div className="w-full h-full items-center justify-center font-Manrope flex flex-col bg-gradient-to-r from-sky-700/80 to-sky-700/0">
           <div className="items-center flex  flex-col justify-center">
@@ -70,19 +76,17 @@ const Landing = () => {
                 </div>
               </h1>
             </div>
-            <div
-              className={`duration-title transition-all flex items-center justify-center 2xl:text-xl  lg:text-sm text-xl ease-in-out delay-500 ${
+            <h2
+              className={` lg:font-extrabold transition-all  ease-in-out delay-500 duration-1000 font-normal  flex sm:flex-row flex-col sm:text-3xl  2xl:text-3xl xl:text-2xl lg:text-2xl text-2xl 2xl:mt-0  ${
                 titleVisible ? "opacity-100 " : "opacity-0 "
               }`}
             >
-              <Link
-                href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
-                className={` text-sky-50 bg-sky-600 py-2 px-4 rounded-full w-fit transition-all flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:bg-sky-50  `}
-              >
-                PRENDRE RENDEZ-VOUS
-                <FontAwesomeIcon className="ml-3 " icon={faCalendar} />
-              </Link>
-            </div>
+              {" "}
+              <span className="lg:mr-3 mr-0 flex flex-col items-center lg:flex-row">
+                Kinésithérapie &{" "}
+              </span>
+              Ostéopathie du sport
+            </h2>
             <div
               className={`duration-title 2xl:text-xl  lg:text-sm text-xl flex items-center justify-center transition-all ease-in-out delay-500 ${
                 titleVisible ? "opacity-100 " : "opacity-0 "
@@ -94,17 +98,46 @@ const Landing = () => {
               </div>
             </div>
           </div>
-          <div></div>
         </div>
       </div>
-      <div className="lg:h-2/5 h-fit bg-sky-50  text-sky-900 flex flex-col items-center justify-evenly ">
-        <h2 className=" lg:font-extrabold font-normal lg:py-0 py-10 flex sm:flex-row flex-col sm:text-3xl  2xl:text-3xl xl:text-2xl lg:text-2xl text-2xl 2xl:mt-0 lg:mt-2">
-          {" "}
-          <span className="lg:mr-3 mr-0">Kinésithérapie & </span>Ostéopathie du
-          sport
-        </h2>
+      <div className="lg:flex-grow flex-grow-0 h-20 lg:h-0 bg-slate-200 flex items-center justify-center text-slate-700 2xl:text-lg lg:text-md overflow-hidden">
+        <div className="animate-scroll lg:animate-none whitespace-nowrap flex">
+          <div className="2xl:px-20 lg:px-10 px-10">
+            Avis Google : 4,7/5{" "}
+            <FontAwesomeIcon className="ml-3" icon={faStar} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10">
+            Remboursement mutuelle{" "}
+            <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10">
+            Spécialiste du sport{" "}
+            <FontAwesomeIcon className="ml-3" icon={faPersonRunning} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10">
+            RDV Rapide <FontAwesomeIcon className="ml-3" icon={faCalendar} />
+          </div>
+          {/* Dupliquez les éléments pour créer l'effet de boucle continue */}
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            Avis Google : 4,7/5{" "}
+            <FontAwesomeIcon className="ml-3" icon={faStar} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            Remboursement mutuelle{" "}
+            <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            Spécialiste du sport{" "}
+            <FontAwesomeIcon className="ml-3" icon={faPersonRunning} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            RDV Rapide <FontAwesomeIcon className="ml-3" icon={faCalendar} />
+          </div>
+        </div>
+      </div>
+      <div className="lg:h-2/6 h-fit bg-sky-50  text-sky-900 flex flex-col items-center justify-evenly ">
         <div className="flex items-center lg:flex-row flex-col justify-evenly w-10/12">
-          <p className="2xl:text-xl xl:text-lg lg:text-md  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 lg:^b">
+          <p className="2xl:text-xl xl:text-lg lg:text-md  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 mt-10 lg:mt-0">
             {" "}
             Notre équipe pluridisciplinaire place{" "}
             <span className="font-bold">le mouvement </span>au centre de chaque

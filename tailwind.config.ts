@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0)" }, // Commence au début de la vue
+          "100%": { transform: "translateX(-50%)" }, // Le premier ensemble sort et le second entre
+        },
+      },
+      animation: {
+        scroll: "scroll 14s linear infinite", // La durée est ajustée pour une boucle fluide
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

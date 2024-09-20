@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import ClientProvider from "../app/ClientProvider"; // Importer ClientProvider
-
+import Header from "./header";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -35,7 +35,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ClientProvider>{children}</ClientProvider>
+        <ClientProvider>
+          <Header></Header>
+          {children}
+        </ClientProvider>
       </body>
     </html>
   );

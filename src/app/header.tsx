@@ -40,6 +40,14 @@ export default function Header() {
         </div>
       </div>
       <div className="flex lg:justify-between justify-start lg:flex-row flex-col items-center w-fit lg:h-full h-2/3  font-semibold">
+        <div className="duration-title transition-all flex items-center justify-center ease-in-out delay-500 ">
+          <Link
+            href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
+            className={` text-sky-50 bg-sky-600 py-2 px-4 rounded-full w-fit transition-all 2xl:text-md  lg:text-sm  flex font-thin justify-center items-center cursor-pointer  hover:bg-sky-50 hover:border-sky-600 hover:text-sky-600 border-solid border-2 border-sky-600 `}
+          >
+            Rendez-vous en ligne
+          </Link>
+        </div>
         <Link
           className="px-8 flex justify-center  relative items-center  2xl:text-md lg:text-sm  h-20 lg:h-full w-fit transition-all"
           href="/"
@@ -87,25 +95,25 @@ export default function Header() {
           >
             <Link
               className="px-8 py-2 lg:hover:bg-sky-900 lg:hover:text-sky-100"
-              href="/Kinesitherapie"
+              href="/kinesitherapie"
             >
               KINESITHERAPIE
             </Link>
             <Link
               className="px-8 py-2 lg:hover:bg-sky-900 lg:hover:text-sky-100"
-              href="/Osteopathie"
+              href="/osteopathie"
             >
               OSTEOPATHIE
             </Link>
             <Link
               className="px-8 py-2 lg:hover:bg-sky-900 lg:hover:text-sky-100"
-              href="/BikeFitting"
+              href="/bikefiting"
             >
               BIKE FITTING
             </Link>
             <Link
               className="px-8 py-2 lg:hover:bg-sky-900 lg:hover:text-sky-100"
-              href="/Massage"
+              href="/massage"
             >
               MASSAGE
             </Link>
