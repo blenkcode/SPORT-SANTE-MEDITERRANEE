@@ -62,7 +62,7 @@ const Landing = () => {
                     : "-translate-x-56 opacity-0 blur-sm"
                 }`}
               >
-                <div className="bg-zinc-700 bg-opacity-25 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col sm:flex-row font-Play xl:text-4xl lg:text-3xl sm:text-3xl text-2xl ">
+                <div className="bg-zinc-700 bg-opacity-25 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col sm:flex-row font-Play 2xl:text-4xl lg:text-2xl sm:text-3xl text-2xl ">
                   Sport - Santé{" "}
                   <span className="sm:ml-5 mt-10 sm:mt-0 text-sky-200">
                     Mediterranée
@@ -71,7 +71,7 @@ const Landing = () => {
               </h1>
             </div>
             <div
-              className={`duration-title transition-all flex items-center justify-center xl:text-xl 2xl:text-2xl lg:text-lg text-xl ease-in-out delay-500 ${
+              className={`duration-title transition-all flex items-center justify-center 2xl:text-xl  lg:text-sm text-xl ease-in-out delay-500 ${
                 titleVisible ? "opacity-100 " : "opacity-0 "
               }`}
             >
@@ -84,11 +84,11 @@ const Landing = () => {
               </Link>
             </div>
             <div
-              className={`duration-title xl:text-xl 2xl:text-2xl lg:text-lg text-xl flex items-center justify-center transition-all ease-in-out delay-500 ${
+              className={`duration-title 2xl:text-xl  lg:text-sm text-xl flex items-center justify-center transition-all ease-in-out delay-500 ${
                 titleVisible ? "opacity-100 " : "opacity-0 "
               }`}
             >
-              <div className="mt-8 text-sky-50 bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:bg-sky-50 w-fit transition-colors">
+              <div className="mt-8 2xl:mt-8 lg:mt-5 text-sky-50 bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:bg-sky-50 w-fit transition-colors">
                 09 75 96 52 30
                 <FontAwesomeIcon className="ml-3 " icon={faPhone} />
               </div>
@@ -98,13 +98,13 @@ const Landing = () => {
         </div>
       </div>
       <div className="lg:h-2/5 h-fit bg-sky-50  text-sky-900 flex flex-col items-center justify-evenly ">
-        <h2 className=" font-extrabold lg:font-normal lg:py-0 py-10 flex sm:flex-row flex-col sm:text-3xl  xl:text-3xl text-2xl">
+        <h2 className=" lg:font-extrabold font-normal lg:py-0 py-10 flex sm:flex-row flex-col sm:text-3xl  2xl:text-3xl xl:text-2xl lg:text-2xl text-2xl 2xl:mt-0 lg:mt-2">
           {" "}
           <span className="lg:mr-3 mr-0">Kinésithérapie & </span>Ostéopathie du
           sport
         </h2>
         <div className="flex items-center lg:flex-row flex-col justify-evenly w-10/12">
-          <p className="lg:text-lg md:text-xl sm:text-lg text-md xl:text-xl 2xl:w-1/3 xl:w-1/2 lg:w-1/2">
+          <p className="2xl:text-xl xl:text-lg lg:text-md  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 lg:^b">
             {" "}
             Notre équipe pluridisciplinaire place{" "}
             <span className="font-bold">le mouvement </span>au centre de chaque
@@ -116,7 +116,7 @@ const Landing = () => {
           </p>
           <img
             src="/logocourse.png"
-            className={`2xl:w-52 xl:w-52 w-1/2 lg:w-40 md:w-1/3 lg:my-0 my-10 rounded-full border-2 border-solid border-sky-900  transition-all duration-1000 ${
+            className={`2xl:w-52 xl:w-40 w-1/2 lg:w-36 md:w-1/3 lg:my-0 my-10 rounded-full border-2 border-solid border-sky-900  transition-all duration-1000 ${
               isVisible
                 ? "-translate-x-0 opacity-100 rotate-0"
                 : "-translate-x-full opacity-0 rotate-180 lg:-translate-x-0 lg:opacity-100 lg:rotate-0"
