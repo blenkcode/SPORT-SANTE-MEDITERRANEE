@@ -22,16 +22,16 @@ const Presta = () => {
 
       if (screenWidth <= 500) {
         // For screens smaller than or equal to 500px, trigger when scrollY > 200
-        if (window.scrollY > 940) {
+        if (window.scrollY > 730) {
           setIsVisible1(true);
         }
-        if (window.scrollY > 1100) {
+        if (window.scrollY > 1000) {
           setIsVisible2(true);
         }
-        if (window.scrollY > 1500) {
+        if (window.scrollY > 1400) {
           setIsVisible3(true);
         }
-        if (window.scrollY > 1750) {
+        if (window.scrollY > 1700) {
           setIsVisible4(true);
         }
       } else {

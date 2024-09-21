@@ -61,14 +61,26 @@ export default function Header() {
             }`}
           ></div>
         </Link>
-
+        <Link
+          className="px-8 flex justify-center  relative items-center  2xl:text-md lg:text-sm h-20 lg:h-full w-fit  transition-all"
+          href="/"
+          onMouseEnter={() => setContactHover(true)}
+          onMouseLeave={() => setContactHover(false)}
+        >
+          CONTACT
+          <div
+            className={`h-0.5 transtion-all duration-500 absolute bottom-0 bg-sky-900 ${
+              contactlHover ? "opacity-100 w-full" : "opacity-0 w-0"
+            } `}
+          ></div>
+        </Link>
         {/* Dropdown for KINESITHERAPIE */}
         <div
           className={`px-6 relative flex items-center 2xl:text-md lg:text-sm h-20 lg:h-full  w-fit justify-center transition-all`}
         >
           <div
             onMouseEnter={handleMouseEnter}
-            className="flex items-center w-fit h-full cursor-pointer opacity-0 lg:opacity-100"
+            className="lg:flex items-center w-fit h-full cursor-pointer opacity-0 lg:opacity-100  "
           >
             PRESTATIONS
             <FontAwesomeIcon
@@ -87,7 +99,7 @@ export default function Header() {
           {/* Dropdown Menu */}
           <div
             onMouseLeave={handleMouseLeave}
-            className={`absolute transition-all lg:text-sky-50 text-sky-900 w-full duration-500 bg-sky-700 py-5 left-0  mt-72 2xl:-translate-y-5 xl:-translate-y-7 lg:-translate-y-8 lg:bg-opacity-50 bg-opacity-0  2xl:text-md  lg:text-xs flex flex-col h-fit justify-between rounded-b-lg z-10 border-sky-100 lg:${
+            className={`absolute transition-all lg:text-sky-50 text-sky-900 w-full duration-500 bg-sky-700 py-5 left-0  lg:mt-72 mt-40 2xl:-translate-y-5 xl:-translate-y-7 lg:-translate-y-8 lg:bg-opacity-50 bg-opacity-0  2xl:text-md  lg:text-xs flex flex-col h-fit justify-between rounded-b-lg z-10 border-sky-100 lg:${
               dropdownOpen ? "opacity-100 " : "opacity-0 "
             } ${
               isMenuOpen ? "opacity-100 lg:opacity-0" : "opacity-0 lg:opacity-0"
@@ -119,19 +131,6 @@ export default function Header() {
             </Link>
           </div>
         </div>
-        <Link
-          className="px-8 flex justify-center  relative items-center  2xl:text-md lg:text-sm h-20 lg:h-full w-fit transition-all"
-          href="/"
-          onMouseEnter={() => setContactHover(true)}
-          onMouseLeave={() => setContactHover(false)}
-        >
-          CONTACT
-          <div
-            className={`h-0.5 transtion-all duration-500 absolute bottom-0 bg-sky-900 ${
-              contactlHover ? "opacity-100 w-full" : "opacity-0 w-0"
-            } `}
-          ></div>
-        </Link>
       </div>
     </header>
   );

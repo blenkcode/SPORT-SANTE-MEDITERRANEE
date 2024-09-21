@@ -25,7 +25,7 @@ const Landing = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 550) {
+      if (window.scrollY > 380) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -68,9 +68,9 @@ const Landing = () => {
                     : "-translate-x-56 opacity-0 blur-sm"
                 }`}
               >
-                <div className="bg-zinc-700 bg-opacity-25 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col  sm:flex-row font-Straw 2xl:text-6xl lg:text-5xl sm:text-3xl text-4xl ">
+                <div className="bg-zinc-700 lg:bg-opacity-25 bg-opacity-0 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col  sm:flex-row font-Straw 2xl:text-6xl lg:text-5xl sm:text-3xl text-4xl ">
                   Sport - Santé{" "}
-                  <span className="sm:ml-5 mt-10 sm:mt-0 text-sky-200">
+                  <span className="sm:ml-5 mt-5 sm:mt-0 text-sky-200">
                     Mediterranée
                   </span>
                 </div>
