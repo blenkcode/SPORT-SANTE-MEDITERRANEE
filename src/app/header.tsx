@@ -49,7 +49,7 @@ export default function Header() {
           </Link>
         </div>
         <Link
-          className="px-8 flex justify-center  relative items-center  2xl:text-md lg:text-sm  h-20 lg:h-full w-fit transition-all"
+          className="px-8 flex justify-center  relative items-center  2xl:text-md lg:text-sm  h-20 lg:h-full w-fit transition-all lg:mt-0 mt-10"
           href="/"
           onMouseEnter={() => setAcceuilHover(true)}
           onMouseLeave={() => setAcceuilHover(false)}

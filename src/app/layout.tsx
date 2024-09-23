@@ -3,10 +3,10 @@ import ClientProvider from "../app/ClientProvider"; // Importer ClientProvider
 import Header from "./header";
 import localFont from "next/font/local";
 import "./globals.css";
-
+import Footer from "./footer";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-
+import BurgerMenu from "./components/BurgerMenu";
 config.autoAddCss = false;
 
 const geistSans = localFont({
@@ -37,7 +37,9 @@ export default function RootLayout({
       >
         <ClientProvider>
           <Header></Header>
+          <BurgerMenu></BurgerMenu>
           {children}
+          <Footer></Footer>
         </ClientProvider>
       </body>
     </html>

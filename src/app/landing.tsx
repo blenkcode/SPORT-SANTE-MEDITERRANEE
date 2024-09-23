@@ -100,7 +100,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="lg:flex-grow flex-grow-0 h-20 lg:h-0 bg-slate-200 flex items-center justify-center text-slate-700 2xl:text-lg lg:text-md overflow-hidden font-Straw font-thin">
+      <div className="lg:flex-grow flex-grow-0 h-20 lg:h-0 bg-slate-200 flex items-center justify-center shadow-2xl text-slate-700 2xl:text-lg lg:text-md overflow-hidden font-Straw font-thin">
         <div className="animate-scroll lg:animate-none whitespace-nowrap flex">
           <div className="2xl:px-20 lg:px-10 px-10">
             Avis Google : 4,7/5{" "}

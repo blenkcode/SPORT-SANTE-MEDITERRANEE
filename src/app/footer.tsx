@@ -10,7 +10,7 @@ const footer = () => {
           <li>Samedi - Dimanche : Fermé</li>
           <li className="mt-10 ">
             {" "}
-            <u>Trouver nous ici :</u> 67 Avenue de la Méditerranée Résidence
+            <u>Trouvez nous ici :</u> 67 Avenue de la Méditerranée Résidence
             Phocéa B, 34340 Marseillan
           </li>
         </ul>
