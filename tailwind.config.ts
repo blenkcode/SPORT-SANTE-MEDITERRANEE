@@ -44,6 +44,7 @@ const config: Config = {
         banner: "200px",
       },
       width: {
+        "100": "500px",
         "200": "1000px",
         circle: "1000px",
         circle2: "800px",

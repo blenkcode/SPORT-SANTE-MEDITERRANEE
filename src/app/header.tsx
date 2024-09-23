@@ -4,10 +4,12 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNotesMedical } from "@fortawesome/free-solid-svg-icons";
 
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
+import { toggleMenu } from "@/store/uiSlice";
 
 export default function Header() {
+  const dispatch = useDispatch();
   const isMenuOpen = useSelector((state: RootState) => state.ui.navbar);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -20,6 +22,10 @@ export default function Header() {
 
   const handleMouseLeave = () => {
     setDropdownOpen(false);
+  };
+
+  const handlemenu = () => {
+    dispatch(toggleMenu());
   };
 
   return (
@@ -53,6 +59,7 @@ export default function Header() {
           href="/"
           onMouseEnter={() => setAcceuilHover(true)}
           onMouseLeave={() => setAcceuilHover(false)}
+          onClick={handlemenu}
         >
           ACCUEIL
           <div
@@ -66,6 +73,7 @@ export default function Header() {
           href="/"
           onMouseEnter={() => setContactHover(true)}
           onMouseLeave={() => setContactHover(false)}
+          onClick={handlemenu}
         >
           CONTACT
           <div
@@ -106,24 +114,28 @@ export default function Header() {
             }`}
           >
             <Link
+              onClick={handlemenu}
               className="px-8 py-2 lg:hover:bg-sky-900 lg:hover:text-sky-100"
               href="/kinesitherapie"
             >
               KINESITHERAPIE
             </Link>
             <Link
+              onClick={handlemenu}
               className="px-8 py-2 lg:hover:bg-sky-900 lg:hover:text-sky-100"
               href="/osteopathie"
             >
               OSTEOPATHIE
             </Link>
             <Link
+              onClick={handlemenu}
               className="px-8 py-2 lg:hover:bg-sky-900 lg:hover:text-sky-100"
               href="/bikefiting"
             >
               BIKE FITTING
             </Link>
             <Link
+              onClick={handlemenu}
               className="px-8 py-2 lg:hover:bg-sky-900 lg:hover:text-sky-100"
               href="/massage"
             >
