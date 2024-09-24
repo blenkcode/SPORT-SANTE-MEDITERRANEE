@@ -14,7 +14,7 @@ export default function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const [acceuilHover, setAcceuilHover] = useState(false);
-  const [contactlHover, setContactHover] = useState(false);
+  // const [contactlHover, setContactHover] = useState(false);
 
   const handleMouseEnter = () => {
     setDropdownOpen(true);
@@ -55,7 +55,7 @@ export default function Header() {
           </Link>
         </div>
         <Link
-          className="px-8 flex justify-center  relative items-center  2xl:text-md lg:text-sm  h-20 lg:h-full w-fit transition-all lg:mt-0 mt-10"
+          className="px-8 flex justify-center  relative items-center  2xl:text-md lg:text-sm  lg:h-full w-fit transition-all lg:mt-0 mt-20"
           href="/"
           onMouseEnter={() => setAcceuilHover(true)}
           onMouseLeave={() => setAcceuilHover(false)}
@@ -68,7 +68,7 @@ export default function Header() {
             }`}
           ></div>
         </Link>
-        <Link
+        {/* <Link
           className="px-8 flex justify-center  relative items-center  2xl:text-md lg:text-sm h-20 lg:h-full w-fit  transition-all"
           href="/"
           onMouseEnter={() => setContactHover(true)}
@@ -81,7 +81,7 @@ export default function Header() {
               contactlHover ? "opacity-100 w-full" : "opacity-0 w-0"
             } `}
           ></div>
-        </Link>
+        </Link> */}
         {/* Dropdown for KINESITHERAPIE */}
         <div
           className={`px-6 relative flex items-center 2xl:text-md lg:text-sm h-20 lg:h-full  w-fit justify-center transition-all`}
@@ -107,7 +107,7 @@ export default function Header() {
           {/* Dropdown Menu */}
           <div
             onMouseLeave={handleMouseLeave}
-            className={`absolute transition-all lg:text-sky-50 text-sky-900 w-full duration-500 bg-sky-700 py-5 left-0  lg:mt-72 mt-40 2xl:-translate-y-5 xl:-translate-y-7 lg:-translate-y-8 lg:bg-opacity-50 bg-opacity-0  2xl:text-md  lg:text-xs flex flex-col h-fit justify-between rounded-b-lg z-10 border-sky-100 lg:${
+            className={`absolute transition-all lg:text-sky-50 text-sky-900 w-full duration-500 bg-sky-700 py-5 left-0  lg:mt-72 mt-40 2xl:-translate-y-5 xl:-translate-y-7 lg:-translate-y-8 lg:bg-opacity-50 bg-opacity-0  2xl:text-md  lg:text-xs flex flex-col h-fit justify-between items-center lg:items-start rounded-b-lg z-10 border-sky-100 -translate-y-4  lg:${
               dropdownOpen ? "opacity-100 " : "opacity-0 "
             } ${
               isMenuOpen ? "opacity-100 lg:opacity-0" : "opacity-0 lg:opacity-0"
@@ -115,28 +115,28 @@ export default function Header() {
           >
             <Link
               onClick={handlemenu}
-              className="px-8 py-2 lg:hover:bg-sky-900 lg:hover:text-sky-100"
+              className="px-8 py-2 mb-2 lg:w-full lg:mb-0 lg:hover:bg-sky-900 lg:hover:text-sky-100"
               href="/kinesitherapie"
             >
               KINESITHERAPIE
             </Link>
             <Link
               onClick={handlemenu}
-              className="px-8 py-2 lg:hover:bg-sky-900 lg:hover:text-sky-100"
+              className="px-8 py-2 mb-2 lg:mb-0 lg:w-full  lg:hover:bg-sky-900 lg:hover:text-sky-100"
               href="/osteopathie"
             >
               OSTEOPATHIE
             </Link>
             <Link
               onClick={handlemenu}
-              className="px-8 py-2 lg:hover:bg-sky-900 lg:hover:text-sky-100"
+              className="px-8 py-2 mb-2 lg:mb-0 lg:w-full lg:hover:bg-sky-900 lg:hover:text-sky-100"
               href="/bikefiting"
             >
               BIKE FITTING
             </Link>
             <Link
               onClick={handlemenu}
-              className="px-8 py-2 lg:hover:bg-sky-900 lg:hover:text-sky-100"
+              className="px-8 py-2 lg:w-full  lg:hover:bg-sky-900 lg:hover:text-sky-100"
               href="/massage"
             >
               MASSAGE
