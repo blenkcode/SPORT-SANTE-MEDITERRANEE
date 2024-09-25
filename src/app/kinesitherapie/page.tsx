@@ -33,7 +33,7 @@ const Kinesitherapie = () => {
           src="course.png"
           className="lg:w-96 w-60 rounded-tr-3xl rounded-bl-3xl lg:mr-20 mt-5 lg:mt-0"
         ></img>
-        <h2 className="xl:text-5xl text-amber-700 bg-slate-50 py-2 px-5 rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10 mt-10  font-bold w-fit ">
+        <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2 px-5 rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10 mt-10  font-bold w-fit ">
           Par le mouvement <FontAwesomeIcon icon={faHeartPulse} />
         </h2>
         <div className=" text-sky-900 z-20 items-center lg:items-start lg:w-2/5  flex flex-col lg:mt-40 mt-5">
@@ -59,7 +59,9 @@ const Kinesitherapie = () => {
           </div>
         </div>
       </div>
-      <div className=" text-sky-900 z-20 bg-slate-200 items-center lg:items-start   flex flex-col lg:py-20 py-10 justify-center relative">
+      <div className=" text-sky-900 z-20 bg-slate-200 items-center lg:items-start   flex flex-col lg:py-20 py-10 justify-center  overflow-hidden relative">
+        <div className="w-circle3 h-circle3 left-96 2xl:top-32 lg:top-20 2xl:-translate-x-32 lg:-translate-x-80 lg:scale-75 2xl:scale-100   bg-orange-300 bg-opacity-50 absolute rounded-full z-10"></div>
+        <div className="w-circle3 h-circle3 lg:right-10 xl:right-96 2xl:-bottom-10 lg:-bottom-10 2xl:translate-x-80 lg:translate-x-96 lg:scale-50 2xl:scale-75 invisible lg:visible  bg-orange-300 bg-opacity-50  absolute rounded-full z-10"></div>
         <div className="flex justify-between items-center flex-col h-full  ">
           {" "}
           <h4 className="w-fit text-sky-900 font-bold text-2xl lg:text-4xl z-20">
@@ -75,17 +77,15 @@ const Kinesitherapie = () => {
               douleurs articulaires, musculaires ou de blessures sportives, nous
               créons un plan de traitement adapté à vos besoins.
             </div>
-            <img
-              src="/kine2.webp"
+            {/* <img
+              src="/kine3.jpg"
               className="lg:w-2/5 px-10 z-20 lg:px-0 lg:mt-20 mt-10 rounded-xl"
-            ></img>
-            <div className="w-circle3 h-circle3 left-96 2xl:top-32 lg:top-20 2xl:-translate-x-32 lg:-translate-x-80 lg:scale-75 2xl:scale-100 invisible lg:visible  bg-orange-300 bg-opacity-50 absolute rounded-full z-10"></div>
-            <div className="w-circle3 h-circle3 right-96 2xl:-bottom-10 lg:-bottom-10 2xl:translate-x-80 lg:translate-x-90 lg:scale-50 2xl:scale-75 invisible lg:visible  bg-orange-300 bg-opacity-50  absolute rounded-full z-10"></div>
+            ></img> */}
           </div>
         </div>
       </div>
       <div className="flex flex-col bg-slate-50 items-center justify-center ">
-        <h2 className="xl:text-4xl text-sky-900 lg:text-4xl text-3xl mt-10 lg:mt-20 font-bold w-fit bg-slate-50 py-2 px-5  lg:mb-20 mb-10 rounded-full">
+        <h2 className="xl:text-4xl text-sky-900 lg:text-4xl text-3xl mt-10 lg:mt-20 font-bold w-fit bg-slate-50 py-2 px-5  lg:mb-10 mb-10 rounded-full">
           Analyse de Course
         </h2>
         <div className="text-sky-900 2xl:w-1/2 lg:w-2/3 px-10 xl:text-xl lg:text-lg lg:mb-10 ">
@@ -130,9 +130,9 @@ const Kinesitherapie = () => {
               />
             </div>
             <div className=" lg:text-lg text-center w-80 h-32 px-5 mb-4 mt-10">
-              Nous identifions les points à améliorer, qu'il s'agisse d'une
-              mauvaise posture, d'un appui inapproprié ou d'un déséquilibre
-              musculaire.
+              Nous identifions les points à améliorer, qu&apos;il s&apos;agisse
+              d&apos;une mauvaise posture, d&apos;un appui inapproprié ou
+              d&apos;un déséquilibre musculaire.
             </div>
           </div>
 
@@ -153,8 +153,8 @@ const Kinesitherapie = () => {
             </div>
 
             <div className=" lg:text-lg text-center w-80 h-32 px-5 mb-4 mt-10">
-              Nous élaborons un plan d'exercices et de conseils pour optimiser
-              votre technique et protéger vos articulations.
+              Nous élaborons un plan d&apos;exercices et de conseils pour
+              optimiser votre technique et protéger vos articulations.
             </div>
           </div>
         </div>
