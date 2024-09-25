@@ -59,15 +59,15 @@ const Kinesitherapie = () => {
           </div>
         </div>
       </div>
-      <div className=" text-sky-900 z-20 bg-orange-100 bg-opacity-10 items-center lg:items-start   flex flex-col lg:py-20 py-10 justify-center relative">
+      <div className=" text-sky-900 z-20 bg-slate-200 items-center lg:items-start   flex flex-col lg:py-20 py-10 justify-center relative">
         <div className="flex justify-between items-center flex-col h-full  ">
           {" "}
-          <h4 className="w-fit text-slate-50 font-bold text-2xl lg:text-4xl z-20">
+          <h4 className="w-fit text-sky-900 font-bold text-2xl lg:text-4xl z-20">
             Rééducation Fonctionnelle
           </h4>
           <div className="flex  items-center justify-center flex-col lg:mt-20 mt-10">
             {" "}
-            <div className=" xl:text-xl lg:text-lg  2xl:w-2/3   px-10 lg:px-36  lg:mt-0 text-slate-50 z-20">
+            <div className=" xl:text-xl lg:text-lg  2xl:w-2/3   px-10 lg:px-36  lg:mt-0 text-sky-900 z-20">
               Chez nous, le mouvement est au cœur de la rééducation. Nous
               privilégions des exercices actifs et spécifiques pour chaque
               patient afin de renforcer les muscles, améliorer la souplesse et
@@ -79,8 +79,8 @@ const Kinesitherapie = () => {
               src="/kine2.webp"
               className="lg:w-2/5 px-10 z-20 lg:px-0 lg:mt-20 mt-10 rounded-xl"
             ></img>
-            <div className="w-circle3 h-circle3 left-96 2xl:top-32 lg:top-20 2xl:-translate-x-32 lg:-translate-x-80 lg:scale-75 2xl:scale-100 invisible lg:visible  bg-sky-900 absolute rounded-full z-10"></div>
-            <div className="w-circle3 h-circle3 right-96 2xl:-bottom-10 lg:-bottom-10 2xl:translate-x-80 lg:translate-x-90 lg:scale-50 2xl:scale-75 invisible lg:visible  bg-sky-900 absolute rounded-full z-10"></div>
+            <div className="w-circle3 h-circle3 left-96 2xl:top-32 lg:top-20 2xl:-translate-x-32 lg:-translate-x-80 lg:scale-75 2xl:scale-100 invisible lg:visible  bg-orange-300 bg-opacity-50 absolute rounded-full z-10"></div>
+            <div className="w-circle3 h-circle3 right-96 2xl:-bottom-10 lg:-bottom-10 2xl:translate-x-80 lg:translate-x-90 lg:scale-50 2xl:scale-75 invisible lg:visible  bg-orange-300 bg-opacity-50  absolute rounded-full z-10"></div>
           </div>
         </div>
       </div>
@@ -95,7 +95,7 @@ const Kinesitherapie = () => {
           athlète confirmé, cette analyse détaillée de votre foulée vous aidera
           à courir plus efficacement tout en minimisant les risques de blessure.
         </div>
-        <div className="w-full h-1 translate-y-20 invisible lg:visible  bg-amber-900 absolute"></div>
+        <div className="w-full h-1 translate-y-28 invisible lg:visible  bg-amber-900 absolute"></div>
         <div className="flex lg:flex-row flex-col items-center justify-around w-full space-y-10 lg:space-y-0 lg:space-x-0 text-sky-900 mt-20 pb-20">
           {/* Section 1: Analyse de la Posture et des Mouvements */}
           <div className="flex flex-col items-center justify-center w-full lg:w-1/3">
