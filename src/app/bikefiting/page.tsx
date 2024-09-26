@@ -2,7 +2,12 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faBicycle } from "@fortawesome/free-solid-svg-icons";
-
+import {
+  faPhone,
+  faEuroSign,
+  faStar,
+  faPersonRunning,
+} from "@fortawesome/free-solid-svg-icons";
 const Bikefiting = () => {
   return (
     <div className=" h-auto min-h-lvh w-full flex flex-col font-Straw">
@@ -24,7 +29,41 @@ const Bikefiting = () => {
           </div>
         </div>
       </div>
-
+      <div className="lg:flex-grow flex-grow-0 h-20  bg-slate-200 flex items-center justify-center shadow-2xl text-slate-700 2xl:text-lg lg:text-md overflow-hidden font-Straw font-thin">
+        <div className="animate-scroll lg:animate-none whitespace-nowrap flex">
+          <div className="2xl:px-20 lg:px-10 px-10">
+            Avis Google : 4,7/5{" "}
+            <FontAwesomeIcon className="ml-3" icon={faStar} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10">
+            Remboursement mutuelle{" "}
+            <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10">
+            Spécialiste du sport{" "}
+            <FontAwesomeIcon className="ml-3" icon={faPersonRunning} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10">
+            RDV Rapide <FontAwesomeIcon className="ml-3" icon={faCalendar} />
+          </div>
+          {/* Dupliquez les éléments pour créer l'effet de boucle continue */}
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            Avis Google : 4,7/5{" "}
+            <FontAwesomeIcon className="ml-3" icon={faStar} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            Remboursement mutuelle{" "}
+            <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            Spécialiste du sport{" "}
+            <FontAwesomeIcon className="ml-3" icon={faPersonRunning} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            RDV Rapide <FontAwesomeIcon className="ml-3" icon={faCalendar} />
+          </div>
+        </div>
+      </div>
       <div className="w-full  bg-slate-50 flex flex-col items-center justify-center lg:py-20 py-10">
         <div className="flex lg:flex-row-reverse flex-col lg:items-start items-center justify-center  ">
           <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2 px-10 rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10  font-bold w-fit  ">

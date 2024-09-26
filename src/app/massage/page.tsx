@@ -4,6 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faLeaf } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
+import {
+  faPhone,
+  faEuroSign,
+  faStar,
+  faPersonRunning,
+} from "@fortawesome/free-solid-svg-icons";
 const Massage = () => {
   const [sign, setSign] = useState(false);
   const [cal, setCal] = useState(false);
@@ -29,7 +35,41 @@ const Massage = () => {
           </div>
         </div>
       </div>
-
+      <div className="lg:flex-grow flex-grow-0 h-20  bg-slate-200 flex items-center justify-center shadow-2xl text-slate-700 2xl:text-lg lg:text-md overflow-hidden font-Straw font-thin">
+        <div className="animate-scroll lg:animate-none whitespace-nowrap flex">
+          <div className="2xl:px-20 lg:px-10 px-10">
+            Avis Google : 4,7/5{" "}
+            <FontAwesomeIcon className="ml-3" icon={faStar} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10">
+            Remboursement mutuelle{" "}
+            <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10">
+            Spécialiste du sport{" "}
+            <FontAwesomeIcon className="ml-3" icon={faPersonRunning} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10">
+            RDV Rapide <FontAwesomeIcon className="ml-3" icon={faCalendar} />
+          </div>
+          {/* Dupliquez les éléments pour créer l'effet de boucle continue */}
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            Avis Google : 4,7/5{" "}
+            <FontAwesomeIcon className="ml-3" icon={faStar} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            Remboursement mutuelle{" "}
+            <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            Spécialiste du sport{" "}
+            <FontAwesomeIcon className="ml-3" icon={faPersonRunning} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            RDV Rapide <FontAwesomeIcon className="ml-3" icon={faCalendar} />
+          </div>
+        </div>
+      </div>
       <div className="w-full  bg-slate-50 flex flex-col items-center justify-center lg:py-20 py-10">
         <div className="flex lg:flex-row flex-col-reverse lg:items-start items-center justify-center  ">
           <img

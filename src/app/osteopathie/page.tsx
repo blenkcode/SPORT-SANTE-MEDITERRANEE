@@ -3,6 +3,12 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faUser } from "@fortawesome/free-solid-svg-icons";
 
+import {
+  faPhone,
+  faEuroSign,
+  faStar,
+  faPersonRunning,
+} from "@fortawesome/free-solid-svg-icons";
 const Osteopathie = () => {
   return (
     <div className=" h-auto min-h-lvh w-full flex flex-col font-Straw">
@@ -22,6 +28,41 @@ const Osteopathie = () => {
               <span>Retrouver l’équilibre</span>
               <span className="lg:ml-2 ">naturellement</span>
             </h2>
+          </div>
+        </div>
+      </div>
+      <div className="lg:flex-grow flex-grow-0 h-20  bg-slate-200 flex items-center justify-center shadow-2xl text-slate-700 2xl:text-lg lg:text-md overflow-hidden font-Straw font-thin">
+        <div className="animate-scroll lg:animate-none whitespace-nowrap flex">
+          <div className="2xl:px-20 lg:px-10 px-10">
+            Avis Google : 4,7/5{" "}
+            <FontAwesomeIcon className="ml-3" icon={faStar} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10">
+            Remboursement mutuelle{" "}
+            <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10">
+            Spécialiste du sport{" "}
+            <FontAwesomeIcon className="ml-3" icon={faPersonRunning} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10">
+            RDV Rapide <FontAwesomeIcon className="ml-3" icon={faCalendar} />
+          </div>
+          {/* Dupliquez les éléments pour créer l'effet de boucle continue */}
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            Avis Google : 4,7/5{" "}
+            <FontAwesomeIcon className="ml-3" icon={faStar} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            Remboursement mutuelle{" "}
+            <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            Spécialiste du sport{" "}
+            <FontAwesomeIcon className="ml-3" icon={faPersonRunning} />
+          </div>
+          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+            RDV Rapide <FontAwesomeIcon className="ml-3" icon={faCalendar} />
           </div>
         </div>
       </div>
