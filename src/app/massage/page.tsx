@@ -37,7 +37,7 @@ const Massage = () => {
             className="lg:w-96 w-4/5 rounded-tr-3xl rounded-bl-3xl lg:mr-20 mt-20 lg:mt-0"
           ></img>
           <div className=" text-sky-900 z-20 items-center lg:items-start  lg:w-2/5  flex flex-col ">
-            <h2 className="2xl:text-5xl xl:text-4xl lg:text-3xl  bg-slate-50 py-2 px-10 rounded-full text-2xl mb-5 lg:-translate-x-56 lg:mt-10 mt-0 text-sky-900 font-bold w-fit">
+            <h2 className="2xl:text-5xl xl:text-4xl lg:text-3xl  bg-slate-50 py-2 px-10 rounded-full text-3xl mb-5 lg:-translate-x-56 lg:mt-10 mt-0 text-sky-900 font-bold w-fit">
               Massages sur mesure{" "}
               <FontAwesomeIcon className="ml-5 text-3xl" icon={faLeaf} />
             </h2>

@@ -17,9 +17,10 @@ const Kinesitherapie = () => {
                 </div>
               </h1>
             </div>
-            <h2 className="lg:font-extrabold font-Straw transition-all  ease-in-out delay-500 duration-1000 font-normal   flex sm:flex-row flex-col sm:text-3xl  2xl:text-3xl xl:text-2xl lg:text-2xl text-2xl 2xl:mt-0 px-10">
+            <h2 className="lg:font-extrabold font-Straw transition-all  ease-in-out delay-500 duration-1000 font-normal   flex sm:flex-row flex-col sm:text-3xl  2xl:text-3xl xl:text-2xl lg:text-2xl text-2xl 2xl:mt-0 px-10 items-center justify-center">
               {" "}
-              Reprenez le contrôle de votre corps
+              <span> Reprenez le contrôle</span>
+              <span className="lg:ml-2"> de votre corps</span>
             </h2>
           </div>
         </div>

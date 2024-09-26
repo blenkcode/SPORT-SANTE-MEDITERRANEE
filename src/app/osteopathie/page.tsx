@@ -17,15 +17,16 @@ const Osteopathie = () => {
                 </div>
               </h1>
             </div>
-            <h2 className="lg:font-extrabold font-Straw transition-all  ease-in-out delay-500 duration-1000 font-normal   flex sm:flex-row flex-col sm:text-3xl  2xl:text-3xl xl:text-2xl lg:text-2xl text-2xl 2xl:mt-0 px-10">
+            <h2 className="lg:font-extrabold font-Straw transition-all  ease-in-out delay-500 duration-1000 font-normal   flex sm:flex-row flex-col sm:text-3xl  2xl:text-3xl xl:text-2xl lg:text-2xl text-2xl 2xl:mt-0 px-10 items-center justify-center w-full ">
               {" "}
-              Retrouver l’équilibre naturellement
+              <span>Retrouver l’équilibre</span>
+              <span className="lg:ml-2 ">naturellement</span>
             </h2>
           </div>
         </div>
       </div>
       <div className="flex lg:flex-row-reverse flex-col lg:items-start items-center justify-center bg-slate-50 lg:py-20 py-10">
-        <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2 px-5 rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10 mt-0 mb-10  font-bold w-fit ">
+        <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2 px-10 rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10 mt-0 mb-5  font-bold w-fit ">
           Approche personnalisée{" "}
           <FontAwesomeIcon className="text-2xl ml-3" icon={faUser} />
         </h2>

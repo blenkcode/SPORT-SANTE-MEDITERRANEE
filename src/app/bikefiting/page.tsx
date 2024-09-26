@@ -16,9 +16,10 @@ const Bikefiting = () => {
                 </div>
               </h1>
             </div>
-            <h2 className="lg:font-extrabold font-Straw transition-all  ease-in-out delay-500 duration-1000 font-normal   flex sm:flex-row flex-col sm:text-3xl  2xl:text-3xl xl:text-2xl lg:text-2xl text-2xl 2xl:mt-0 px-10 lg:px-0">
+            <h2 className="lg:font-extrabold font-Straw transition-all  ease-in-out delay-500 duration-1000 font-normal   flex sm:flex-row flex-col sm:text-3xl  2xl:text-3xl xl:text-2xl lg:text-2xl text-2xl 2xl:mt-0 px-10 lg:px- items-center justify-center">
               {" "}
-              Optimisez votre confort et vos performances
+              <span>Optimisez votre confort </span>
+              <span className="lg:ml-2">et vos performances</span>
             </h2>
           </div>
         </div>
