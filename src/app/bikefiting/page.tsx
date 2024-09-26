@@ -3,7 +3,6 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faBicycle } from "@fortawesome/free-solid-svg-icons";
 import {
-  faPhone,
   faEuroSign,
   faStar,
   faPersonRunning,

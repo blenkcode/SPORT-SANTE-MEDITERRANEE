@@ -5,7 +5,6 @@ import { faCalendar, faLeaf } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 import {
-  faPhone,
   faEuroSign,
   faStar,
   faPersonRunning,
