@@ -26,7 +26,7 @@ const Equipe = () => {
           Notre équipe à votre écoute{" "}
           <FontAwesomeIcon className="ml-5" icon={faUserNurse} />
         </h2>
-        <div className="flex  justify-center   flex-col">
+        <div className="flex  justify-center items-center  flex-col">
           <div className="mt-10 lg:mt-20 flex flex-col lg:flex-row justify-center items-center">
             <div className="rounded-xl pb-8  bg-zinc-300 bg-opacity-20 w-fit px-10 flex flex-col items-center justify center">
               <span className="xl:text-3xl text-2xl mb-8 mt-8 font-extrabold">
@@ -54,7 +54,7 @@ const Equipe = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:mt-20 mt-10 xl:grid-cols-5 lg:grid-cols-3 xl:gap-20 gap-10 z-20 justify-items-center ">
+          <div className="grid grid-cols-1 lg:mt-20 mt-10 lg:grid-cols-3 xl:gap-10 gap-10 z-20 justify-items-center w-fit ">
             <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
               {" "}
               <img
@@ -72,7 +72,7 @@ const Equipe = () => {
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
               <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
-                Laureen Pépin
+                Martin Larivière
               </div>
             </div>
             <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
@@ -82,7 +82,7 @@ const Equipe = () => {
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
               <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
-                Laureen Pépin
+                Cyril Portal
               </div>
             </div>
             <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
@@ -92,7 +92,7 @@ const Equipe = () => {
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
               <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
-                Laureen Pépin
+                Marcelo Cianti
               </div>
             </div>
             <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
@@ -102,7 +102,17 @@ const Equipe = () => {
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
               <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
-                Laureen Pépin
+                Yann Martez
+              </div>
+            </div>
+            <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
+              {" "}
+              <img
+                src="/laureen.png"
+                className=" grayscale hover:scale-110 transition-all duration-300 "
+              ></img>
+              <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
+                Sophie Faudin
               </div>
             </div>
           </div>

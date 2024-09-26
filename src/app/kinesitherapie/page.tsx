@@ -67,7 +67,7 @@ const Kinesitherapie = () => {
         </div>
       </div>
       <div className="flex lg:flex-row-reverse flex-col lg:items-start items-center justify-center bg-slate-50 lg:py-20 py-10">
-        <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2  rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10  font-bold w-fit ">
+        <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2  rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 px-5 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10  font-bold w-fit ">
           Par le mouvement <FontAwesomeIcon icon={faHeartPulse} />
         </h2>
         <div className=" text-sky-900 z-20 items-center lg:items-start lg:w-2/5  flex flex-col lg:mt-40 mt-5">

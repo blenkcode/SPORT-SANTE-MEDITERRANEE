@@ -66,11 +66,17 @@ const Presta = () => {
     <div className="lg:pt-20 bg-sky-50 overflow-x-hidden lg:overflow-x-visible ">
       <div className="lg:text-3xl text-2xl lg:h-200 h-fit text-sky-50  lg:py-20 flex flex-col items-center justify-center font-Straw w-full relative ">
         <div
-          className={`xl:w-circle xl:h-circle lg:w-circle2 lg:h-circle2 w-0 h-0 rounded-full bg-sky-900 border-2 border-solid border-sky-50 absolute transition-all delay-300 duration-1000 lg:-top-20 -top-10 z-10 ${
-            isVisible ? "border-opacity-100" : "border-opacity-0"
+          className={` rounded-full bg-sky-900 border-2 border-solid border-sky-50 absolute transition-all delay-300 duration-1000 lg:-top-20 -top-10 z-10 ${
+            isVisible
+              ? "border-opacity-100 xl:w-circle xl:h-circle lg:w-circle2 lg:h-circle2 w-0 h-0 visible"
+              : "w-0 h-0 border-opacity-0 invisible"
           }`}
         ></div>
-        <h3 className="mb-20 z-20 lg:absolute lg:text-white text-sky-900 relative top-10 lg:-translate-y-10 translate-y-10 ">
+        <h3
+          className={`mb-20 z-20 lg:absolute delay-300 duration-500 transition-all relative top-10 lg:-translate-y-10 translate-y-10 ${
+            isVisible ? "lg:text-white text-sky-900 " : "text-sky-900"
+          } `}
+        >
           Nos Prestations{" "}
           <FontAwesomeIcon
             icon={faNotesMedical}
@@ -79,7 +85,7 @@ const Presta = () => {
         </h3>
         <div className="flex z-30 lg:flex-row flex-col lg:mt-32 items-center">
           <div
-            className={`w-fit flex z-20  mt-0 lg:mt-0 flex-col text-lg  transition-all duration-2000 ease-in-out items-center rounded-lg lg:pb-20 pb-10 lg:-translate-y-20 ${
+            className={`w-fit flex z-20  mt-0 lg:mt-0 flex-col text-lg  transition-all duration-2000 ease-in-out items-center rounded-lg lg:pb-20 pb-0 lg:-translate-y-24 ${
               isVisible
                 ? "-translate-x-0 xl:-translate-x-56 lg:-translate-x-36 opacity-100"
                 : "-translate-x-80 lg:-translate-x-96 opacity-0"
@@ -104,7 +110,7 @@ const Presta = () => {
             </Link>
           </div>
           <div
-            className={`w-fit flex flex-col text-lg xl:-translate-x-24 lg:-translate-x-14 transition-all duration-2000 ease-in-out items-center rounded-lg lg:pb-20 pb-10 ${
+            className={`w-fit flex flex-col text-lg xl:-translate-x-24 lg:-translate-x-14 transition-all duration-2000 ease-in-out items-center rounded-lg lg:pb-20 pb-0 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : " lg:opacity-0 lg:translate-y-56"
@@ -129,7 +135,7 @@ const Presta = () => {
             </Link>
           </div>
           <div
-            className={`w-fit flex flex-col xl:translate-x-24 lg:translate-x-14 text-lg transition-all duration-2000 ease-in-out items-center rounded-lg lg:pb-20 pb-10 ${
+            className={`w-fit flex flex-col xl:translate-x-24 lg:translate-x-14 text-lg transition-all duration-2000 ease-in-out items-center rounded-lg lg:pb-20 pb-0 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : " lg:opacity-0 lg:translate-y-56"
@@ -152,7 +158,7 @@ const Presta = () => {
             </Link>
           </div>
           <div
-            className={`w-fit flex z-20  mt-20 lg:mt-0 flex-col text-lg transition-all duration-2000 ease-in-out items-center rounded-lg lg:pb-20 -translate-y-20 ${
+            className={`w-fit flex z-20  mt-20 lg:mt-0 flex-col text-lg transition-all duration-2000 ease-in-out items-center rounded-lg lg:pb-24 -translate-y-20 ${
               isVisible
                 ? "translate-x-0 xl:translate-x-56 lg:translate-x-36 opacity-100"
                 : " lg:translate-x-80 opacity-0"
