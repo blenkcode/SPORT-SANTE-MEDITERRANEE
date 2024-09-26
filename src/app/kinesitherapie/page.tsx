@@ -24,38 +24,36 @@ const Kinesitherapie = () => {
           </div>
         </div>
       </div>
-      <div className="flex lg:flex-row flex-col-reverse lg:items-start items-center justify-center bg-slate-50 lg:py-20 py-10">
-        <img
-          src="course.png"
-          className="lg:w-96 w-60 rounded-tr-3xl rounded-bl-3xl lg:mr-20 mt-5 lg:mt-0"
-        ></img>
-        <div>
-          <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2 px-10 rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10  font-bold w-fit ">
-            Par le mouvement <FontAwesomeIcon icon={faHeartPulse} />
-          </h2>
-          <div className=" text-sky-900 z-20 items-center lg:items-start lg:w-2/5  flex flex-col lg:mt-40 mt-5">
-            <div className="flex justify-between items-center flex-col h-full  ">
-              <div className=" xl:text-xl lg:text-lg  px-10 lg:px-0  ">
-                Notre cabinet de kinésithérapie est spécialisé dans le
-                traitement par le mouvement, en particulier chez les sportifs.
-                Grâce à notre expertise, nous vous aidons à corriger vos
-                déséquilibres, prévenir les blessures et optimiser vos
-                performances. Notre service d’analyse de course permet
-                d’identifier et de traiter les anomalies de votre foulée afin de
-                vous permettre de courir plus efficacement et en toute sécurité.
-              </div>
-              <div className=" lg:text-3xl  mt-5  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
-                <Link
-                  href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
-                  className={`lg:text-xl text-md text-sky-50 bg-sky-600 py-2 px-4 rounded-full lg:ml-10 lg:w-80 transition-all flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:border-sky-600 border-1 border-solid hover:bg-sky-50 lg:mt-0 mt-10 mb-10 lg:mb-0 `}
-                >
-                  Rendez-vous en ligne
-                  <FontAwesomeIcon className="ml-3 text-xl" icon={faCalendar} />
-                </Link>
-              </div>
+      <div className="flex lg:flex-row-reverse flex-col lg:items-start items-center justify-center bg-slate-50 lg:py-20 py-10">
+        <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2  rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10  font-bold w-fit ">
+          Par le mouvement <FontAwesomeIcon icon={faHeartPulse} />
+        </h2>
+        <div className=" text-sky-900 z-20 items-center lg:items-start lg:w-2/5  flex flex-col lg:mt-40 mt-5">
+          <div className="flex justify-between items-center flex-col h-full  ">
+            <div className=" xl:text-xl lg:text-lg  px-10 lg:px-0  ">
+              Notre cabinet de kinésithérapie est spécialisé dans le traitement
+              par le mouvement, en particulier chez les sportifs. Grâce à notre
+              expertise, nous vous aidons à corriger vos déséquilibres, prévenir
+              les blessures et optimiser vos performances. Notre service
+              d’analyse de course permet d’identifier et de traiter les
+              anomalies de votre foulée afin de vous permettre de courir plus
+              efficacement et en toute sécurité.
+            </div>
+            <div className=" lg:text-3xl  mt-5 lg:mt-10  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
+              <Link
+                href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
+                className={`lg:text-xl text-md text-sky-50 bg-sky-600 py-2 px-4 rounded-full lg:ml-10 lg:w-80 transition-all flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:border-sky-600 border-1 border-solid hover:bg-sky-50 lg:mt-0 mt-10 mb-10 lg:mb-0 `}
+              >
+                Rendez-vous en ligne
+                <FontAwesomeIcon className="ml-3 text-xl" icon={faCalendar} />
+              </Link>
             </div>
           </div>
         </div>
+        <img
+          src="course.png"
+          className="lg:w-96 w-4/5 rounded-tr-3xl rounded-bl-3xl lg:mr-20 mt-5 lg:mt-0"
+        ></img>
       </div>
       <div className=" text-sky-900 z-20 bg-slate-200 items-center lg:items-start   flex flex-col lg:py-20 py-10 justify-center  overflow-hidden relative">
         <div className="w-circle3 h-circle3 left-96 2xl:top-32 lg:top-20 2xl:-translate-x-32 lg:-translate-x-80 lg:scale-75 2xl:scale-100   bg-orange-300 bg-opacity-50 absolute rounded-full z-10"></div>
@@ -82,6 +80,7 @@ const Kinesitherapie = () => {
           </div>
         </div>
       </div>
+      <div></div>
       <div className="flex flex-col bg-slate-50 items-center justify-center ">
         <h2 className="xl:text-4xl text-sky-900 lg:text-4xl text-3xl mt-10 lg:mt-20 font-bold w-fit bg-slate-50 py-2 px-5  lg:mb-10 mb-10 rounded-full">
           Analyse de Course

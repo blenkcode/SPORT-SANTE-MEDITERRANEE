@@ -10,7 +10,7 @@ const Massage = () => {
   const [thai, setThai] = useState(false);
   const [ayu, setAyu] = useState(false);
   return (
-    <div className=" h-auto min-h-lvh w-full flex flex-col font-Straw">
+    <div className=" h-auto min-h-lvh w-full flex flex-col font-Straw z-10">
       <div className="bg-[url('/massage.jpg')] bg-center lg:bg-fixed bg-scroll w-full bg-cover  text-sky-50 h-200 ">
         <div className="w-full h-full items-center justify-center font-Straw flex flex-col bg-gradient-to-r from-green-800/70 to-lime-500/0">
           <div className="items-center flex  flex-col justify-center">
@@ -34,10 +34,10 @@ const Massage = () => {
         <div className="flex lg:flex-row flex-col-reverse lg:items-start items-center justify-center  ">
           <img
             src="masso.webp"
-            className="lg:w-96 w-60 rounded-tr-3xl rounded-bl-3xl lg:mr-20 mt-20 lg:mt-0"
+            className="lg:w-96 w-4/5 rounded-tr-3xl rounded-bl-3xl lg:mr-20 mt-20 lg:mt-0"
           ></img>
           <div className=" text-sky-900 z-20 items-center lg:items-start  lg:w-2/5  flex flex-col ">
-            <h2 className="2xl:text-5xl xl:text-4xl lg:text-3xl  bg-slate-50 py-2 px-10 rounded-full text-2xl mb-10 lg:-translate-x-56 lg:mt-10 mt-0 text-sky-900 font-bold w-fit">
+            <h2 className="2xl:text-5xl xl:text-4xl lg:text-3xl  bg-slate-50 py-2 px-10 rounded-full text-2xl mb-5 lg:-translate-x-56 lg:mt-10 mt-0 text-sky-900 font-bold w-fit">
               Massages sur mesure{" "}
               <FontAwesomeIcon className="ml-5 text-3xl" icon={faLeaf} />
             </h2>
@@ -176,14 +176,14 @@ const Massage = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-2/5 h-full relative ">
+          <div className="2xl:w-1/5 lg:w-2/5 h-full relative ">
             <div className="lg:text-2xl  lg:mt-10 px-10 text-sky-900  mb-20 relative z-20 lg:mb-10  ">
               {" "}
               S&apos;inspirant des bienfaits de la mer et des massages du monde
               ancestraux, vous trouverez dans nos massages une approche unique
               pour vous faire vivre une expérience de qualité unique
             </div>
-            <span className="w-circle3 h-circle3 absolute rounded-full bg-green-700 bg-opacity-30 -top-60 -left-32 z-10 lg:visible invisible"></span>
+            <span className="w-circle3 h-circle3 absolute rounded-full bg-green-700 bg-opacity-30 lg:-top-60 2xl:-top-36 -left-32 z-10 lg:visible invisible"></span>
           </div>
         </div>
         <div className="lg:w-1/2 h-fit py-30  flex lg:flex-row flex-col justify-evenly items-center">

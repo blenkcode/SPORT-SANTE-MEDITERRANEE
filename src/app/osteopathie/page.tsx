@@ -24,39 +24,37 @@ const Osteopathie = () => {
           </div>
         </div>
       </div>
-      <div className="flex lg:flex-row flex-col-reverse lg:items-start items-center justify-center bg-slate-50 lg:py-20 py-10">
-        <img
-          src="ost.webp"
-          className="lg:w-96 w-60 rounded-tr-3xl rounded-bl-3xl lg:mr-20 mt-5 lg:mt-0"
-        ></img>
-        <div>
-          <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2 px-10 rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10 mt-0 mb-10  font-bold w-fit ">
-            Approche personnalisée{" "}
-            <FontAwesomeIcon className="text-2xl ml-3" icon={faUser} />
-          </h2>
-          <div className=" text-sky-900 z-20 items-center lg:items-start lg:w-2/5 2xl:w-1/3  flex flex-col lg:mt-40 mt-5">
-            <div className="flex justify-between items-center flex-col h-full  ">
-              <div className=" xl:text-xl lg:text-lg  px-10 lg:px-0  ">
-                Notre approche thérapeutique douce repose sur la manipulation
-                manuelle du corps pour rétablir son équilibre naturel. Nous
-                mettons à votre disposition une expertise complète pour soulager
-                vos douleurs, améliorer votre mobilité et favoriser le bien-être
-                général. En identifiant la cause sous-jacente de vos douleurs,
-                nos ostéopathes restaurent les capacités fonctionnelles de votre
-                corps.
-              </div>
-              <div className=" lg:text-3xl  mt-5 xl:mt-20  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
-                <Link
-                  href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
-                  className={`lg:text-xl text-md text-sky-50 bg-sky-600 py-2 px-4 rounded-full lg:ml-10 lg:w-80 transition-all flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:border-sky-600 border-1 border-solid hover:bg-sky-50 lg:mt-0 mt-10 mb-10 lg:mb-0 `}
-                >
-                  Rendez-vous en ligne
-                  <FontAwesomeIcon className="ml-3 text-xl" icon={faCalendar} />
-                </Link>
-              </div>
+      <div className="flex lg:flex-row-reverse flex-col lg:items-start items-center justify-center bg-slate-50 lg:py-20 py-10">
+        <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2 px-5 rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10 mt-0 mb-10  font-bold w-fit ">
+          Approche personnalisée{" "}
+          <FontAwesomeIcon className="text-2xl ml-3" icon={faUser} />
+        </h2>
+        <div className=" text-sky-900 z-20 items-center lg:items-start lg:w-2/5 2xl:w-1/3  flex flex-col lg:mt-40 mt-5">
+          <div className="flex justify-between items-center flex-col h-full  ">
+            <div className=" xl:text-xl lg:text-lg  px-10 lg:px-0  ">
+              Notre approche thérapeutique douce repose sur la manipulation
+              manuelle du corps pour rétablir son équilibre naturel. Nous
+              mettons à votre disposition une expertise complète pour soulager
+              vos douleurs, améliorer votre mobilité et favoriser le bien-être
+              général. En identifiant la cause sous-jacente de vos douleurs, nos
+              ostéopathes restaurent les capacités fonctionnelles de votre
+              corps.
+            </div>
+            <div className=" lg:text-3xl  mt-5 xl:mt-20  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
+              <Link
+                href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
+                className={`lg:text-xl text-md text-sky-50 bg-sky-600 py-2 px-4 rounded-full lg:ml-10 lg:w-80 transition-all flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:border-sky-600 border-1 border-solid hover:bg-sky-50 lg:mt-0 mt-10 mb-10 lg:mb-0 `}
+              >
+                Rendez-vous en ligne
+                <FontAwesomeIcon className="ml-3 text-xl" icon={faCalendar} />
+              </Link>
             </div>
           </div>
         </div>
+        <img
+          src="ost.webp"
+          className="lg:w-96 w-4/5 rounded-tr-3xl rounded-bl-3xl lg:mr-20 mt-5 lg:mt-0"
+        ></img>
       </div>
       <div className=" text-sky-900 z-20 bg-slate-200 items-center lg:items-start   flex flex-col lg:py-20 py-10 justify-center  overflow-hidden relative">
         <div className="w-circle3 h-circle3 left-96 2xl:top-32 lg:top-20 2xl:-translate-x-32 lg:-translate-x-80 lg:scale-75 2xl:scale-100   bg-orange-300 bg-opacity-50 absolute rounded-full z-10"></div>

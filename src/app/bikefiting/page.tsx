@@ -25,42 +25,36 @@ const Bikefiting = () => {
       </div>
 
       <div className="w-full  bg-slate-50 flex flex-col items-center justify-center lg:py-20 py-10">
-        <div className="flex lg:flex-row flex-col-reverse lg:items-start items-center justify-center  ">
+        <div className="flex lg:flex-row-reverse flex-col lg:items-start items-center justify-center  ">
+          <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2 px-10 rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10  font-bold w-fit  ">
+            Ajustez votre vélo à votre corps{" "}
+            <FontAwesomeIcon icon={faBicycle} className="ml-3 text-3xl " />
+          </h2>
+          <div className=" text-sky-900 z-20 items-center lg:items-start lg:w-2/5  flex flex-col lg:mt-40 mt-5">
+            <div className="flex justify-between items-center flex-col h-full  ">
+              <div className=" xl:text-xl lg:text-lg  px-10 lg:px-0  ">
+                Vous êtes passionné de cyclisme ou souhaitez simplement
+                améliorer votre posture sur votre vélo ? Notre service de Bike
+                Fitting vous aide à trouver l&apos;ajustement parfait pour
+                allier confort, efficacité et prévention des blessures. Que vous
+                soyez amateur ou professionnel, nous vous accompagnons pour
+                adapter votre vélo à votre morphologie unique.
+              </div>
+              <div className=" lg:text-3xl  mt-10  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
+                <Link
+                  href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
+                  className={`lg:text-xl text-md text-sky-50 bg-sky-600 py-2 px-4 rounded-full lg:ml-10 lg:w-80 transition-all flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:border-sky-600 border-1 border-solid hover:bg-sky-50 lg:mt-0 mt-5 mb-10 lg:mb-0 `}
+                >
+                  Rendez-vous en ligne
+                  <FontAwesomeIcon className="ml-3 text-xl" icon={faCalendar} />
+                </Link>
+              </div>
+            </div>
+          </div>
           <img
             src="bike1.png"
             className="lg:w-96 w-4/5 rounded-tr-3xl rounded-bl-3xl lg:mr-20 mt-5 lg:mt-0"
           ></img>
-          <div>
-            {" "}
-            <h2 className="xl:text-5xl text-violet-900 bg-slate-50 py-2 px-10 rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10  font-bold w-fit  ">
-              Ajustez votre vélo à votre corps{" "}
-              <FontAwesomeIcon icon={faBicycle} className="ml-3 text-3xl " />
-            </h2>
-            <div className=" text-sky-900 z-20 items-center lg:items-start lg:w-2/5  flex flex-col lg:mt-40 mt-5">
-              <div className="flex justify-between items-center flex-col h-full  ">
-                <div className=" xl:text-xl lg:text-lg  px-10 lg:px-0  ">
-                  Vous êtes passionné de cyclisme ou souhaitez simplement
-                  améliorer votre posture sur votre vélo ? Notre service de Bike
-                  Fitting vous aide à trouver l&apos;ajustement parfait pour
-                  allier confort, efficacité et prévention des blessures. Que
-                  vous soyez amateur ou professionnel, nous vous accompagnons
-                  pour adapter votre vélo à votre morphologie unique.
-                </div>
-                <div className=" lg:text-3xl  mt-10  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
-                  <Link
-                    href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
-                    className={`lg:text-xl text-md text-sky-50 bg-sky-600 py-2 px-4 rounded-full lg:ml-10 lg:w-80 transition-all flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:border-sky-600 border-1 border-solid hover:bg-sky-50 lg:mt-0 mt-5 mb-10 lg:mb-0 `}
-                  >
-                    Rendez-vous en ligne
-                    <FontAwesomeIcon
-                      className="ml-3 text-xl"
-                      icon={faCalendar}
-                    />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className="flex flex-col items-center justify-center lg:mt-24 mt-16">
@@ -68,7 +62,7 @@ const Bikefiting = () => {
             Notre processus
           </h2>
           <div className="w-full h-1 invisible lg:visible bg-sky-900 absolute"></div>
-          <div className="flex lg:flex-row flex-col items-center justify-around w-full space-y-0 lg:space-y-0 lg:space-x-32 text-sky-900">
+          <div className="flex lg:flex-row flex-col items-center justify-around w-full space-y-0 lg:space-y-0 xl:space-x-32 lg:space-x-10 text-sky-900">
             {/* Section 1: Analyse de la Posture et des Mouvements */}
             <div className="flex flex-col items-center justify-center w-full lg:w-1/3 mt-10 lg:mt-0">
               <h4 className="lg:text-2xl text-xl mb-4">
