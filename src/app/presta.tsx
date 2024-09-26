@@ -63,10 +63,10 @@ const Presta = () => {
   }, []);
 
   return (
-    <div className="lg:pt-20   bg-sky-50 overflow-x-hidden lg:overflow-x-visible overflow-y-hidden ">
+    <div className="lg:pt-20 pt-20   bg-sky-50 overflow-x-hidden lg:overflow-x-visible overflow-hidden ">
       <div className="lg:text-3xl text-2xl lg:h-200 h-fit text-sky-50  lg:py-20 flex flex-col items-center justify-center font-Straw w-full relative ">
         <div
-          className={` rounded-full bg-sky-900 border-2 border-solid border-sky-50 absolute transition-all delay-300 duration-1000 lg:-top-20 -top-10 z-10 ${
+          className={` rounded-full bg-sky-700 border-2 border-solid border-sky-50 absolute transition-all delay-300 duration-2000 lg:-top-20 -top-10 z-10 ${
             isVisible
               ? "border-opacity-100 xl:w-circle xl:h-circle lg:w-circle2 lg:h-circle2 w-0 h-0 visible"
               : "w-0 h-0 border-opacity-0 invisible"

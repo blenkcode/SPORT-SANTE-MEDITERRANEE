@@ -121,11 +121,11 @@ const Osteopathie = () => {
         <h2 className="xl:text-4xl text-sky-900 lg:text-4xl text-3xl mt-10 lg:mt-20 font-bold w-fit bg-slate-50 py-2 px-5  lg:mb-10 mb-10 rounded-full ">
           Quand consulter ?
         </h2>
-        <div className="text-sky-900 lg:1/5 xl:text-xl lg:text-lg lg:mb-20 flex flex-col">
+        <div className="text-sky-900 border-b-2 border-zinc-500 border-opacity-30 pb-5 flex items-start w-full lg:px-44 px-10 xl:text-xl lg:text-lg lg:mb-20 flex-col">
           <h5>À titre préventif :</h5>
           Pour établir un “check up”, pour préparer une épreuve.
         </div>
-        <div className="text-sky-900 lg:1/5 flex flex-col px-10 xl:text-xl lg:text-lg lg:mb-20 ">
+        <div className="text-sky-900 border-b-2 border-zinc-500 border-opacity-30 pb-5 flex items-start w-full lg:px-44 px-10 xl:text-xl lg:text-lg lg:mb-20 flex-col mt-10">
           <h5>À titre curatif :</h5>
           <ul>
             <li>
@@ -139,7 +139,7 @@ const Osteopathie = () => {
             <li>Pour effacer les traumatismes même anciens.</li>
           </ul>
         </div>
-        <div className="text-sky-900 lg:1/5 flex flex-col px-10 xl:text-xl lg:text-lg lg:mb-20 ">
+        <div className="text-sky-900 border-b-2 border-zinc-500 border-opacity-30 pb-5 flex items-start w-full lg:px-44 px-10 xl:text-xl lg:text-lg lg:mb-20 flex-col mt-10">
           <h5>Mais aussi en cas de :</h5>
           <ul>
             <li>

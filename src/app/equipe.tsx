@@ -4,8 +4,42 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { faUserNurse } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
 import "./globals.css";
 const Equipe = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+
+  console.log(scrollY);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 975) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Nettoyer l'écouteur d'événements lors du démontage du composant
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="w-full bg-[url('/bc.jpg')] bg-center lg:bg-fixed bg-scroll bg-cover">
       <div className="w-full  border-t-4  border-sky-50  font-Straw relative z-34 overflow-hidden h-48  ">
@@ -26,10 +60,18 @@ const Equipe = () => {
         </div>
       </div>
       <div className=" h-fit bg-sky-50 text-sky-900 lg:px-10 flex z-20 flex-col w-full items-center justify-center font-Straw  relative pb-20">
-        <h2 className=" lg:mt-20 mt-10 lg:text-3xl font-bold text-xl">
-          Notre équipe à votre écoute{" "}
-          <FontAwesomeIcon className="ml-5" icon={faUserNurse} />
-        </h2>
+        <div className="overflow-hidden">
+          {" "}
+          <h2
+            className={`  lg:mt-20 mt-10 lg:text-3xl transition-all duration-2000 font-bold text-xl ${
+              isVisible ? "translate-y-0" : "translate-y-10"
+            }`}
+          >
+            Notre équipe à votre écoute{" "}
+            <FontAwesomeIcon className="ml-5" icon={faUserNurse} />
+          </h2>
+        </div>
+
         <div className="flex  justify-center items-center  flex-col">
           <div className="mt-10 lg:mt-20 flex flex-col lg:flex-row justify-center items-center">
             <div className="rounded-xl pb-8  bg-zinc-300 bg-opacity-20 w-fit px-10 flex flex-col items-center justify center">

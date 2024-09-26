@@ -29,7 +29,7 @@ const Landing = () => {
       {
         // L'élément retrouve sa taille initiale (scaleY 1 = 100%)
         duration: 1, // Durée de l'animation
-        delay: 2,
+        delay: 3.2,
         ease: "power1.inOut", // Utilisation de power1.inOut pour une animation plus douce
         visibility: "visible",
         opacity: "100%", // Rendre visible pendant l'animation
@@ -41,7 +41,7 @@ const Landing = () => {
       {
         height: "66.67%", // L'élément retrouve sa taille initiale (scaleY 1 = 100%)
         duration: 2, // Durée de l'animation
-        delay: 1,
+        delay: 1.8,
         ease: "power1.inOut", // Utilisation de power1.inOut pour une animation plus douce
       }
     );
@@ -51,7 +51,7 @@ const Landing = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 1.5,
+        duration: 2,
         delay: 0,
         ease: "power3.out",
         visibility: "visible",
@@ -63,8 +63,8 @@ const Landing = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 1.5,
-        delay: 0.2,
+        duration: 2,
+        delay: 0.5,
         ease: "power3.out",
         visibility: "visible",
       }
@@ -75,8 +75,8 @@ const Landing = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 1.5,
-        delay: 0.4,
+        duration: 2,
+        delay: 0.8,
         ease: "power3.out",
         visibility: "visible",
       }
@@ -88,7 +88,7 @@ const Landing = () => {
         opacity: 1,
 
         duration: 1,
-        delay: 2,
+        delay: 2.5,
         ease: "power3.out",
         visibility: "visible",
       }
