@@ -8,7 +8,7 @@ import {
   faStar,
   faPersonRunning,
 } from "@fortawesome/free-solid-svg-icons";
-
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import "./globals.css";
 const Landing = () => {
@@ -92,10 +92,12 @@ const Landing = () => {
                 titleVisible ? "opacity-100 " : "opacity-0 "
               }`}
             >
-              <div className="mt-8 2xl:mt-8 lg:mt-5 text-sky-50 bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:bg-sky-50 w-fit transition-colors">
-                09 75 96 52 30
-                <FontAwesomeIcon className="ml-3 " icon={faPhone} />
-              </div>
+              <Link href="tel:0975965230" passHref>
+                <div className="mt-8 2xl:mt-8 lg:mt-5 text-sky-50 bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:bg-sky-50 w-fit transition-colors">
+                  09 75 96 52 30
+                  <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                </div>
+              </Link>
             </div>
           </div>
         </div>
