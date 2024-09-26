@@ -11,7 +11,7 @@ const Massage = () => {
   const [ayu, setAyu] = useState(false);
   return (
     <div className=" h-auto min-h-lvh w-full flex flex-col font-Straw">
-      <div className="bg-[url('/massage.jpg')] bg-center lg:bg-fixed bg-scroll w-full bg-cover  text-sky-50 h-200">
+      <div className="bg-[url('/massage.jpg')] bg-center lg:bg-fixed bg-scroll w-full bg-cover  text-sky-50 h-200 ">
         <div className="w-full h-full items-center justify-center font-Straw flex flex-col bg-gradient-to-r from-green-800/70 to-lime-500/0">
           <div className="items-center flex  flex-col justify-center">
             <div className="mb-10 lg:mt-10 mt-0 flex flex-col justify-start items-center font-Manrope">
@@ -37,7 +37,7 @@ const Massage = () => {
             className="lg:w-96 w-60 rounded-tr-3xl rounded-bl-3xl lg:mr-20 mt-20 lg:mt-0"
           ></img>
           <div className=" text-sky-900 z-20 items-center lg:items-start  lg:w-2/5  flex flex-col ">
-            <h2 className="2xl:text-5xl xl:text-4xl lg:text-3xl  bg-slate-50 py-2 px-5 rounded-full text-2xl mb-10 lg:-translate-x-56 lg:mt-10 mt-5 text-sky-900 font-bold w-fit">
+            <h2 className="2xl:text-5xl xl:text-4xl lg:text-3xl  bg-slate-50 py-2 px-10 rounded-full text-2xl mb-10 lg:-translate-x-56 lg:mt-10 mt-0 text-sky-900 font-bold w-fit">
               Massages sur mesure{" "}
               <FontAwesomeIcon className="ml-5 text-3xl" icon={faLeaf} />
             </h2>
@@ -63,7 +63,7 @@ const Massage = () => {
             </div>
           </div>
         </div>
-        <h3 className="lg:text-4xl text-2xl lg:mt-32 mt-20 text-sky-900 bg-slate-50 w-full flex items-center justify-center pt-20 font-bold">
+        <h3 className="lg:text-4xl text-2xl lg:mt-32 mt-20 text-sky-900 bg-slate-50 w-full flex items-center justify-center pt-10 font-bold">
           Choissisez votre formule{" "}
         </h3>
         <div className="w-full h-auto bg-slate-50 flex lg:flex-row flex-col items-center justify-center">

@@ -137,7 +137,7 @@ const Landing = () => {
       </div>
       <div className="lg:h-2/6 h-fit bg-sky-50  text-sky-900 flex flex-col items-center justify-evenly ">
         <div className="flex items-center lg:flex-row flex-col justify-evenly w-10/12">
-          <p className=" font-Straw 2xl:text-xl xl:text-lg lg:text-md  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 mt-10 lg:mt-0">
+          <p className=" font-Straw 2xl:text-xl lg:text-lg  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 mt-10 lg:mt-0">
             {" "}
             Notre équipe pluridisciplinaire place{" "}
             <span className="font-bold">le mouvement </span>au centre de chaque

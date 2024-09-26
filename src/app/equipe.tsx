@@ -40,7 +40,7 @@ const Equipe = () => {
               </ul>
             </div>
 
-            <p className="2xl:text-xl xl:text-lg lg:text-md  text-md px-5  2xl:px-20 xl:px-10 lg:px-7 lg:w-1/3 lg-pt-0 pt-12">
+            <p className="2xl:text-xl xl:text-lg lg:text-md  text-md px-10  2xl:px-20 xl:px-10 lg:px-7 lg:w-1/3 lg-pt-0 pt-12">
               Notre équipe de soignants,{" "}
               <span className="font-bold">
                 agrée par la clinique du coureur
