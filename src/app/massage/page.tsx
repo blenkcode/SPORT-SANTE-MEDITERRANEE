@@ -63,10 +63,10 @@ const Massage = () => {
             </div>
           </div>
         </div>
-        <h3 className="lg:text-4xl text-2xl lg:mt-32 mt-20 text-sky-900 bg-slate-50 w-full flex items-center justify-center pt-10 font-bold">
+        <h3 className="lg:text-4xl text-2xl lg:mt-32 mt-20 bg-slate-100 text-sky-900 s w-full flex items-center justify-center pt-10 font-bold">
           Choissisez votre formule{" "}
         </h3>
-        <div className="w-full h-auto bg-slate-50 flex lg:flex-row flex-col items-center justify-center">
+        <div className="w-full h-auto bg-slate-100  flex lg:flex-row flex-col items-center justify-center">
           <div className=" h-auto grid grid-cols-1 justify-items-center w-fit gap-10 items-center lg:grid-cols-2 lg:py-32 py-20 px-5 z-20  ">
             <div
               onMouseEnter={() => setSign(true)}
@@ -186,7 +186,7 @@ const Massage = () => {
             <span className="w-circle3 h-circle3 absolute rounded-full bg-green-700 bg-opacity-30 lg:-top-60 2xl:-top-36 -left-32 z-10 lg:visible invisible"></span>
           </div>
         </div>
-        <div className="lg:w-1/2 h-fit py-30  flex lg:flex-row flex-col justify-evenly items-center">
+        <div className="lg:w-1/2 h-fit py-30 mt-20  flex lg:flex-row flex-col justify-evenly items-center">
           <div className="flex flex-col w-fit px-10 py-5 text-2xl items-center justify-center bg-slate-200 bg-opacity-50 rounded-xl text-sky-900">
             <div className="mb-5">Nos tarifs</div>
             <div>1H : 75€ </div>
