@@ -14,13 +14,13 @@ const Bikefiting = () => {
         <div className="w-full h-full items-center justify-center font-Straw flex flex-col bg-gradient-to-r from-violet-800/70 to-lime-500/0">
           <div className="items-center flex  flex-col justify-center">
             <div className="mb-10 lg:mt-10 mt-0 flex flex-col justify-start items-center font-Manrope">
-              <h1 className="ease-in-out duration-title transition-all font-extrabold flex lg:flex-row flex-col">
-                <div className="bg-zinc-700 lg:bg-opacity-25 bg-opacity-0 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col  sm:flex-row font-Straw 2xl:text-6xl lg:text-5xl sm:text-3xl text-5xl ">
+              <h1 className="ease-in-out duration-title transition-all lg:font-extrabold flex lg:flex-row flex-col">
+                <div className="bg-zinc-700 lg:bg-opacity-25 bg-opacity-0 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col  sm:flex-row font-Straw 2xl:text-6xl lg:text-5xl sm:text-3xl text-4xl ">
                   Bike Fitting
                 </div>
               </h1>
             </div>
-            <h2 className="lg:font-extrabold font-Straw transition-all  ease-in-out delay-500 duration-1000 font-normal   flex sm:flex-row flex-col sm:text-3xl  2xl:text-3xl xl:text-2xl lg:text-2xl text-2xl 2xl:mt-0 px-10 lg:px- items-center justify-center">
+            <h2 className="lg:font-extrabold font-Straw transition-all  ease-in-out delay-500 duration-1000 font-normal   flex sm:flex-row flex-col sm:text-3xl  2xl:text-3xl xl:text-2xl lg:text-2xl text-2xl 2xl:mt-0 px-8 lg:px- items-center justify-center">
               {" "}
               <span>Optimisez votre confort </span>
               <span className="lg:ml-2">et vos performances</span>
@@ -104,10 +104,10 @@ const Bikefiting = () => {
           <div className="flex lg:flex-row flex-col items-center justify-around w-full space-y-0 lg:space-y-0 xl:space-x-32 lg:space-x-10 text-sky-900">
             {/* Section 1: Analyse de la Posture et des Mouvements */}
             <div className="flex flex-col items-center justify-center w-full lg:w-1/3 mt-10 lg:mt-0">
-              <h4 className="lg:text-2xl text-xl mb-4">
+              <h4 className="lg:text-2xl text-2xl mb-4">
                 Analyse de la Posture
               </h4>
-              <div className="w-72 rounded-full h-72 overflow-hidden relative">
+              <div className="w-72 lg:w-64 lg:h-64 rounded-full h-72 overflow-hidden relative">
                 <div className="bg-violet-700 bg-opacity-30 absolute w-full h-full "></div>
                 <img
                   src="/ana.png"
@@ -115,7 +115,7 @@ const Bikefiting = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="xl:text-xl lg:text-lg text-center w-80 h-32 px-5 mb-4 mt-10">
+              <div className="lg:text-md text-center w-80 h-32 px-5 mb-4 mt-10">
                 Nous réalisons une analyse complète de votre posture et de vos
                 mouvements en pédalant.
               </div>
@@ -123,8 +123,8 @@ const Bikefiting = () => {
 
             {/* Section 2: Ajustement du Vélo */}
             <div className="flex flex-col items-center justify-center w-full lg:w-1/3">
-              <h4 className="lg:text-2xl text-xl mb-4">Ajustement du Vélo</h4>
-              <div className="w-72 rounded-full h-72 overflow-hidden relative">
+              <h4 className="lg:text-2xl text-2xl mb-4">Ajustement du Vélo</h4>
+              <div className="w-72 rounded-full h-72 lg:w-64 lg:h-64 overflow-hidden relative">
                 <div className="bg-violet-700 bg-opacity-30 absolute w-full h-full"></div>
                 <img
                   src="/ajust.webp"
@@ -132,7 +132,7 @@ const Bikefiting = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="xl:text-xl lg:text-lg text-center w-80 h-32 px-5 mb-4 mt-10">
+              <div className="lg:text-md text-center w-80 h-32 px-5 mb-4 mt-10">
                 Nous ajustons la hauteur de la selle, la longueur des
                 manivelles, la position du guidon, et bien plus encore.
               </div>
@@ -140,11 +140,11 @@ const Bikefiting = () => {
 
             {/* Section 3: Conseils Personnalisés */}
             <div className="flex flex-col items-center justify-center w-full lg:w-1/3">
-              <h4 className="lg:text-2xl text-xl mb-4">
+              <h4 className="lg:text-2xl text-2xl mb-4">
                 Conseils Personnalisés
               </h4>
 
-              <div className="w-72 rounded-full h-72 overflow-hidden relative">
+              <div className="w-72 rounded-full h-72 lg:w-64 lg:h-64 overflow-hidden relative">
                 <div className="bg-violet-700 bg-opacity-30 absolute w-full h-full"></div>
                 <img
                   src="/ajust.png"
@@ -152,7 +152,7 @@ const Bikefiting = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="xl:text-xl lg:text-lg text-center w-80 h-32 px-5 mb-4 mt-10">
+              <div className="lg:text-md text-center w-80 h-32 px-5 mb-4 mt-10">
                 À la fin de la séance, nous vous donnons des conseils pour
                 améliorer votre position et maximiser vos performances.
               </div>

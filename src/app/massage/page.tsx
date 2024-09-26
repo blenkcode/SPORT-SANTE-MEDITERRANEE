@@ -2,20 +2,63 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faLeaf } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import {
   faEuroSign,
   faStar,
   faPersonRunning,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 const Massage = () => {
   const [sign, setSign] = useState(false);
   const [cal, setCal] = useState(false);
   const [thai, setThai] = useState(false);
   const [ayu, setAyu] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const [scrollY, setScrollY] = useState(0);
+
+  console.log(scrollY);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth <= 500) {
+        // For screens smaller than or equal to 500px, trigger when scrollY > 200
+        if (window.scrollY > 730) {
+          setIsVisible(true);
+        }
+      } else {
+        // For larger screens, trigger when scrollY > 320
+        if (window.scrollY > 900) {
+          setIsVisible(true);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Nettoyer l'écouteur d'événements lors du démontage du composant
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className=" h-auto min-h-lvh w-full flex flex-col font-Straw z-10">
+    <div className=" h-auto min-h-lvh w-full  flex flex-col font-Straw z-10">
       <div className="bg-[url('/massage.jpg')] bg-center lg:bg-fixed bg-scroll w-full bg-cover  text-sky-50 h-200 ">
         <div className="w-full h-full items-center justify-center font-Straw flex flex-col bg-gradient-to-r from-green-800/70 to-lime-500/0">
           <div className="items-center flex  flex-col justify-center">
@@ -41,8 +84,7 @@ const Massage = () => {
             <FontAwesomeIcon className="ml-3" icon={faStar} />
           </div>
           <div className="2xl:px-20 lg:px-10 px-10">
-            Remboursement mutuelle{" "}
-            <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
+            75 - 140 <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
           </div>
           <div className="2xl:px-20 lg:px-10 px-10">
             Spécialiste du sport{" "}
@@ -57,8 +99,7 @@ const Massage = () => {
             <FontAwesomeIcon className="ml-3" icon={faStar} />
           </div>
           <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
-            Remboursement mutuelle{" "}
-            <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
+            75 - 140 <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
           </div>
           <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
             Spécialiste du sport{" "}
@@ -76,12 +117,15 @@ const Massage = () => {
             className="lg:w-96 w-4/5 rounded-tr-3xl rounded-bl-3xl lg:mr-20 mt-20 lg:mt-0"
           ></img>
           <div className=" text-sky-900 z-20 items-center lg:items-start  lg:w-2/5  flex flex-col ">
-            <h2 className="2xl:text-5xl xl:text-4xl lg:text-3xl  bg-slate-50 py-2 px-5 rounded-full text-3xl mb-5 lg:-translate-x-56 lg:mt-10 mt-0 text-sky-900 font-bold w-fit">
+            <h2 className="2xl:text-5xl xl:text-4xl lg:text-3xl  bg-slate-50 py-2 px-10 rounded-full text-3xl mb-5 lg:-translate-x-56 lg:mt-10 mt-0 text-sky-900 font-bold w-fit">
               Massages sur mesure{" "}
-              <FontAwesomeIcon className="ml-5 text-3xl" icon={faLeaf} />
+              <FontAwesomeIcon
+                className="lg:ml-5 lg:text-3xl text-xl"
+                icon={faLeaf}
+              />
             </h2>
             <div className="flex justify-between items-center flex-col h-full">
-              <div className="2xl:text-2xl xl:text-xl lg:text-lg lg:mt-10 px-10 lg:px-0  ">
+              <div className="xl:text-xl lg:text-lg lg:mt-10 px-10 lg:px-0  ">
                 Nous proposons un ensemble de techniques de massage choisi selon
                 vos besoins et vos gouts dans le but de composer le massage qui
                 vous ressemble. Nos massages apportent détente et amene vôtre
@@ -91,22 +135,27 @@ const Massage = () => {
               </div>
               <div className=" lg:text-3xl lg:mt-20 mt-10  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
                 <Link
-                  href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
-                  className={`lg:text-xl text-md text-sky-50 bg-sky-600 py-2 px-4 rounded-full lg:ml-10 lg:w-80 transition-all flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:bg-sky-50 lg:mt-0 mt-10 `}
+                  href="https://www.massagemarseillan.fr/"
+                  className={`lg:text-xl text-md text-sky-50 bg-sky-600 py-2 px-5 rounded-full  lg:w-fit transition-all flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:border-sky-600 border-1 hover:bg-sky-50 lg:mt-0 mt-10 `}
                 >
                   Rendez-vous en ligne
                   <FontAwesomeIcon className="ml-3 text-xl" icon={faCalendar} />
                 </Link>
               </div>
-              <span className="text-lg mt-5 lg:ml-8">ou au 07.80.96.67.96</span>
+              <Link href="tel:0780966796" passHref>
+                <div className="mt-8  lg:mt-5 text-sky-50 bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center items-center cursor-pointer hover:border-sky-600 border-1 hover:text-sky-600 hover:bg-sky-50 w-fit transition-colors">
+                  07 80 96 67 96
+                  <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                </div>
+              </Link>
             </div>
           </div>
         </div>
-        <h3 className="lg:text-4xl text-2xl lg:mt-32 mt-20 bg-slate-100 text-sky-900 s w-full flex items-center justify-center pt-10 font-bold">
+        <h3 className="lg:text-4xl text-2xl lg:pt-20 mt-20 bg-slate-100 text-sky-900 s w-full flex items-center justify-center pt-10 font-bold">
           Choissisez votre formule{" "}
         </h3>
         <div className="w-full h-auto bg-slate-100  flex lg:flex-row flex-col items-center justify-center">
-          <div className=" h-auto grid grid-cols-1 justify-items-center w-fit gap-10 items-center lg:grid-cols-2 lg:py-32 py-20 px-5 z-20  ">
+          <div className=" h-auto grid grid-cols-1 justify-items-center w-fit gap-10 items-center md:grid-cols-2 lg:py-32 py-20 px-5 z-20  ">
             <div
               onMouseEnter={() => setSign(true)}
               onMouseLeave={() => setSign(false)}
@@ -215,31 +264,18 @@ const Massage = () => {
               </div>
             </div>
           </div>
-          <div className="2xl:w-1/5 lg:w-2/5 h-full relative ">
-            <div className="lg:text-2xl  lg:mt-10 px-10 text-sky-900  mb-20 relative z-20 lg:mb-10  ">
+          <div className=" xl:w-1/5 lg:w-2/5 h-full relative ">
+            <div className="lg:text-xl  lg:mt-10 px-10 text-sky-900  mb-20 relative z-20 lg:mb-10  ">
               {" "}
               S&apos;inspirant des bienfaits de la mer et des massages du monde
               ancestraux, vous trouverez dans nos massages une approche unique
               pour vous faire vivre une expérience de qualité unique
             </div>
-            <span className="w-circle3 h-circle3 absolute rounded-full bg-green-700 bg-opacity-30 lg:-top-60 2xl:-top-36 -left-32 z-10 lg:visible invisible"></span>
-          </div>
-        </div>
-        <div className="lg:w-1/2 h-fit py-30 mt-20  flex lg:flex-row flex-col justify-evenly items-center">
-          <div className="flex flex-col w-fit px-10 py-5 text-2xl items-center justify-center bg-slate-200 bg-opacity-50 rounded-xl text-sky-900">
-            <div className="mb-5">Nos tarifs</div>
-            <div>1H : 75€ </div>
-            <div>1H30 : 110€ </div>
-            <div>2H : 140€</div>
-          </div>
-          <div>
-            <div className="text-sky-900 lg:text-xl mt-10 lg:mt-0">
-              {" "}
-              Plus d&apos;informations :{" "}
-              <Link href="https://www.massagemarseillan.fr/">
-                Massage Marseillan
-              </Link>{" "}
-            </div>
+            <span
+              className={` lg:absolute transition-all duration-1000 rounded-full bg-green-700 bg-opacity-30 lg:-top-48 xl:-top-36 2xl:-top-48 -left-40 z-10  scale-90 lg:visible invisible ${
+                isVisible ? "w-circle3 h-circle3 visible" : "w-0 h-0 invisible"
+              }`}
+            ></span>
           </div>
         </div>
       </div>

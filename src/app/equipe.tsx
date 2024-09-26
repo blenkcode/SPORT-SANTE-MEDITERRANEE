@@ -7,10 +7,14 @@ import { faUserNurse } from "@fortawesome/free-solid-svg-icons";
 import "./globals.css";
 const Equipe = () => {
   return (
-    <div className="w-full">
-      <div className="w-full  font-Straw relative z-30">
-        <img src="/bannerocean.gif" className="w-full lg:h-auto h-banner"></img>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:text-3xl  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center ">
+    <div className="w-full bg-[url('/bc.jpg')] bg-center lg:bg-fixed bg-scroll bg-cover">
+      <div className="w-full  border-t-4  border-sky-50  font-Straw relative z-34 overflow-hidden h-48  ">
+        {/* <img
+          src="/bc.jpg"
+          className="w-full absolute top-0 lg:h-auto h-banner"
+        ></img> */}
+        <div className="bg-sky-900 opacity-70 w-full h-full"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:text-3xl  w-full lg:flex-row flex-col font-bold flex items-center text-white lg:text-skt-50 justify-center ">
           Prenez rendez-vous dès maintenant !{" "}
           <Link
             href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"

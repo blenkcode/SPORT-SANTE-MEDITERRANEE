@@ -7,6 +7,7 @@ import {
   faEuroSign,
   faStar,
   faPersonRunning,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Kinesitherapie = () => {
@@ -17,7 +18,7 @@ const Kinesitherapie = () => {
         <div className="w-full h-full items-center justify-center font-Straw flex flex-col bg-gradient-to-r from-orange-800/80 to-orange-500/0">
           <div className="items-center flex  flex-col justify-center">
             <div className="mb-10 lg:mt-10 mt-0 flex flex-col justify-start items-center font-Manrope">
-              <h1 className="ease-in-out duration-title transition-all font-extrabold flex lg:flex-row flex-col">
+              <h1 className="ease-in-out duration-title transition-all lg:font-extrabold flex lg:flex-row flex-col">
                 <div className="bg-zinc-700 lg:bg-opacity-25 bg-opacity-0 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col  sm:flex-row font-Straw 2xl:text-6xl lg:text-5xl sm:text-3xl text-4xl ">
                   Kinésithérapie
                 </div>
@@ -81,13 +82,12 @@ const Kinesitherapie = () => {
               anomalies de votre foulée afin de vous permettre de courir plus
               efficacement et en toute sécurité.
             </div>
-            <div className=" lg:text-3xl  mt-5 lg:mt-10  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
-              <Link
-                href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
-                className={`lg:text-xl text-md text-sky-50 bg-sky-600 py-2 px-4 rounded-full lg:ml-10 lg:w-80 transition-all flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:border-sky-600 border-1 border-solid hover:bg-sky-50 lg:mt-0 mt-10 mb-10 lg:mb-0 `}
-              >
-                Rendez-vous en ligne
-                <FontAwesomeIcon className="ml-3 text-xl" icon={faCalendar} />
+            <div className=" lg:text-xl  mt-5 lg:mt-5 xl:mt-10  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
+              <Link href="tel:0975965230" passHref>
+                <div className="mt-8  lg:mt-5 text-sky-50 bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:bg-sky-50 w-fit hover:border-sky-600 border-1 transition-colors">
+                  09 75 96 52 30
+                  <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                </div>
               </Link>
             </div>
           </div>

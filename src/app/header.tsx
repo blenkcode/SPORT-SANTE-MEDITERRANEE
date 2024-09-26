@@ -1,9 +1,9 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNotesMedical } from "@fortawesome/free-solid-svg-icons";
-
+import { gsap } from "gsap";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
 import { toggleMenu } from "@/store/uiSlice";
@@ -12,7 +12,7 @@ export default function Header() {
   const dispatch = useDispatch();
   const isMenuOpen = useSelector((state: RootState) => state.ui.navbar);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
+  const headerRef = useRef<HTMLHeadingElement>(null);
   const [acceuilHover, setAcceuilHover] = useState(false);
   // const [contactlHover, setContactHover] = useState(false);
 
@@ -27,25 +27,47 @@ export default function Header() {
   const handlemenu = () => {
     dispatch(toggleMenu());
   };
+  useEffect(() => {
+    // Animation d'ouverture : l'élément passe de `h-0` à `h-2/6`
+    const screenWidth = window.innerWidth;
 
+    if (screenWidth >= 1000) {
+      gsap.fromTo(
+        headerRef.current,
+        { y: -70, visibility: "hidden" }, // Démarre avec scaleY: 0
+        {
+          y: 0,
+          // L'élément retrouve sa taille initiale (scaleY 1 = 100%)
+          duration: 1.5, // Durée de l'animation
+          delay: 1.5,
+          ease: "power1.inOut", // Utilisation de power1.inOut pour une animation plus douce
+          visibility: "visible",
+          opacity: "100%", // Rendre visible pendant l'animation
+        }
+      );
+    } else {
+      return;
+    }
+  }, []);
   return (
     <header
-      className={`bg-sky-50 font-Straw tracking-widest transition-all duration-500 text-sky-900 2xl:h-20 xl:h-16 lg:h-14   flex lg:pl-8 lg:justify-between justify-evenly items-center fixed top-0 left-0 w-full z-50 lg:-translate-y-0 h-lvh lg:flex-row flex-col ${
+      ref={headerRef}
+      className={` bg-sky-50 lg:bg-transparent font-Straw lg:invisible tracking-widest transition-all duration-500 lg:duration-0 lg:text-sky-100 text-sky-900 2xl:h-20 xl:h-16 lg:h-14   flex lg:pl-8 lg:justify-between justify-evenly items-center fixed top-0 left-0 w-full z-50 lg:-translate-y-0 h-lvh lg:flex-row flex-col lg:px-10 ${
         isMenuOpen
-          ? "translate-x-0 lg:translate-0"
-          : "lg:translate-x-0 translate-x-full"
+          ? "translate-y-0 lg:translate-0"
+          : "lg:translate-y-0 translate-y-full"
       }`}
     >
       <div className="flex lg:flex-row flex-col items-center lg:pt-0 pt-5 h-1/5 lg:h-full">
         <img
           src="/logomain.png"
-          className="2xl:h-14 xl:h-12 lg:h-10 h-1/2 lg:mr-8"
+          className="2xl:h-14 xl:h-12 lg:h-10 h-1/2 lg:mr-8 rounded-full"
         ></img>
         <div className="2xl:text-lg xl:text-md lg:text-xs  font-Play mt-10 lg:mt-0 font-bold">
           Sport - Santé Mediterranée{" "}
         </div>
       </div>
-      <div className="flex lg:justify-between justify-start lg:flex-row flex-col items-center w-fit lg:h-full h-2/3  font-semibold">
+      <div className="flex lg:justify-between justify-start lg:flex-row flex-col items-center w-fit lg:h-full h-2/3  font-semibold ">
         <div className="duration-title transition-all flex items-center justify-center ease-in-out delay-500 ">
           <Link
             href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
@@ -63,25 +85,27 @@ export default function Header() {
         >
           ACCUEIL
           <div
-            className={`h-0.5  transtion-all- duration-500 absolute bottom-0 bg-sky-900 ${
-              acceuilHover ? "opacity-100 w-full" : "opacity-0 w-0"
+            className={`h-0.5  transtion-all- duration-500 absolute bottom-0 bg-sky-100 ${
+              acceuilHover
+                ? "opacity-100 w-1/2 -translate-y-5"
+                : "opacity-0 w-0"
             }`}
           ></div>
         </Link>
         {/* <Link
-          className="px-8 flex justify-center  relative items-center  2xl:text-md lg:text-sm h-20 lg:h-full w-fit  transition-all"
-          href="/"
-          onMouseEnter={() => setContactHover(true)}
-          onMouseLeave={() => setContactHover(false)}
-          onClick={handlemenu}
-        >
-          CONTACT
-          <div
-            className={`h-0.5 transtion-all duration-500 absolute bottom-0 bg-sky-900 ${
-              contactlHover ? "opacity-100 w-full" : "opacity-0 w-0"
-            } `}
-          ></div>
-        </Link> */}
+        className="px-8 flex justify-center  relative items-center  2xl:text-md lg:text-sm h-20 lg:h-full w-fit  transition-all"
+        href="/"
+        onMouseEnter={() => setContactHover(true)}
+        onMouseLeave={() => setContactHover(false)}
+        onClick={handlemenu}
+      >
+        CONTACT
+        <div
+          className={`h-0.5 transtion-all duration-500 absolute bottom-0 bg-sky-900 ${
+            contactlHover ? "opacity-100 w-full" : "opacity-0 w-0"
+          } `}
+        ></div>
+      </Link> */}
         {/* Dropdown for KINESITHERAPIE */}
         <div
           className={`px-6 relative flex items-center 2xl:text-md lg:text-sm h-20 lg:h-full  w-fit justify-center transition-all`}
@@ -97,7 +121,7 @@ export default function Header() {
             />
           </div>
           <div
-            className={`h-0.5  transtion-all- duration-500 absolute bottom-0 bg-sky-900 ${
+            className={`h-0.5  transtion-all- duration-500 absolute bottom-0 bg-sky-100 ${
               dropdownOpen
                 ? "lg:opacity-100 lg:w-full opacity-0"
                 : "lg:opacity-0 w-0 "
