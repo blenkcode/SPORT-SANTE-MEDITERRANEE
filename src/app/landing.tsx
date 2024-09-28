@@ -9,7 +9,7 @@ import {
   faPersonRunning,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./globals.css";
 import { gsap } from "gsap";
 const Landing = () => {
@@ -98,42 +98,8 @@ const Landing = () => {
         visibility: "visible",
       }
     );
-    setIsVisible(true);
   }, []);
 
-  const [isVisible, setIsVisible] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
-
-  console.log(scrollY);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 380) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Nettoyer l'écouteur d'événements lors du démontage du composant
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <main className="lg:h-auto h-auto lg:min-h-lvh w-full flex flex-col">
       <div className="bg-[url('/bc.jpg')] bg-center lg:bg-fixed bg-scroll w-full bg-cover h-lvh lg:h-lvh text-sky-50 ">
