@@ -154,10 +154,10 @@ const Massage = () => {
             </div>
           </div>
         </div>
-        <h3 className="lg:text-4xl text-2xl lg:pt-20 mt-20 bg-slate-100 text-sky-900 s w-full flex items-center justify-center pt-10 font-StrawBold">
+        <h3 className="lg:text-4xl text-2xl lg:pt-20 mt-20 lg:bg-slate-50 bg-green-600 bg-opacity-50 lg:bg-opacity-100 lg:text-sky-900 rounded-full  text-white lg:w-full flex items-center justify-center py-3 px-5 w-fit  font-StrawBold">
           Choissisez votre formule{" "}
         </h3>
-        <div className="w-full h-auto bg-slate-100  flex lg:flex-row flex-col items-center justify-center">
+        <div className="w-full h-auto bg-slate-50  flex lg:flex-row flex-col items-center justify-center">
           <div className=" h-auto grid grid-cols-1 justify-items-center w-fit gap-10 items-center md:grid-cols-2 lg:py-32 py-20 px-5 z-20  ">
             <div
               onMouseEnter={() => setSign(true)}
