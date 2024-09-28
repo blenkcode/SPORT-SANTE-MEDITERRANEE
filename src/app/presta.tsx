@@ -20,16 +20,16 @@ const Presta = () => {
 
       if (screenWidth <= 1000) {
         // For screens smaller than or equal to 500px, trigger when scrollY > 200
-        if (window.scrollY > 400) {
+        if (window.scrollY > 311) {
           setIsVisible2(true);
         }
-        if (window.scrollY > 700) {
+        if (window.scrollY > 620) {
           setIsVisible1(true);
         }
-        if (window.scrollY > 920) {
+        if (window.scrollY > 950) {
           setIsVisible3(true);
         }
-        if (window.scrollY > 1200) {
+        if (window.scrollY > 1260) {
           setIsVisible4(true);
         }
       } else {
@@ -80,7 +80,7 @@ const Presta = () => {
         <div className="flex z-30 lg:flex-row flex-col lg:mt-32 items-center">
           <div className="flex flex-col-reverse lg:flex-row">
             <div
-              className={`w-fit flex z-20  mt-0 lg:mt-0 flex-col text-lg  transition-all duration-2000 ease-out items-center delay-100 rounded-lg lg:pb-20 pb-0 lg:-translate-y-24 ${
+              className={`w-fit flex z-20  mt-0 lg:mt-0 flex-col text-lg  transition-all duration-1000 ease-out items-center delay-100 rounded-lg lg:pb-20 pb-0 lg:-translate-y-24 ${
                 isVisible
                   ? "-translate-x-0 xl:-translate-x-56 lg:-translate-x-36 opacity-100"
                   : "-translate-x-80 lg:-translate-x-96 opacity-0"
@@ -106,7 +106,7 @@ const Presta = () => {
               </Link>
             </div>
             <div
-              className={`w-fit flex flex-col text-lg xl:-translate-x-24 lg:-translate-x-14 transition-all duration-2000 ease-out delay-100  items-center rounded-lg mt-10 lg:mt-0 lg:pb-20 pb-0 ${
+              className={`w-fit flex flex-col text-lg xl:-translate-x-24 lg:-translate-x-14 transition-all duration-1000 ease-out delay-100  items-center rounded-lg mt-10 lg:mt-0 lg:pb-20 pb-0 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : " lg:opacity-0 lg:translate-y-56"
@@ -132,7 +132,7 @@ const Presta = () => {
             </div>
           </div>
           <div
-            className={`w-fit flex flex-col xl:translate-x-24 lg:translate-x-14 text-lg transition-all duration-2000 ease-out  delay-100 items-center mt-10 lg:mt-0 rounded-lg lg:pb-20 pb-0 ${
+            className={`w-fit flex flex-col xl:translate-x-24 lg:translate-x-14 text-lg transition-all duration-1000 ease-out  delay-100 items-center mt-10 lg:mt-0 rounded-lg lg:pb-20 pb-0 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : " lg:opacity-0 lg:translate-y-56"
@@ -157,7 +157,7 @@ const Presta = () => {
             </Link>
           </div>
           <div
-            className={`w-fit flex z-20  mt-20 lg:mt-0 flex-col text-lg transition-all duration-2000 ease-in-out items-center rounded-lg delay-100 lg:pb-24 -translate-y-20 ${
+            className={`w-fit flex z-20  mt-20 lg:mt-0 flex-col text-lg transition-all duration-1000 ease-in-out items-center rounded-lg delay-100 lg:pb-24 -translate-y-20 ${
               isVisible
                 ? "translate-x-0 xl:translate-x-56 lg:translate-x-36 opacity-100"
                 : " lg:translate-x-80 opacity-0"

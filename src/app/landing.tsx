@@ -211,7 +211,7 @@ const Landing = () => {
             ref={sectionRef}
             className="flex items-center lg:flex-row flex-col lg:justify-evenly justify-center lg:w-10/12 px-10"
           >
-            <p className=" font-Straw 2xl:text-xl lg:text-lg  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 lg:mt-0">
+            <p className=" font-Straw 2xl:text-xl lg:text-lg  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 lg:mt-0 pt-5 lg:pt-0">
               {" "}
               Notre équipe pluridisciplinaire place{" "}
               <span className="font-StrawBold">le mouvement </span>au centre de
