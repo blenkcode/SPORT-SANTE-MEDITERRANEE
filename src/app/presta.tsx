@@ -64,7 +64,7 @@ const Presta = () => {
   }, []);
 
   return (
-    <div className="lg:pt-20   bg-sky-50 overflow-x-hidden lg:overflow-x-visible overflow-hidden ">
+    <div className="lg:pt-20   bg-sky-50 overflow-x-hidden lg:overflow-x-visible overflow-hidden h-fit ">
       <div className="lg:text-3xl text-2xl lg:h-200 h-fit text-sky-50  lg:py-20 flex flex-col items-center justify-center font-Straw w-full relative ">
         <div
           className={` rounded-full bg-sky-900 bg-opacity-50 border-2  border-solid border-sky-50 absolute transition-all delay-300 duration-2000 lg:-top-20 -top-10 z-10 ${
@@ -81,7 +81,7 @@ const Presta = () => {
           }`}
         ></div>
         <h3
-          className={`mb-20 z-20 bg-sky-900 lg:bg-transparent  w-fit lg:py-0 px-5  rounded-full py-2 items-center justify-center flex lg:absolute delay-300 duration-500 transition-all relative top-10  ${
+          className={`lg:mb-20 mb-10 z-20 bg-sky-900 lg:bg-transparent  w-fit lg:py-0 px-5  rounded-full py-2 items-center justify-center flex lg:absolute delay-300 duration-500 transition-all relative top-10  ${
             isVisible ? "text-white  " : "lg:text-sky-900"
           } `}
         >

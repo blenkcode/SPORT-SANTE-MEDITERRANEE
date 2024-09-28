@@ -54,7 +54,7 @@ const Landing = () => {
         mainRef.current,
         { height: "100vh" }, // Démarre avec scaleY: 0
         {
-          height: "66.67%", // L'élément retrouve sa taille initiale (scaleY 1 = 100%)
+          height: "70%", // L'élément retrouve sa taille initiale (scaleY 1 = 100%)
           duration: 2, // Durée de l'animation
           delay: 1.8,
           ease: "power1.inOut",
@@ -70,7 +70,7 @@ const Landing = () => {
         mainRef.current,
         { height: "100vh" }, // Démarre avec scaleY: 0
         {
-          height: "75%", // L'élément retrouve sa taille initiale (scaleY 1 = 100%)
+          height: "70%", // L'élément retrouve sa taille initiale (scaleY 1 = 100%)
           duration: 2, // Durée de l'animation
           delay: 1.8,
           ease: "power1.inOut",
@@ -133,14 +133,14 @@ const Landing = () => {
   }, []);
 
   return (
-    <main className="lg:h-auto h-auto lg:min-h-lvh w-full flex flex-col">
-      <div className="bg-[url('/bc.jpg')] bg-center lg:bg-fixed bg-scroll w-full bg-cover h-lvh lg:h-lvh text-sky-50 ">
+    <main className="lg:h-auto h-lvh lg:min-h-lvh w-full flex flex-col">
+      <div className="bg-[url('/bc.jpg')] bg-center lg:bg-fixed bg-scroll w-full bg-cover h-lvh  text-white ">
         <div
           ref={mainRef}
-          className="w-full relative  items-center justify-center lg:h-4/6 h-lvh font-Straw flex flex-col bg-gradient-to-r from-sky-700/80 to-sky-700/0"
+          className="w-full relative  items-center justify-center lg:h-4/6  font-Straw flex flex-col bg-gradient-to-r from-sky-700/80 to-sky-700/0"
         >
           <div className="items-center flex mb-20  lg:mb-20 flex-col justify-center ">
-            <div className="mb-10 lg:mt-10 mt-0 flex flex-col justify-start items-center font-Manrope">
+            <div className="mb-0 lg:mt-10 mt-0 flex flex-col justify-start items-center font-Manrope">
               <div className="overflow-hidden">
                 {" "}
                 {/* Masquer le texte pendant l'animation */}
@@ -195,52 +195,52 @@ const Landing = () => {
                 </div>
               </Link>
             </div>
-          </div>
-          <div
-            ref={subRef}
-            className=" w-full absolute bottom-0 h-14  bg-slate-200 bg-opacity-25 flex items-center justify-center shadow-2xl text-slate-700 2xl:text-lg lg:text-md overflow-hidden font-Straw font-thin"
-          >
-            <div className="animate-scroll lg:animate-none whitespace-nowrap flex">
-              <div className="2xl:px-20 lg:px-10 px-10">
-                Avis Google : 4,7/5{" "}
-                <FontAwesomeIcon className="ml-3" icon={faStar} />
-              </div>
-              <div className="2xl:px-20 lg:px-10 px-10">
-                Remboursement mutuelle{" "}
-                <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
-              </div>
-              <div className="2xl:px-20 lg:px-10 px-10">
-                Spécialiste du sport{" "}
-                <FontAwesomeIcon className="ml-3" icon={faPersonRunning} />
-              </div>
-              <div className="2xl:px-20 lg:px-10 px-10">
-                RDV Rapide{" "}
-                <FontAwesomeIcon className="ml-3" icon={faCalendar} />
-              </div>
-              {/* Dupliquez les éléments pour créer l'effet de boucle continue */}
-              <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
-                Avis Google : 4,7/5{" "}
-                <FontAwesomeIcon className="ml-3" icon={faStar} />
-              </div>
-              <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
-                Remboursement mutuelle{" "}
-                <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
-              </div>
-              <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
-                Spécialiste du sport{" "}
-                <FontAwesomeIcon className="ml-3" icon={faPersonRunning} />
-              </div>
-              <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
-                RDV Rapide{" "}
-                <FontAwesomeIcon className="ml-3" icon={faCalendar} />
+            <div
+              ref={subRef}
+              className=" w-full absolute bottom-0 lg:h-14 h-12  bg-slate-200 bg-opacity-25 flex items-center justify-center shadow-2xl text-slate-700 2xl:text-lg lg:text-md  overflow-hidden font-Straw font-thin"
+            >
+              <div className="animate-scroll lg:animate-none whitespace-nowrap flex">
+                <div className="2xl:px-20 lg:px-10 px-10">
+                  Avis Google : 4,7/5{" "}
+                  <FontAwesomeIcon className="ml-3" icon={faStar} />
+                </div>
+                <div className="2xl:px-20 lg:px-10 px-10">
+                  Remboursement mutuelle{" "}
+                  <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
+                </div>
+                <div className="2xl:px-20 lg:px-10 px-10">
+                  Spécialiste du sport{" "}
+                  <FontAwesomeIcon className="ml-3" icon={faPersonRunning} />
+                </div>
+                <div className="2xl:px-20 lg:px-10 px-10">
+                  RDV Rapide{" "}
+                  <FontAwesomeIcon className="ml-3" icon={faCalendar} />
+                </div>
+                {/* Dupliquez les éléments pour créer l'effet de boucle continue */}
+                <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+                  Avis Google : 4,7/5{" "}
+                  <FontAwesomeIcon className="ml-3" icon={faStar} />
+                </div>
+                <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+                  Remboursement mutuelle{" "}
+                  <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
+                </div>
+                <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+                  Spécialiste du sport{" "}
+                  <FontAwesomeIcon className="ml-3" icon={faPersonRunning} />
+                </div>
+                <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
+                  RDV Rapide{" "}
+                  <FontAwesomeIcon className="ml-3" icon={faCalendar} />
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className=" bg-sky-50 lg:h-2/6 h-1/4 py-10 lg-py-0  text-sky-900 flex flex-col items-center justify-evenly transition-all duration-2000 ">
+        <div className=" bg-sky-50  py-10 lg-py-0 lg:h-2/6 h-30  text-sky-900 flex flex-col items-center justify-evenly transition-all duration-2000 ">
           <div
             ref={sectionRef}
-            className="flex items-center lg:flex-row flex-col lg:justify-evenly justify-center lg:w-10/12 px-10"
+            className="flex items-center  lg:flex-row flex-col lg:justify-evenly justify-center lg:w-10/12 px-10"
           >
             <p className=" font-Straw 2xl:text-xl lg:text-lg  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 lg:mt-0 pt-5 lg:pt-0">
               {" "}
