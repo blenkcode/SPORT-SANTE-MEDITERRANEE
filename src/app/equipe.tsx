@@ -41,7 +41,7 @@ const Equipe = () => {
     };
   }, []);
   return (
-    <div className="w-full bg-[url('/bc.jpg')] bg-center lg:bg-fixed bg-scroll bg-cover">
+    <div className="w-full bg-[url('/bc.jpg')] bg-center bg-fixed lg:bg-fixed bg-cover">
       <div className="w-full  border-t-4  border-sky-50  font-Straw relative z-34 overflow-hidden h-48  ">
         {/* <img
           src="/bc.jpg"
@@ -63,22 +63,22 @@ const Equipe = () => {
         <div className="overflow-hidden">
           {" "}
           <h2
-            className={`  lg:mt-20 mt-10 lg:text-3xl transition-all duration-2000 font-bold text-xl ${
+            className={`  lg:mt-20 mt-10 lg:text-3xl transition-all duration-2000 lg:font-bold text-xl ${
               isVisible ? "translate-y-0" : "translate-y-10"
             }`}
           >
             Notre équipe à votre écoute{" "}
-            <FontAwesomeIcon className="ml-5" icon={faUserNurse} />
+            <FontAwesomeIcon className="ml-2" icon={faUserNurse} />
           </h2>
         </div>
 
         <div className="flex  justify-center items-center  flex-col">
           <div className="mt-10 lg:mt-20 flex flex-col lg:flex-row justify-center items-center">
-            <div className="rounded-xl pb-8  bg-zinc-300 bg-opacity-20 w-fit px-10 flex flex-col items-center justify center">
+            <div className="rounded-xl pb-8   shadow-2xl bg-opacity-20 w-fit px-10 flex flex-col items-center justify center">
               <span className="xl:text-3xl text-2xl mb-8 mt-8 font-extrabold">
                 Nos Valeurs
               </span>
-              <ul className="flex flex-col items-center 2xl:text-2xl xl:text-xl lg:text-lg  text-xl justify center ">
+              <ul className="flex  flex-col items-center 2xl:text-2xl xl:text-xl lg:text-lg  text-xl justify center ">
                 <li className="mb-3">Qualité du soin</li>
                 <li className="mb-3">Prévention</li>
                 <li className="mb-3">Respect de l’Humain </li>
@@ -100,8 +100,8 @@ const Equipe = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:mt-20 mt-10 lg:grid-cols-3 xl:gap-10 gap-10 z-20 justify-items-center w-fit ">
-            <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
+          <div className="grid grid-cols-1 lg:mt-20 mt-10 lg:grid-cols-3 xl:gap-10 gap-10 z-20 justify-items-center w-fit px-10 lg:px-0 ">
+            <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64   overflow-hidden rounded-tl-xl rounded-br-xl relative">
               {" "}
               <img
                 src="/laureen.png"

@@ -39,12 +39,21 @@ body {
 @font-face {
   font-family: "strawfordregular";
   src: url("../app/fonts/strawford-regular-webfont.eot");
+
   src: url("../app/fonts/strawford-regular-webfont.eot?#iefix")
       format("embedded-opentype"),
     url("../app/fonts/strawford-regular-webfont.woff2") format("woff2"),
     url("../app/fonts/strawford-regular-webfont.woff") format("woff"),
     url("../app/fonts/strawford-regular-webfont.ttf") format("truetype");
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "strawfordbold";
+
+  src: url("../app/fonts/Strawford-Medium.ttf");
+
+  font-weight: bold;
   font-style: normal;
 }
 

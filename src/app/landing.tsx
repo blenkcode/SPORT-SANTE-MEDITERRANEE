@@ -22,19 +22,23 @@ const Landing = () => {
 
   // Animation d'ouverture : le background image occupe tout l'écran
   useEffect(() => {
+    const screenWidth = window.innerWidth;
     // Animation d'ouverture : l'élément passe de `h-0` à `h-2/6`
-    gsap.fromTo(
-      sectionRef.current,
-      { opacity: "0%", visibility: "hidden" }, // Démarre avec scaleY: 0
-      {
-        // L'élément retrouve sa taille initiale (scaleY 1 = 100%)
-        duration: 1, // Durée de l'animation
-        delay: 3.2,
-        ease: "power1.inOut", // Utilisation de power1.inOut pour une animation plus douce
-        visibility: "visible",
-        opacity: "100%", // Rendre visible pendant l'animation
-      }
-    );
+    if (screenWidth > 1000) {
+      gsap.fromTo(
+        sectionRef.current,
+        { opacity: "0%", visibility: "hidden" }, // Démarre avec scaleY: 0
+        {
+          // L'élément retrouve sa taille initiale (scaleY 1 = 100%)
+          duration: 1, // Durée de l'animation
+          delay: 3.2,
+          ease: "power1.inOut", // Utilisation de power1.inOut pour une animation plus douce
+          visibility: "visible",
+          opacity: "100%", // Rendre visible pendant l'animation
+        }
+      );
+    }
+
     gsap.fromTo(
       mainRef.current,
       { height: "100vh" }, // Démarre avec scaleY: 0
@@ -45,6 +49,7 @@ const Landing = () => {
         ease: "power1.inOut", // Utilisation de power1.inOut pour une animation plus douce
       }
     );
+
     gsap.fromTo(
       titleRef.current,
       { opacity: 0, y: 100, visibility: "hidden" },
@@ -130,7 +135,7 @@ const Landing = () => {
     };
   }, []);
   return (
-    <main className="lg:h-auto h-auto min-h-lvh w-full flex flex-col">
+    <main className="lg:h-auto h-auto lg:min-h-lvh w-full flex flex-col">
       <div className="bg-[url('/bc.jpg')] bg-center lg:bg-fixed bg-scroll w-full bg-cover h-lvh lg:h-lvh text-sky-50 ">
         <div
           ref={mainRef}
@@ -223,12 +228,12 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-sky-50 h-fit lg:h-2/6  text-sky-900 flex flex-col items-center justify-evenly transition-all duration-2000">
+        <div className=" bg-sky-50 h-2/6  text-sky-900 flex flex-col items-center justify-evenly transition-all duration-2000">
           <div
             ref={sectionRef}
             className="flex items-center lg:flex-row flex-col justify-evenly w-10/12"
           >
-            <p className=" font-Straw 2xl:text-xl lg:text-lg  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 mt-10 lg:mt-0">
+            <p className=" font-Straw 2xl:text-xl lg:text-lg  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 lg:mt-0">
               {" "}
               Notre équipe pluridisciplinaire place{" "}
               <span className="font-bold">le mouvement </span>au centre de
@@ -240,11 +245,7 @@ const Landing = () => {
             </p>
             <img
               src="/logocourse.png"
-              className={`2xl:w-52 xl:w-40 w-1/2 lg:w-36 md:w-1/3 lg:my-0 my-10 rounded-full border-2 border-solid border-sky-900  transition-all duration-1000 ${
-                isVisible
-                  ? "-translate-x-0 opacity-100 rotate-0"
-                  : "-translate-x-full opacity-0 rotate-180 lg:-translate-x-0 lg:opacity-100 lg:rotate-0"
-              }`}
+              className="2xl:w-52 xl:w-40 w-0 invisible lg:visible  lg:w-36 md:w-1/3  rounded-full border-2 border-solid border-sky-900  transition-all duration-1000 "
             ></img>
           </div>
         </div>

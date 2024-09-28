@@ -16,8 +16,8 @@ const Osteopathie = () => {
         <div className="w-full h-full items-center justify-center font-Straw flex flex-col bg-gradient-to-r from-sky-800/80 to-orange-500/0">
           <div className="items-center flex  flex-col justify-center">
             <div className="mb-10 lg:mt-10 mt-0 flex flex-col justify-start items-center font-Manrope">
-              <h1 className="ease-in-out duration-title transition-all lg:font-extrabold flex lg:flex-row flex-col">
-                <div className="bg-zinc-700 lg:bg-opacity-25 bg-opacity-0 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col  sm:flex-row font-Straw 2xl:text-6xl lg:text-5xl sm:text-3xl text-4xl ">
+              <h1 className="ease-in-out duration-title transition-all  flex lg:flex-row flex-col">
+                <div className="bg-zinc-700 lg:bg-opacity-25 bg-opacity-0 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col  sm:flex-row font-StrawBold 2xl:text-6xl lg:text-5xl sm:text-3xl text-4xl ">
                   Ostéopathie
                 </div>
               </h1>
@@ -66,7 +66,7 @@ const Osteopathie = () => {
         </div>
       </div>
       <div className="flex lg:flex-row-reverse flex-col lg:items-start items-center justify-center bg-slate-50 lg:py-20 py-10">
-        <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2 px-5 rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10 mt-0 mb-5  font-bold w-fit ">
+        <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2 px-5 rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10 mt-0 mb-5  font-StrawBold  w-fit ">
           Approche personnalisée{" "}
           <FontAwesomeIcon className="text-2xl ml-3" icon={faUser} />
         </h2>
