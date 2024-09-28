@@ -38,17 +38,29 @@ const Landing = () => {
         }
       );
     }
-
-    gsap.fromTo(
-      mainRef.current,
-      { height: "100vh" }, // Démarre avec scaleY: 0
-      {
-        height: "66.67%", // L'élément retrouve sa taille initiale (scaleY 1 = 100%)
-        duration: 2, // Durée de l'animation
-        delay: 1.8,
-        ease: "power1.inOut", // Utilisation de power1.inOut pour une animation plus douce
-      }
-    );
+    if (screenWidth > 1000) {
+      gsap.fromTo(
+        mainRef.current,
+        { height: "100vh" }, // Démarre avec scaleY: 0
+        {
+          height: "66.67%", // L'élément retrouve sa taille initiale (scaleY 1 = 100%)
+          duration: 2, // Durée de l'animation
+          delay: 1.8,
+          ease: "power1.inOut", // Utilisation de power1.inOut pour une animation plus douce
+        }
+      );
+    } else {
+      gsap.fromTo(
+        mainRef.current,
+        { height: "100vh" }, // Démarre avec scaleY: 0
+        {
+          height: "75%", // L'élément retrouve sa taille initiale (scaleY 1 = 100%)
+          duration: 2, // Durée de l'animation
+          delay: 1.8,
+          ease: "power1.inOut", // Utilisation de power1.inOut pour une animation plus douce
+        }
+      );
+    }
 
     gsap.fromTo(
       titleRef.current,
@@ -194,7 +206,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-sky-50 h-2/6  text-sky-900 flex flex-col items-center justify-evenly transition-all duration-2000">
+        <div className=" bg-sky-50 lg:h-2/6 h-1/4 py-10 lg-py-0  text-sky-900 flex flex-col items-center justify-evenly transition-all duration-2000">
           <div
             ref={sectionRef}
             className="flex items-center lg:flex-row flex-col justify-evenly w-10/12"

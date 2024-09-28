@@ -127,8 +127,8 @@ const Kinesitherapie = () => {
         </div>
       </div>
       <div></div>
-      <div className="flex flex-col bg-slate-50 items-center justify-center ">
-        <h2 className="xl:text-4xl text-sky-900 lg:text-4xl text-3xl mt-10 lg:mt-20 font-StrawBold w-fit bg-slate-50 py-2 px-5  lg:mb-10 mb-10 rounded-full">
+      <div className="flex flex-col bg-slate-50 items-center justify-center pt-5 lg:pt-0">
+        <h2 className="xl:text-4xl text-sky-900 lg:text-4xl text-3xl mt-10 lg:mt-20 font-StrawBold w-fit lg:bg-slate-50 bg-orange-200 py-2 px-5  lg:mb-10 mb-10 rounded-full">
           Analyse de Course
         </h2>
         <div className="text-sky-900 2xl:w-1/2 lg:w-2/3 px-10 xl:text-xl lg:text-lg lg:mb-10 ">
