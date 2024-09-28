@@ -209,7 +209,7 @@ const Landing = () => {
         <div className=" bg-sky-50 lg:h-2/6 h-1/4 py-10 lg-py-0  text-sky-900 flex flex-col items-center justify-evenly transition-all duration-2000">
           <div
             ref={sectionRef}
-            className="flex items-center lg:flex-row flex-col justify-evenly w-10/12"
+            className="flex items-center lg:flex-row flex-col lg:justify-evenly justify-center lg:w-10/12 px-10"
           >
             <p className=" font-Straw 2xl:text-xl lg:text-lg  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 lg:mt-0">
               {" "}
