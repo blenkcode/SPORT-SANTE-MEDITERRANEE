@@ -86,11 +86,25 @@ const Kinesitherapie = () => {
               anomalies de votre foulée afin de vous permettre de courir plus
               efficacement et en toute sécurité.
             </div>
-            <div className=" lg:text-xl  mt-5 lg:mt-5 xl:mt-10  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
+            <div className=" lg:text-xl lg:mb-10  mb-5 lg:mt-10  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
               <Link href="tel:0975965230" passHref>
-                <div className="mt-8  lg:mt-5 text-sky-50 bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:bg-sky-50 w-fit hover:border-sky-600 border-1 transition-colors">
-                  09 75 96 52 30
-                  <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                <div className="mt-8  lg:mt-5 text-sky-50 group border-1 border-sky-600 bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center  items-center cursor-pointer transition-all hover:bg-sky-50 w-fit relative duration-300 overflow-hidden ">
+                  {/* <span className="translate-y-5 absolute -translate-x-10">
+                      09 75 96 52 30{" "}
+                      <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                    </span> */}
+                  <span className="hover-group: hover:text-sky-600  opacity-0 translate-">
+                    09 75 96 52 30
+                    <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                  </span>
+                  <span className="transition-all group-hover:text-sky-600 duration-300 absolute group-hover:-translate-y-10 group-hover:translate-x-20">
+                    09 75 96 52 30{" "}
+                    <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                  </span>
+                  <span className="transition-all group-hover:text-sky-600  duration-300 absolute translate-y-10  group-hover:-translate-y-0 group-hover:translate-x-0 -translate-x-20">
+                    09 75 96 52 30{" "}
+                    <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                  </span>
                 </div>
               </Link>
             </div>
@@ -128,7 +142,7 @@ const Kinesitherapie = () => {
       </div>
       <div></div>
       <div className="flex flex-col bg-slate-50 items-center justify-center pt-5 lg:pt-0">
-        <h2 className="xl:text-4xl text-sky-900 lg:text-4xl text-3xl mt-10 lg:mt-20 font-StrawBold w-fit lg:bg-slate-50 bg-orange-200 py-2 px-5  lg:mb-10 mb-10 rounded-full">
+        <h2 className="xl:text-4xl text-sky-900 lg:text-4xl text-3xl mt-20 lg:mt-32 font-StrawBold w-fit  bg-orange-200 py-2 px-5  lg:mb-20 mb-10 rounded-full">
           Analyse de Course
         </h2>
         <div className="text-sky-900 2xl:w-1/2 lg:w-2/3 px-10 xl:text-xl lg:text-lg lg:mb-10 ">
@@ -138,7 +152,7 @@ const Kinesitherapie = () => {
           athlète confirmé, cette analyse détaillée de votre foulée vous aidera
           à courir plus efficacement tout en minimisant les risques de blessure.
         </div>
-        <div className="w-full h-1 translate-y-28 invisible lg:visible  bg-amber-900 absolute"></div>
+        <div className="w-full h-1 translate-y-24 invisible lg:visible  bg-orange-300 bg-opacity-50 absolute"></div>
         <div className="flex lg:flex-row flex-col items-center justify-around w-full space-y-10 lg:space-y-0 lg:space-x-0 text-sky-900 mt-20 pb-20">
           {/* Section 1: Analyse de la Posture et des Mouvements */}
           <div className="flex flex-col items-center justify-center w-full lg:w-1/3">

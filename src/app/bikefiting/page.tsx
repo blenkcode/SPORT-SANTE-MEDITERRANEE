@@ -82,13 +82,35 @@ const Bikefiting = () => {
                 soyez amateur ou professionnel, nous vous accompagnons pour
                 adapter votre vélo à votre morphologie unique.
               </div>
-              <div className=" lg:text-3xl  mt-10  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
-                <Link
-                  href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
-                  className={`lg:text-xl text-md text-sky-50 bg-sky-600 py-2 px-4 rounded-full lg:ml-10 lg:w-80 transition-all flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:border-sky-600 border-1 border-solid hover:bg-sky-50 lg:mt-0 mt-5 mb-10 lg:mb-0 `}
-                >
-                  Rendez-vous en ligne
-                  <FontAwesomeIcon className="ml-3 text-xl" icon={faCalendar} />
+              <div className=" lg:text-xl  mt-10  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
+                <Link href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal">
+                  <div className="mt-5 mb-10 lg:mb-0  lg:mt-5 text-sky-50 group border-1 border-sky-600 bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center  items-center cursor-pointer transition-all hover:bg-sky-50 w-fit relative duration-300 overflow-hidden ">
+                    {/* <span className="translate-y-5 absolute -translate-x-10">
+                      09 75 96 52 30{" "}
+                      <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                    </span> */}
+                    <span className="hover-group: hover:text-sky-600  opacity-0 translate-">
+                      Rendez-vous en ligne
+                      <FontAwesomeIcon
+                        className="ml-3 text-xl"
+                        icon={faCalendar}
+                      />
+                    </span>
+                    <span className="transition-all group-hover:text-sky-600 duration-300 absolute group-hover:-translate-y-10 group-hover:translate-x-20">
+                      Rendez-vous en ligne
+                      <FontAwesomeIcon
+                        className="ml-3 text-xl"
+                        icon={faCalendar}
+                      />
+                    </span>
+                    <span className="transition-all group-hover:text-sky-600  duration-300 absolute translate-y-10  group-hover:-translate-y-0 group-hover:translate-x-0 -translate-x-20">
+                      Rendez-vous en ligne
+                      <FontAwesomeIcon
+                        className="ml-3 text-xl"
+                        icon={faCalendar}
+                      />
+                    </span>
+                  </div>
                 </Link>
               </div>
             </div>
@@ -100,7 +122,7 @@ const Bikefiting = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center lg:mt-24 mt-16">
-          <h2 className="xl:text-4xl lg:text-sky-900 text-white bg-violet-900 bg-opacity-50 lg:bg-opacity-100  lg:text-2xl text-3xl mt-10 font-StrawBold w-fit lg:bg-slate-50 py-2 px-5 mb-10 rounded-full">
+          <h2 className="xl:text-4xl  text-white bg-violet-900 bg-opacity-50 lg:text-2xl text-3xl mt-10 font-StrawBold w-fit  py-2 px-5 mb-20 rounded-full">
             Notre processus
           </h2>
           <div className="w-full h-1 invisible lg:visible bg-sky-900 absolute"></div>

@@ -55,19 +55,22 @@ export default function Header() {
   console.log(scrollY);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
+    const screenWidth = window.innerWidth;
+    if (screenWidth >= 1000) {
+      const handleScroll = () => {
+        if (window.scrollY > 100) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      };
 
-    window.addEventListener("scroll", handleScroll);
+      window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
 
   useEffect(() => {
@@ -102,8 +105,8 @@ export default function Header() {
             className="2xl:h-14 xl:h-12 lg:h-10 h-1/2 lg:mr-8 rounded-full"
           ></img>
           <div
-            className={`2xl:text-lg xl:text-md lg:text-xs text-sky-900 lg:text-white transition-all duration-500 font-Play mt-10 lg:mt-0 font-bold  ${
-              isVisible ? "lg:text-sky-900 " : ""
+            className={`2xl:text-lg xl:text-md lg:text-xs transition-all duration-500 font-Play mt-10 lg:mt-0 font-bold  ${
+              isVisible ? "lg:text-sky-900  " : "lg:text-white "
             }`}
           >
             Sport - Santé Mediterranée{" "}
@@ -119,8 +122,8 @@ export default function Header() {
             </Link>
           </div>
           <Link
-            className={`px-8 flex justify-center text-sky-900 lg:text-white  relative items-center  2xl:text-md lg:text-sm  lg:h-full w-fit transition-all lg:mt-0 mt-14  ${
-              isVisible ? "lg:text-sky-900 " : ""
+            className={`px-8 flex justify-center  relative items-center  2xl:text-md lg:text-sm  lg:h-full w-fit transition-all lg:mt-0 mt-14  ${
+              isVisible ? "lg:text-sky-900 " : "lg:text-white text-sky-900"
             }`}
             href="/"
             onMouseEnter={() => setAcceuilHover(true)}
@@ -133,7 +136,7 @@ export default function Header() {
                 acceuilHover
                   ? "opacity-100 w-1/2 -translate-y-5"
                   : "opacity-0 w-0"
-              } ${isVisible ? "bg-sky-900 " : ""}`}
+              }  ${isVisible ? "text-sky-900 " : "text-white"}`}
             ></div>
           </Link>
           {/* <Link

@@ -22,6 +22,17 @@ const Landing = () => {
 
   // Animation d'ouverture : le background image occupe tout l'écran
   useEffect(() => {
+    const disableScroll = () => {
+      document.body.style.overflow = "hidden";
+    };
+
+    // Réactive le scroll
+    const enableScroll = () => {
+      document.body.style.overflow = "";
+    };
+
+    // Désactive le scroll au début de l'animation
+    disableScroll();
     const screenWidth = window.innerWidth;
     // Animation d'ouverture : l'élément passe de `h-0` à `h-2/6`
     if (screenWidth > 1000) {
@@ -46,7 +57,12 @@ const Landing = () => {
           height: "66.67%", // L'élément retrouve sa taille initiale (scaleY 1 = 100%)
           duration: 2, // Durée de l'animation
           delay: 1.8,
-          ease: "power1.inOut", // Utilisation de power1.inOut pour une animation plus douce
+          ease: "power1.inOut",
+          onComplete: () => {
+            // Réactive le scroll une fois l'animation terminée
+            enableScroll();
+          },
+          // Utilisation de power1.inOut pour une animation plus douce
         }
       );
     } else {
@@ -57,7 +73,11 @@ const Landing = () => {
           height: "75%", // L'élément retrouve sa taille initiale (scaleY 1 = 100%)
           duration: 2, // Durée de l'animation
           delay: 1.8,
-          ease: "power1.inOut", // Utilisation de power1.inOut pour une animation plus douce
+          ease: "power1.inOut",
+          onComplete: () => {
+            // Réactive le scroll une fois l'animation terminée
+            enableScroll();
+          }, // Utilisation de power1.inOut pour une animation plus douce
         }
       );
     }
@@ -149,20 +169,31 @@ const Landing = () => {
                 </span>
                 Ostéopathie du sport
               </h2>
-            </div>
-            <div className="overflow-hidden">
-              {" "}
-              <div
-                ref={title3Ref}
-                className="2xl:text-xl  lg:text-sm text-xl flex items-center justify-center  "
-              >
-                <Link href="tel:0975965230" passHref>
-                  <div className="mt-8 2xl:mt-8 lg:mt-5 text-sky-50 bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:bg-sky-50 w-fit transition-colors">
-                    09 75 96 52 30
+            </div>{" "}
+            <div
+              ref={title3Ref}
+              className="2xl:text-xl  lg:text-sm text-xl flex items-center justify-center  "
+            >
+              <Link href="tel:0975965230" passHref>
+                <div className="mt-8 2xl:mt-8 lg:mt-5 text-sky-50 group bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center  items-center cursor-pointer transition-all hover:bg-sky-50 w-fit relative duration-300 overflow-hidden ">
+                  {/* <span className="translate-y-5 absolute -translate-x-10">
+                      09 75 96 52 30{" "}
+                      <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                    </span> */}
+                  <span className="hover-group: hover:text-sky-600  opacity-0 translate-">
+                    09 75 96 52 30{" "}
                     <FontAwesomeIcon className="ml-3 " icon={faPhone} />
-                  </div>
-                </Link>
-              </div>
+                  </span>
+                  <span className="transition-all group-hover:text-sky-600 duration-300 absolute group-hover:-translate-y-10 group-hover:translate-x-20">
+                    09 75 96 52 30{" "}
+                    <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                  </span>
+                  <span className="transition-all group-hover:text-sky-600  duration-300 absolute translate-y-10  group-hover:-translate-y-0 group-hover:translate-x-0 -translate-x-20">
+                    09 75 96 52 30{" "}
+                    <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                  </span>
+                </div>
+              </Link>
             </div>
           </div>
           <div
@@ -206,7 +237,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-sky-50 lg:h-2/6 h-1/4 py-10 lg-py-0  text-sky-900 flex flex-col items-center justify-evenly transition-all duration-2000">
+        <div className=" bg-sky-50 lg:h-2/6 h-1/4 py-10 lg-py-0  text-sky-900 flex flex-col items-center justify-evenly transition-all duration-2000 ">
           <div
             ref={sectionRef}
             className="flex items-center lg:flex-row flex-col lg:justify-evenly justify-center lg:w-10/12 px-10"

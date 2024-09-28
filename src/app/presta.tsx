@@ -37,6 +37,9 @@ const Presta = () => {
         if (window.scrollY > 330) {
           setIsVisible(true);
         }
+        // if (window.scrollY > 1200) {
+        //   setIsVisible(false);
+        // }
       }
     };
 
@@ -64,7 +67,14 @@ const Presta = () => {
     <div className="lg:pt-20   bg-sky-50 overflow-x-hidden lg:overflow-x-visible overflow-hidden ">
       <div className="lg:text-3xl text-2xl lg:h-200 h-fit text-sky-50  lg:py-20 flex flex-col items-center justify-center font-Straw w-full relative ">
         <div
-          className={` rounded-full bg-sky-900 border-2 border-solid border-sky-50 absolute transition-all delay-300 duration-2000 lg:-top-20 -top-10 z-10 ${
+          className={` rounded-full bg-sky-900 bg-opacity-50 border-2  border-solid border-sky-50 absolute transition-all delay-300 duration-2000 lg:-top-20 -top-10 z-10 ${
+            isVisible
+              ? "border-opacity-100 xl:w-circle xl:h-circle lg:w-circle2 lg:h-circle2 w-0 h-0 visible"
+              : "w-0 h-0 border-opacity-0 invisible"
+          }`}
+        ></div>
+        <div
+          className={` rounded-full bg-sky-900 bg-opacity-30  border-2 border-solid border-sky-50 absolute transition-all  duration-2000 lg:-top-20 -top-10 z-10 ${
             isVisible
               ? "border-opacity-100 xl:w-circle xl:h-circle lg:w-circle2 lg:h-circle2 w-0 h-0 visible"
               : "w-0 h-0 border-opacity-0 invisible"
@@ -96,7 +106,7 @@ const Presta = () => {
               </h3>
               <img
                 src="/bike.png"
-                className=" rounded-full  border-4 border-solid border-sky-50 w-40 h-40 shadow-2xl hover:-rotate-12 transition-all ease-in-out duration-300 "
+                className=" rounded-full  border-4 border-solid border-sky-50 w-40 h-40 shadow-2xl hover:scale-110 transition-all ease-in-out duration-300 "
               ></img>
               <Link
                 href="/bikefiting"
@@ -121,7 +131,7 @@ const Presta = () => {
               </h3>
               <img
                 src="/osteo.png"
-                className=" rounded-full border-4  border-solid shadow-2xl border-sky-50 w-40 h-40 hover:rotate-12 transition-all ease-in-out duration-300 "
+                className=" rounded-full border-4  border-solid shadow-2xl border-sky-50 w-40 h-40 hover:scale-110 transition-all ease-in-out duration-300 "
               ></img>
               <Link
                 href="/kinesitherapie"
@@ -147,7 +157,7 @@ const Presta = () => {
             </h3>
             <img
               src="/kiné.png"
-              className=" rounded-full  border-4 border-solid shadow-2xl border-sky-50 w-40 h-40 hover:-rotate-12 transition-all ease-in-out duration-300 "
+              className=" rounded-full  border-4 border-solid shadow-2xl border-sky-50 w-40 h-40 hover:scale-110 transition-all ease-in-out duration-300 "
             ></img>
             <Link
               href="/osteopathie"
@@ -172,7 +182,7 @@ const Presta = () => {
             </h3>
             <img
               src="/massage.png"
-              className=" rounded-full  border-4 border-solid shadow-2xl border-sky-50 w-40 h-40 hover:rotate-12 ease-out  duration-300 transition-all"
+              className=" rounded-full  border-4 border-solid shadow-2xl border-sky-50 w-40 h-40 hover:scale-110 ease-out  duration-300 transition-all"
             ></img>
             <Link
               href="/massage"

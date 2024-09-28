@@ -84,13 +84,35 @@ const Osteopathie = () => {
               ostéopathes restaurent les capacités fonctionnelles de votre
               corps.
             </div>
-            <div className=" lg:text-3xl  mt-5 xl:mt-20  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
-              <Link
-                href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
-                className={`lg:text-xl text-md text-sky-50 bg-sky-600 py-2 px-4 rounded-full lg:ml-10 lg:w-80 transition-all flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:border-sky-600 border-1 border-solid hover:bg-sky-50  lg:mt-10 xl:mt-5 mt-10 mb-10 lg:mb-0 `}
-              >
-                Rendez-vous en ligne
-                <FontAwesomeIcon className="ml-3 text-xl" icon={faCalendar} />
+            <div className=" lg:text-xl  mt-5 xl:mt-20  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
+              <Link href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal">
+                <div className="mt-5 mb-10 lg:mb-0  lg:mt-5 text-sky-50 group border-1 border-sky-600 bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center  items-center cursor-pointer transition-all hover:bg-sky-50 w-fit relative duration-300 overflow-hidden ">
+                  {/* <span className="translate-y-5 absolute -translate-x-10">
+                      09 75 96 52 30{" "}
+                      <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                    </span> */}
+                  <span className="hover-group: hover:text-sky-600  opacity-0 translate-">
+                    Rendez-vous en ligne
+                    <FontAwesomeIcon
+                      className="ml-3 text-xl"
+                      icon={faCalendar}
+                    />
+                  </span>
+                  <span className="transition-all group-hover:text-sky-600 duration-300 absolute group-hover:-translate-y-10 group-hover:translate-x-20">
+                    Rendez-vous en ligne
+                    <FontAwesomeIcon
+                      className="ml-3 text-xl"
+                      icon={faCalendar}
+                    />
+                  </span>
+                  <span className="transition-all group-hover:text-sky-600  duration-300 absolute translate-y-10  group-hover:-translate-y-0 group-hover:translate-x-0 -translate-x-20">
+                    Rendez-vous en ligne
+                    <FontAwesomeIcon
+                      className="ml-3 text-xl"
+                      icon={faCalendar}
+                    />
+                  </span>
+                </div>
               </Link>
             </div>
           </div>
@@ -121,15 +143,15 @@ const Osteopathie = () => {
         </div>
       </div>
       <div className="flex 6 flex-col bg-slate-50 items-center justify-center ">
-        <h2 className="xl:text-4xl text-sky-900 lg:text-4xl text-3xl mt-10 lg:mt-20 font-StrawBold w-fit bg-slate-50 py-2 px-5  lg:mb-10 mb-10 rounded-full ">
+        <h2 className="xl:text-4xl text-sky-900  bg-sky-300 bg-opacity-50 py-2lg:text-4xl text-3xl mt-10 lg:mt-20 font-StrawBold w-fit  py-2 px-5  lg:mb-20 mb-10 rounded-full ">
           Quand consulter ?
         </h2>
-        <div className="text-sky-900 border-b-2 border-zinc-500 border-opacity-30 pb-5 flex items-start w-full lg:px-44 px-10 xl:text-xl lg:text-lg lg:mb-20 flex-col">
-          <h5>À titre préventif :</h5>
+        <div className="text-sky-900 border-b-2 border-zinc-500 border-opacity-30 pb-10 flex items-start w-full lg:px-44 px-10 xl:text-xl lg:text-lg lg:mb-10 flex-col">
+          <h5 className="font-StrawBold">À titre préventif :</h5>
           Pour établir un “check up”, pour préparer une épreuve.
         </div>
-        <div className="text-sky-900 border-b-2 border-zinc-500 border-opacity-30 pb-5 flex items-start w-full lg:px-44 px-10 xl:text-xl lg:text-lg lg:mb-20 flex-col mt-10">
-          <h5>À titre curatif :</h5>
+        <div className="text-sky-900 border-b-2 border-zinc-500 border-opacity-30 pb-10 flex items-start w-full lg:px-44 px-10 xl:text-xl lg:text-lg lg:mb-10  flex-col mt-10">
+          <h5 className="font-StrawBold">À titre curatif :</h5>
           <ul>
             <li>
               Pour rééquilibrer de façon très précise les axes articulaires qui
@@ -142,8 +164,8 @@ const Osteopathie = () => {
             <li>Pour effacer les traumatismes même anciens.</li>
           </ul>
         </div>
-        <div className="text-sky-900 border-b-2 border-zinc-500 border-opacity-30 pb-5 flex items-start w-full lg:px-44 px-10 xl:text-xl lg:text-lg lg:mb-20 flex-col mt-10">
-          <h5>Mais aussi en cas de :</h5>
+        <div className="text-sky-900 border-opacity-30 pb-5 flex items-start w-full lg:px-44 px-10 xl:text-xl lg:text-lg lg:mb-20 flex-col mt-10">
+          <h5 className="font-StrawBold">Mais aussi en cas de :</h5>
           <ul>
             <li>
               Chutes sans traumatismes osseux ni lésions visibles sur une

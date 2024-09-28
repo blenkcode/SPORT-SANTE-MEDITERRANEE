@@ -136,25 +136,61 @@ const Massage = () => {
                 circulation sanguine et lymphatique et participent à lutter
                 contre le stress et l&apos;insomnie.
               </div>
-              <div className=" lg:text-3xl lg:mt-20 mt-10  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
-                <Link
-                  href="https://www.massagemarseillan.fr/"
-                  className={`lg:text-xl text-md text-sky-50 bg-sky-600 py-2 px-5 rounded-full  lg:w-fit transition-all flex font-thin justify-center items-center cursor-pointer hover:text-sky-600 hover:border-sky-600 border-1 hover:bg-sky-50 lg:mt-0 mt-10 `}
-                >
-                  Rendez-vous en ligne
-                  <FontAwesomeIcon className="ml-3 text-xl" icon={faCalendar} />
+              <div className=" lg:text-xl lg:mt-10 mt-10  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
+                <Link href="https://www.massagemarseillan.fr/">
+                  <div className="mt-5 mb-10 lg:mb-0  lg:mt-5 text-sky-50 group border-1 border-sky-600 bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center  items-center cursor-pointer transition-all hover:bg-sky-50 w-fit relative duration-300 overflow-hidden ">
+                    {/* <span className="translate-y-5 absolute -translate-x-10">
+                      09 75 96 52 30{" "}
+                      <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                    </span> */}
+                    <span className="hover-group: hover:text-sky-600  opacity-0 translate-">
+                      Rendez-vous en ligne
+                      <FontAwesomeIcon
+                        className="ml-3 text-xl"
+                        icon={faCalendar}
+                      />
+                    </span>
+                    <span className="transition-all group-hover:text-sky-600 duration-300 absolute group-hover:-translate-y-10 group-hover:translate-x-20">
+                      Rendez-vous en ligne
+                      <FontAwesomeIcon
+                        className="ml-3 text-xl"
+                        icon={faCalendar}
+                      />
+                    </span>
+                    <span className="transition-all group-hover:text-sky-600  duration-300 absolute translate-y-10  group-hover:-translate-y-0 group-hover:translate-x-0 -translate-x-20">
+                      Rendez-vous en ligne
+                      <FontAwesomeIcon
+                        className="ml-3 text-xl"
+                        icon={faCalendar}
+                      />
+                    </span>
+                  </div>
                 </Link>
               </div>
               <Link href="tel:0780966796" passHref>
-                <div className="mt-8  lg:mt-5 text-sky-50 bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center items-center cursor-pointer hover:border-sky-600 border-1 hover:text-sky-600 hover:bg-sky-50 w-fit transition-colors">
-                  07 80 96 67 96
-                  <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                <div className="mt-8  lg:mt-5 text-sky-50 group border-1 border-sky-600 bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center  items-center cursor-pointer transition-all hover:bg-sky-50 w-fit relative duration-300 overflow-hidden ">
+                  {/* <span className="translate-y-5 absolute -translate-x-10">
+                      09 75 96 52 30{" "}
+                      <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                    </span> */}
+                  <span className="hover-group: hover:text-sky-600  opacity-0 translate-">
+                    07 80 96 67 96
+                    <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                  </span>
+                  <span className="transition-all group-hover:text-sky-600 duration-300 absolute group-hover:-translate-y-10 group-hover:translate-x-20">
+                    07 80 96 67 96
+                    <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                  </span>
+                  <span className="transition-all group-hover:text-sky-600  duration-300 absolute translate-y-10  group-hover:-translate-y-0 group-hover:translate-x-0 -translate-x-20">
+                    07 80 96 67 96
+                    <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                  </span>
                 </div>
               </Link>
             </div>
           </div>
         </div>
-        <h3 className="lg:text-4xl text-2xl lg:pt-20 mt-20 lg:bg-slate-50 bg-green-600 bg-opacity-50 lg:bg-opacity-100 lg:text-sky-900 rounded-full  text-white lg:w-full flex items-center justify-center py-3 px-5 w-fit  font-StrawBold">
+        <h3 className="lg:text-3xl text-2xl  mt-20 lg:mt-32 bg-green-600 bg-opacity-50   rounded-full  text-white flex items-center justify-center py-3 px-5 w-fit  font-StrawBold">
           Choissisez votre formule{" "}
         </h3>
         <div className="w-full h-auto bg-slate-50  flex lg:flex-row flex-col items-center justify-center">
@@ -268,14 +304,14 @@ const Massage = () => {
             </div>
           </div>
           <div className=" xl:w-1/5 lg:w-2/5 h-full relative ">
-            <div className="lg:text-xl  lg:mt-10 px-10 text-sky-900   mb-20 relative z-20 lg:mb-10  ">
+            <div className="lg:text-xl  lg:mt-10 px-10 text-white  mb-20 relative z-20 lg:mb-10  ">
               {" "}
               S&apos;inspirant des bienfaits de la mer et des massages du monde
               ancestraux, vous trouverez dans nos massages une approche unique
               pour vous faire vivre une expérience de qualité unique
             </div>
             <span
-              className={` lg:absolute transition-all duration-1000 rounded-full bg-green-700 bg-opacity-30 lg:-top-48 xl:-top-36 2xl:-top-48 -left-40 z-10  scale-90 lg:visible invisible ${
+              className={` lg:absolute transition-all duration-1000 rounded-full bg-green-600 bg-opacity-50   lg:-top-48 xl:-top-36 2xl:-top-48 -left-40 z-10  scale-90 lg:visible invisible ${
                 isVisible ? "w-circle3 h-circle3 visible" : "w-0 h-0 invisible"
               }`}
             ></span>

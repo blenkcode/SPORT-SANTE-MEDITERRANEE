@@ -57,6 +57,17 @@ body {
   font-style: normal;
 }
 
+html {
+  /* Le scroll fonctionne toujours mais la barre de scroll est masquée */
+  scrollbar-width: none; /* Pour Firefox */
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+} /* Pour Internet Explorer et Edge */
+
+html::-webkit-scrollbar {
+  display: none; /* Pour Chrome, Safari et Opera */
+}
+
 @font-face {
   font-family: "Play";
   src: url("../app/fonts/PlaywriteNL-Regular.ttf") format("truetype");
