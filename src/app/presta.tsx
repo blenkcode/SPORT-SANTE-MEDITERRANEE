@@ -73,15 +73,11 @@ const Presta = () => {
           }`}
         ></div>
         <h3
-          className={`mb-20 z-20 bg-sky-900 lg:bg-transparent lg:w-fit lg:py-0 w-full py-2 items-center justify-center flex lg:absolute delay-300 duration-500 transition-all relative top-10  ${
+          className={`mb-20 z-20 bg-sky-900 lg:bg-transparent  w-fit lg:py-0 px-5  rounded-full py-2 items-center justify-center flex lg:absolute delay-300 duration-500 transition-all relative top-10  ${
             isVisible ? "text-white  " : "lg:text-sky-900"
           } `}
         >
           Nos Prestations{" "}
-          <FontAwesomeIcon
-            icon={faNotesMedical}
-            className="ml-2 -translate-y-0.5"
-          />
         </h3>
         <div className="flex z-30 lg:flex-row flex-col lg:mt-32 items-center">
           <div className="flex flex-col-reverse lg:flex-row">
@@ -97,7 +93,7 @@ const Presta = () => {
               }`}
             >
               {" "}
-              <h3 className="lg:text-xl text-2xl text-sky-900 mt-10 lg:mt-0 font-bold py-3 mb-5 px-3 ">
+              <h3 className="lg:text-xl text-2xl text-sky-900 mt-10 lg:mt-0 font-StrawBold py-3 mb-5 px-3 ">
                 Bike-Fitting
               </h3>
               <img
@@ -122,7 +118,7 @@ const Presta = () => {
                   : " -translate-x-full opacity-0"
               } `}
             >
-              <h3 className="lg:text-xl text-2xl lg:text-white text-sky-900 font-bold py-3">
+              <h3 className="lg:text-xl text-2xl lg:text-white text-sky-900 font-StrawBold py-3">
                 Kinésithérapie
               </h3>
               <img
@@ -148,7 +144,7 @@ const Presta = () => {
                 : " translate-x-full opacity-0"
             }`}
           >
-            <h3 className="lg:text-xl text-2xl lg:text-white text-sky-900 font-bold py-3 ">
+            <h3 className="lg:text-xl text-2xl lg:text-white text-sky-900 font-StrawBold py-3 ">
               Ostéopathie
             </h3>
             <img
@@ -173,7 +169,7 @@ const Presta = () => {
                 : " -translate-x-full opacity-0"
             }`}
           >
-            <h3 className="lg:text-xl text-2xl text-sky-900 z-20 font-bold py-3 px-5 mb-5 mt-10 lg:mt-0">
+            <h3 className="lg:text-xl text-2xl text-sky-900 z-20 font-StrawBold py-3 px-5 mb-5 mt-10 lg:mt-0">
               Massage
             </h3>
             <img

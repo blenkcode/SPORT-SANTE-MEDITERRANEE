@@ -48,7 +48,7 @@ const Equipe = () => {
           className="w-full absolute top-0 lg:h-auto h-banner"
         ></img> */}
         <div className="bg-sky-900 opacity-70 w-full h-full"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:text-3xl  w-full lg:flex-row flex-col font-bold flex items-center text-white lg:text-skt-50 justify-center ">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:text-3xl  w-full lg:flex-row flex-col font-StrawBold flex items-center text-white lg:text-skt-50 justify-center ">
           Prenez rendez-vous dès maintenant !{" "}
           <Link
             href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
@@ -59,7 +59,7 @@ const Equipe = () => {
           </Link>
         </div>
       </div>
-      <div className=" h-fit bg-sky-50 text-sky-900 lg:px-10 flex z-20 flex-col w-full items-center justify-center font-Straw  relative pb-20">
+      <div className=" h-fit bg-sky-50 text-sky-900 lg:px-10 flex z-20 flex-col w-full items-center justify-center font-Straw  relative pb-20 pt-10 lg:pt-0">
         <div className="overflow-hidden">
           {" "}
           <h2
@@ -75,7 +75,7 @@ const Equipe = () => {
         <div className="flex  justify-center items-center  flex-col">
           <div className="mt-10 lg:mt-20 flex flex-col lg:flex-row justify-center items-center">
             <div className="rounded-xl pb-8   shadow-2xl bg-opacity-20 w-fit px-10 flex flex-col items-center justify center">
-              <span className="xl:text-3xl text-2xl mb-8 mt-8 font-extrabold">
+              <span className="xl:text-3xl text-2xl mb-8 mt-8 font-StrawBold">
                 Nos Valeurs
               </span>
               <ul className="flex  flex-col items-center 2xl:text-2xl xl:text-xl lg:text-lg  text-xl justify center ">
@@ -88,15 +88,15 @@ const Equipe = () => {
 
             <p className="2xl:text-xl xl:text-lg lg:text-md  text-md px-10  2xl:px-20 xl:px-10 lg:px-7 lg:w-1/3 lg-pt-0 pt-12">
               Notre équipe de soignants,{" "}
-              <span className="font-bold">
+              <span className="font-StrawBold">
                 agrée par la clinique du coureur
               </span>{" "}
               est à votre disposition pour vous accompagner dans votre parcours
               de soins.
               <br></br> <br></br>
               Ils mettent leur expertise et leur bienveillance au service de
-              <span className="font-bold"> votre bien-être</span> .<br></br>{" "}
-              <br></br>
+              <span className="font-StrawBold"> votre bien-être</span> .
+              <br></br> <br></br>
             </p>
           </div>
 

@@ -66,9 +66,12 @@ const Osteopathie = () => {
         </div>
       </div>
       <div className="flex lg:flex-row-reverse flex-col lg:items-start items-center justify-center bg-slate-50 lg:py-20 py-10">
-        <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2 px-5 rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10 mt-0 mb-5  font-StrawBold  w-fit ">
+        <h2 className="xl:text-5xl text-sky-900 bg-slate-50 py-2 px-10 rounded-full lg:text-4xl lg:absolute text-3xl lg:mb-10 2xl:-translate-x-10 lg:translate-x-20 lg:mt-10 mt-0 mb-5  font-StrawBold  w-fit ">
           Approche personnalisée{" "}
-          <FontAwesomeIcon className="text-2xl ml-3" icon={faUser} />
+          <FontAwesomeIcon
+            className="text-2xl ml-3 invisible lg:visible"
+            icon={faUser}
+          />
         </h2>
         <div className=" text-sky-900 z-20 items-center lg:items-start lg:w-2/5 2xl:w-1/3  flex flex-col lg:mt-40 mt-5">
           <div className="flex justify-between items-center flex-col h-full  ">
@@ -102,7 +105,7 @@ const Osteopathie = () => {
         <div className="w-circle3 h-circle3 lg:right-10 xl:right-96 2xl:-bottom-10 lg:-bottom-10 2xl:translate-x-80 lg:translate-x-96 lg:scale-50 2xl:scale-75 invisible lg:visible  bg-sky-300 bg-opacity-50  absolute rounded-full z-10"></div>
         <div className="flex justify-between items-center flex-col h-full  ">
           {" "}
-          <h4 className="w-fit text-sky-900 font-bold text-2xl lg:text-4xl z-20 px-10">
+          <h4 className="w-fit text-sky-900 font-StrawBold text-2xl lg:text-4xl z-20 px-10">
             L’ostéopathie améliore vos performances
           </h4>
           <div className="flex  items-center justify-center flex-col lg:mt-20 mt-10">
@@ -118,7 +121,7 @@ const Osteopathie = () => {
         </div>
       </div>
       <div className="flex 6 flex-col bg-slate-50 items-center justify-center ">
-        <h2 className="xl:text-4xl text-sky-900 lg:text-4xl text-3xl mt-10 lg:mt-20 font-bold w-fit bg-slate-50 py-2 px-5  lg:mb-10 mb-10 rounded-full ">
+        <h2 className="xl:text-4xl text-sky-900 lg:text-4xl text-3xl mt-10 lg:mt-20 font-StrawBold w-fit bg-slate-50 py-2 px-5  lg:mb-10 mb-10 rounded-full ">
           Quand consulter ?
         </h2>
         <div className="text-sky-900 border-b-2 border-zinc-500 border-opacity-30 pb-5 flex items-start w-full lg:px-44 px-10 xl:text-xl lg:text-lg lg:mb-20 flex-col">

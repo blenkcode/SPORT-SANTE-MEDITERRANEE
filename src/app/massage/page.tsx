@@ -64,7 +64,7 @@ const Massage = () => {
           <div className="items-center flex  flex-col justify-center">
             <div className="mb-10 lg:mt-10 mt-0 flex flex-col justify-start items-center font-Manrope">
               <h1 className="ease-in-out duration-title transition-all font-extrabold flex lg:flex-row flex-col">
-                <div className="bg-zinc-700 lg:bg-opacity-25 bg-opacity-0 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col  sm:flex-row font-Straw 2xl:text-6xl lg:text-5xl sm:text-3xl text-5xl ">
+                <div className="bg-zinc-700 lg:bg-opacity-25 bg-opacity-0 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col  sm:flex-row font-StrawBold 2xl:text-6xl lg:text-5xl sm:text-3xl text-5xl ">
                   Massage
                 </div>
               </h1>
@@ -117,21 +117,24 @@ const Massage = () => {
             className="lg:w-96 w-4/5 rounded-tr-3xl rounded-bl-3xl lg:mr-20 mt-20 lg:mt-0"
           ></img>
           <div className=" text-sky-900 z-20 items-center lg:items-start  lg:w-2/5  flex flex-col ">
-            <h2 className="2xl:text-5xl xl:text-4xl lg:text-3xl  bg-slate-50 py-2 px-10 rounded-full text-3xl mb-5 lg:-translate-x-56 lg:mt-10 mt-0 text-sky-900 font-bold w-fit">
+            <h2 className="2xl:text-5xl xl:text-4xl lg:text-3xl  bg-slate-50 py-2 px-10 rounded-full text-3xl mb-5 lg:-translate-x-56 lg:mt-10 mt-0 text-sky-900 font-StrawBold  w-fit">
               Massages sur mesure{" "}
               <FontAwesomeIcon
-                className="lg:ml-5 lg:text-3xl text-xl"
+                className="lg:ml-5 lg:text-3xl lg:visible invisible text-xl"
                 icon={faLeaf}
               />
             </h2>
             <div className="flex justify-between items-center flex-col h-full">
               <div className="xl:text-xl lg:text-lg lg:mt-10 px-10 lg:px-0  ">
                 Nous proposons un ensemble de techniques de massage choisi selon
-                vos besoins et vos gouts dans le but de composer le massage qui
-                vous ressemble. Nos massages apportent détente et amene vôtre
-                esprit à lâcher prise, ils stimulent la circulation sanguine et
-                lymphatique et participent à lutter contre le stress et
-                l&apos;insomnie.
+                <span className="font-StrawBold "> vos besoins</span> et vos
+                gouts dans le but de composer le massage{" "}
+                <span className="font-StrawBold "> qui vous ressemble</span>.
+                Nos massages apportent détente et amene vôtre esprit{" "}
+                <span className="font-StrawBold "> à lâcher prise</span>, ils
+                <span className="font-StrawBold "> stimulent</span> la
+                circulation sanguine et lymphatique et participent à lutter
+                contre le stress et l&apos;insomnie.
               </div>
               <div className=" lg:text-3xl lg:mt-20 mt-10  w-full lg:flex-row flex-col font-bold flex items-center text-sky-900 lg:text-skt-50 justify-center  ">
                 <Link
@@ -151,7 +154,7 @@ const Massage = () => {
             </div>
           </div>
         </div>
-        <h3 className="lg:text-4xl text-2xl lg:pt-20 mt-20 bg-slate-100 text-sky-900 s w-full flex items-center justify-center pt-10 font-bold">
+        <h3 className="lg:text-4xl text-2xl lg:pt-20 mt-20 bg-slate-100 text-sky-900 s w-full flex items-center justify-center pt-10 font-StrawBold">
           Choissisez votre formule{" "}
         </h3>
         <div className="w-full h-auto bg-slate-100  flex lg:flex-row flex-col items-center justify-center">
@@ -179,7 +182,7 @@ const Massage = () => {
                   sign ? "scale-125 " : "scale-105"
                 }`}
               ></img>
-              <div className="w-full h-full absolute 2xl:top-24 top-16 px-10 ">
+              <div className="w-full h-full absolute 2xl:top-24 top-16 px-10 text-white ">
                 Un voyage qui vous transportera dans un espace de détente, de
                 déconnexion avec un lâcher prise profond.
               </div>
@@ -204,7 +207,7 @@ const Massage = () => {
                   cal ? "scale-125 " : "scale-105"
                 }`}
               ></img>
-              <div className="w-full h-full absolute 2xl:top-24 top-16 px-10 ">
+              <div className="w-full h-full absolute 2xl:top-24 top-16 text-white px-10 ">
                 Un voyage hors du temps où l’esprit et le corps se reconnectent.
                 Enveloppant, relaxant, ce massage alterne des mouvements fluides
                 et répétés en cercles pour vous offrir un bien être durable et
@@ -231,7 +234,7 @@ const Massage = () => {
                   thai ? "scale-125 " : "scale-105"
                 }`}
               ></img>
-              <div className="w-full h-full absolute 2xl:top-24 top-16 px-10 ">
+              <div className="w-full h-full absolute 2xl:top-24 top-16 px-10 text-white ">
                 Prêt pour une détente musculaire totale ? Grâce à des techniques
                 de pétrissages, acupressions, étirements, ce massage plutôt
                 dédié aux sportifs vous invite à un relâchement profond.
@@ -257,7 +260,7 @@ const Massage = () => {
                   ayu ? "scale-125 " : "scale-105"
                 }`}
               ></img>
-              <div className="w-full h-full absolute 2xl:top-24 top-16 px-10 ">
+              <div className="w-full h-full absolute 2xl:top-24 text-white top-16 px-10 ">
                 Originaire d’inde, issu de l’Ayurveda, ce massage libère vos
                 canaux énergétiques (les nadis) pour harmoniser votre énergie
                 physique et mentale.
@@ -265,7 +268,7 @@ const Massage = () => {
             </div>
           </div>
           <div className=" xl:w-1/5 lg:w-2/5 h-full relative ">
-            <div className="lg:text-xl  lg:mt-10 px-10 text-sky-900  mb-20 relative z-20 lg:mb-10  ">
+            <div className="lg:text-xl  lg:mt-10 px-10 text-sky-900   mb-20 relative z-20 lg:mb-10  ">
               {" "}
               S&apos;inspirant des bienfaits de la mer et des massages du monde
               ancestraux, vous trouverez dans nos massages une approche unique

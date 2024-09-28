@@ -114,9 +114,9 @@ const Landing = () => {
                 {/* Masquer le texte pendant l'animation */}
                 <h1
                   ref={titleRef}
-                  className=" lg:font-bold flex lg:flex-row flex-col"
+                  className=" font-StrawBold flex lg:flex-row flex-col"
                 >
-                  <div className="lg:bg-opacity-25 translate-y-0 bg-opacity-0 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col sm:flex-row font-Straw 2xl:text-6xl lg:text-5xl sm:text-3xl text-4xl">
+                  <div className="lg:bg-opacity-25 translate-y-0 bg-opacity-0 px-10 lg:px-5 py-8 rounded-full items-center justify-center flex flex-col sm:flex-row   2xl:text-6xl lg:text-5xl sm:text-3xl text-4xl">
                     Sport - Santé{" "}
                     <span className="sm:ml-5 mt-5 sm:mt-0 text-sky-200">
                       Mediterranée
@@ -202,12 +202,12 @@ const Landing = () => {
             <p className=" font-Straw 2xl:text-xl lg:text-lg  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 lg:mt-0">
               {" "}
               Notre équipe pluridisciplinaire place{" "}
-              <span className="font-bold">le mouvement </span>au centre de
+              <span className="font-StrawBold">le mouvement </span>au centre de
               chaque approche thérapeutique, convaincue que{" "}
-              <span className="font-bold">l’activité physique</span>, adaptée à
-              chacun, est la clé de{" "}
-              <span className="font-bold">la guérison </span> et de{" "}
-              <span className="font-bold">la prévention.</span>
+              <span className="font-StrawBold">l’activité physique</span>,
+              adaptée à chacun, est la clé de{" "}
+              <span className="font-StrawBold">la guérison </span> et de{" "}
+              <span className="font-StrawBold">la prévention.</span>
             </p>
             <img
               src="/logocourse.png"
