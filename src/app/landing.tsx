@@ -19,6 +19,7 @@ const Landing = () => {
   const title2Ref = useRef<HTMLHeadingElement>(null);
   const title3Ref = useRef<HTMLHeadingElement>(null);
   const subRef = useRef<HTMLHeadingElement>(null);
+  const whiteRef = useRef<HTMLHeadingElement>(null);
 
   // Animation d'ouverture : le background image occupe tout l'écran
   useEffect(() => {
@@ -130,6 +131,15 @@ const Landing = () => {
         visibility: "visible",
       }
     );
+    gsap.fromTo(
+      whiteRef.current,
+      { visibility: "hidden" },
+      {
+        duration: 0.2,
+
+        visibility: "visible",
+      }
+    );
   }, []);
 
   return (
@@ -137,7 +147,7 @@ const Landing = () => {
       <div className="bg-[url('/covermain.JPG')] bg-center lg:bg-fixed bg-scroll w-full bg-cover h-lvh  text-white ">
         <div
           ref={mainRef}
-          className="w-full relative  items-center justify-center lg:h-4/6  font-Straw flex flex-col bg-gradient-to-r from-sky-700/80 to-sky-700/0"
+          className="w-full relative  items-center justify-center h-lvh font-Straw flex flex-col bg-gradient-to-r from-sky-700/80 to-sky-700/0"
         >
           <div className="items-center flex mb-20  lg:mb-20 flex-col justify-center ">
             <div className="mb-0 lg:mt-10 mt-0 flex flex-col justify-start items-center font-Manrope">
@@ -197,7 +207,7 @@ const Landing = () => {
             </div>
             <div
               ref={subRef}
-              className=" w-full absolute bottom-0 lg:h-14 h-12  bg-slate-200 bg-opacity-25 flex items-center justify-center shadow-2xl text-slate-700 2xl:text-lg lg:text-md  overflow-hidden font-Straw font-thin"
+              className=" w-full invisible absolute bottom-0 lg:h-14 h-12  bg-slate-200 bg-opacity-25 flex items-center justify-center shadow-2xl text-slate-700 2xl:text-lg lg:text-md  overflow-hidden font-Straw font-thin"
             >
               <div className="animate-scroll lg:animate-none whitespace-nowrap flex">
                 <div className="2xl:px-20 lg:px-10 px-10">
@@ -237,7 +247,10 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-sky-50  py-10 lg-py-0 lg:h-2/6 h-30  text-sky-900 flex flex-col items-center justify-evenly transition-all duration-2000 ">
+        <div
+          ref={whiteRef}
+          className=" bg-sky-50 invisible  py-10 lg-py-0 lg:h-2/6 h-30  text-sky-900 flex flex-col items-center justify-evenly transition-all duration-2000 "
+        >
           <div
             ref={sectionRef}
             className="flex items-center  lg:flex-row flex-col lg:justify-evenly justify-center lg:w-10/12 px-10"
