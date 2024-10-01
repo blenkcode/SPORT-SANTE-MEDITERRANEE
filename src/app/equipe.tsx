@@ -94,8 +94,8 @@ const Equipe = () => {
         </div>
         <p className="mt-10 lg:w-2/3 px-10 2xl:text-xl xl:text-lg lg:text-md  text-md px-10  2xl:px-20 xl:px-10 lg:px-7">
           Idéallement situé à 10 minutes de la plage de Marseillan dans
-          l'hérault le cabinet de kinésithérapie et ostéopathie vous acceuille
-          dans un cadre propice aux soins.
+          l&apos;hérault le cabinet de kinésithérapie et ostéopathie vous
+          acceuille dans un cadre propice aux soins.
         </p>
         <div className="flex lg:flex-row flex-col items-center justify-center w-full mt-20    ">
           <div className="overflow-hidden lg:w-photo lg:h-photo w-72 h-72   rounded-full border-opacity-70 border-8 border-solid border-sky-900 z-20">
