@@ -242,7 +242,7 @@ const Landing = () => {
             ref={sectionRef}
             className="flex items-center  lg:flex-row flex-col lg:justify-evenly justify-center lg:w-10/12 px-10"
           >
-            <p className=" font-Straw 2xl:text-xl lg:text-lg  text-md  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 lg:mt-0 pt-5 lg:pt-0">
+            <p className=" font-Straw 2xl:text-xl lg:text-lg  text-md 2xl:mb-8  2xl:w-1/3 xl:w-1/2 lg:w-1/2 2xl:pb-0 xl:pb-6 lg:mt-0 pt-5 lg:pt-0">
               {" "}
               Notre équipe pluridisciplinaire place{" "}
               <span className="font-StrawBold">le mouvement </span>au centre de
@@ -254,7 +254,7 @@ const Landing = () => {
             </p>
             <img
               src="/logocourse.png"
-              className="2xl:w-52 xl:w-40 w-0 invisible lg:visible  lg:w-36 md:w-1/3  rounded-full border-2 border-solid border-sky-900  transition-all duration-1000 "
+              className="2xl:w-52 xl:w-40 w-0  invisible lg:visible  lg:w-36 md:w-1/3  rounded-full border-2 border-solid border-sky-900  transition-all duration-1000 "
             ></img>
           </div>
         </div>

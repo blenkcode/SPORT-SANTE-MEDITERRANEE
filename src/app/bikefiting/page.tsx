@@ -2,11 +2,7 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faBicycle } from "@fortawesome/free-solid-svg-icons";
-import {
-  faEuroSign,
-  faStar,
-  faPersonRunning,
-} from "@fortawesome/free-solid-svg-icons";
+import { faStar, faPersonRunning } from "@fortawesome/free-solid-svg-icons";
 const Bikefiting = () => {
   return (
     <div className=" h-auto min-h-lvh w-full flex flex-col font-Straw">
@@ -47,10 +43,7 @@ const Bikefiting = () => {
             Avis Google : 4,7/5{" "}
             <FontAwesomeIcon className="ml-3" icon={faStar} />
           </div>
-          <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
-            Remboursement mutuelle{" "}
-            <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
-          </div>
+
           <div className="2xl:px-20 lg:px-10 px-10 lg:hidden">
             Spécialiste du sport{" "}
             <FontAwesomeIcon className="ml-3" icon={faPersonRunning} />

@@ -3,11 +3,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faUser } from "@fortawesome/free-solid-svg-icons";
 
-import {
-  faEuroSign,
-  faStar,
-  faPersonRunning,
-} from "@fortawesome/free-solid-svg-icons";
+import { faStar, faPersonRunning } from "@fortawesome/free-solid-svg-icons";
 const Osteopathie = () => {
   return (
     <div className=" h-auto min-h-lvh w-full flex flex-col font-Straw">

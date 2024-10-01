@@ -81,8 +81,10 @@ const Presta = () => {
           }`}
         ></div>
         <h3
-          className={`lg:mb-20 mb-10 z-20 bg-sky-900 lg:bg-transparent  w-fit lg:py-0 px-5  rounded-full py-2 items-center justify-center flex lg:absolute delay-300 duration-500 transition-all relative top-10  ${
-            isVisible ? "text-white  " : "lg:text-sky-900"
+          className={`lg:mb-20 mb-10 z-20 lg:text-3xl text-xl   w-fit lg:-translate-y-5 px-5  rounded-full py-2 items-center justify-center flex lg:absolute delay-300 duration-500 transition-all relative top-10  ${
+            isVisible
+              ? "text-sky-900 bg-sky-50 "
+              : "lg:text-sky-900 text-white bg-sky-900 bg-opacity-40 lg:bg-transparent"
           } `}
         >
           Nos Prestations{" "}

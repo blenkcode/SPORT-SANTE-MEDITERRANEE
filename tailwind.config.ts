@@ -33,6 +33,7 @@ const config: Config = {
         "1": "1px", // Exemple: changer 'border-1' pour 2px au lieu de 1px
       },
       height: {
+        photo: "500px",
         circle: "1000px",
         circle2: "800px",
         circle3: "650px",
@@ -47,6 +48,7 @@ const config: Config = {
         banner: "200px",
       },
       width: {
+        photo: "500px",
         "100": "500px",
         "200": "1000px",
         circle: "1000px",

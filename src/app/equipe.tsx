@@ -8,16 +8,18 @@ import { useEffect, useState } from "react";
 import "./globals.css";
 const Equipe = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isVisible2, setIsVisible2] = useState(false);
   const [scrollY, setScrollY] = useState(0);
 
   console.log(scrollY);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 975) {
+      if (window.scrollY > 1000) {
         setIsVisible(true);
-      } else {
-        setIsVisible(false);
+      }
+      if (window.scrollY > 1950) {
+        setIsVisible2(true);
       }
     };
 
@@ -78,12 +80,49 @@ const Equipe = () => {
           </Link>
         </div>
       </div>
-      <div className=" h-fit bg-sky-50 text-sky-900 lg:px-10 flex z-20 flex-col w-full items-center justify-center font-Straw  relative pb-20 pt-10 lg:pt-0">
+      <div className=" h-fit bg-sky-50 text-sky-900 lg:px-10 flex z-20 flex-col w-full items-center justify-center font-Straw  relative pb-20 pt-5 lg:pt-0">
+        {" "}
         <div className="overflow-hidden">
           {" "}
           <h2
-            className={`  lg:mt-20 mt-10 lg:text-3xl transition-all duration-2000 lg:font-bold text-xl ${
+            className={`  lg:mt-20 mt-10 bg-sky-900 bg-opacity-60 rounded-full px-5 py-2 lg:text-3xl text-white transition-all duration-500 lg:font-bold text-xl ${
               isVisible ? "translate-y-0" : "translate-y-10"
+            }`}
+          >
+            Le Cabinet
+          </h2>
+        </div>
+        <p className="mt-10 lg:w-2/3 px-10 2xl:text-xl xl:text-lg lg:text-md  text-md px-10  2xl:px-20 xl:px-10 lg:px-7">
+          Idéallement situé à 10 minutes de la plage de Marseillan dans
+          l'hérault le cabinet de kinésithérapie et ostéopathie vous acceuille
+          dans un cadre propice aux soins.
+        </p>
+        <div className="flex lg:flex-row flex-col items-center justify-center w-full mt-20    ">
+          <div className="overflow-hidden lg:w-photo lg:h-photo w-72 h-72   rounded-full border-opacity-70 border-8 border-solid border-sky-900 z-20">
+            {" "}
+            <img
+              alt="cabinet"
+              src="/cab1.webp"
+              className="w-full translate-y-10 scale-150"
+            ></img>
+          </div>
+
+          <div className="overflow-hidden mt-10 lg:mt-0 lg:w-96 lg:h-96 w-72 h-72 lg:-translate-x-10 border-opacity-70 rounded-full border-8 border-solid border-sky-900 lg:-translate-y-10 z-10 rounded-full bg-red-50">
+            {" "}
+            <img
+              alt="cabinet"
+              src="/cab2.webp"
+              className="w-full translate-y-10 scale-150"
+            ></img>
+          </div>
+        </div>
+      </div>
+      <div className=" h-fit bg-sky-50 text-sky-900 lg:px-10 flex z-20 flex-col w-full items-center justify-center font-Straw  relative pb-20 pt-0 lg:pt-0">
+        <div className="overflow-hidden">
+          {" "}
+          <h2
+            className={`  lg:mt-20 mt-10  bg-opacity-60 bg-sky-900 rounded-full px-5 py-2 lg:text-3xl text-white transition-all duration-500 lg:font-bold text-xl ${
+              isVisible2 ? "translate-y-0" : "translate-y-10"
             }`}
           >
             Notre équipe à votre écoute{" "}
@@ -133,6 +172,7 @@ const Equipe = () => {
             <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
               {" "}
               <img
+                alt="Martin Larivière"
                 src="/mart2.webp"
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
@@ -143,6 +183,7 @@ const Equipe = () => {
             <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
               {" "}
               <img
+                alt="Cyril Portal"
                 src="/mart.webp"
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
@@ -153,6 +194,7 @@ const Equipe = () => {
             <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
               {" "}
               <img
+                alt="Marcelo Ramirez"
                 src="/marcelo.webp"
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
@@ -163,7 +205,8 @@ const Equipe = () => {
             <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
               {" "}
               <img
-                src="/laureen.png"
+                src="/ewe.webp"
+                alt="Ewen Gbick"
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
               <div className="text-white bg-zinc-500 w-full text-3xl  absolute z-30 bottom-0 left-0 py-2 px-3 bg-opacity-50 flex items-center justify-center">
