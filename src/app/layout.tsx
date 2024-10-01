@@ -23,6 +23,10 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Sport-Santé Méditerranée",
   description: "Kinésithérapie & Ostéopathie à Marseillan",
+  icons: {
+    icon: "/logokinemedwhite.png", // Chemin vers ton favicon dans le dossier public
+    apple: "/logokinemedwhite.png", // Optionnel, icône spécifique pour Apple devices
+  },
 };
 
 export default function RootLayout({
