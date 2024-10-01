@@ -86,13 +86,13 @@ const Equipe = () => {
           {" "}
           <h2
             className={`  lg:mt-20 mt-10 bg-sky-900 bg-opacity-60 rounded-full px-5 py-2 lg:text-3xl text-white transition-all duration-500 lg:font-bold text-xl ${
-              isVisible ? "translate-y-0" : "translate-y-10"
+              isVisible ? "translate-y-0" : "translate-y-20"
             }`}
           >
             Le Cabinet
           </h2>
         </div>
-        <p className="mt-10 lg:w-2/3 px-10 2xl:text-xl xl:text-lg lg:text-md  text-md px-10  2xl:px-20 xl:px-10 lg:px-7">
+        <p className="mt-10 lg:w-2/3  2xl:text-xl xl:text-lg lg:text-md  text-md px-10  2xl:px-20 xl:px-10 lg:px-7">
           Idéallement situé à 10 minutes de la plage de Marseillan dans
           l&apos;hérault le cabinet de kinésithérapie et ostéopathie vous
           acceuille dans un cadre propice aux soins.
@@ -107,7 +107,7 @@ const Equipe = () => {
             ></img>
           </div>
 
-          <div className="overflow-hidden mt-10 lg:mt-0 lg:w-96 lg:h-96 w-72 h-72 lg:-translate-x-10 border-opacity-70 rounded-full border-8 border-solid border-sky-900 lg:-translate-y-10 z-10 rounded-full bg-red-50">
+          <div className="overflow-hidden mt-10 lg:mt-0 lg:w-96 lg:h-96 w-72 h-72 lg:-translate-x-10 border-opacity-70  border-8 border-solid border-sky-900 lg:-translate-y-10 z-10 rounded-full bg-red-50">
             {" "}
             <img
               alt="cabinet"
@@ -122,7 +122,7 @@ const Equipe = () => {
           {" "}
           <h2
             className={`  lg:mt-20 mt-10  bg-opacity-60 bg-sky-900 rounded-full px-5 py-2 lg:text-3xl text-white transition-all duration-500 lg:font-bold text-xl ${
-              isVisible2 ? "translate-y-0" : "translate-y-10"
+              isVisible2 ? "translate-y-0" : "translate-y-20"
             }`}
           >
             Notre équipe à votre écoute{" "}
