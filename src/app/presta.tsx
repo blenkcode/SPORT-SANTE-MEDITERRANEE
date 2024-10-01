@@ -129,10 +129,11 @@ const Presta = () => {
               <h3 className="lg:text-xl text-2xl lg:text-white text-sky-900 font-StrawBold py-3">
                 Kinésithérapie
               </h3>
-              <img
-                src="/osteo.png"
-                className=" rounded-full border-4  border-solid shadow-2xl border-sky-50 w-40 h-40 hover:scale-110 transition-all ease-in-out duration-300 "
-              ></img>
+              <div className="w-40 h-40 rounded-full border-4 border-solid shadow-2xl border-sky-50 overflow-hidden relative hover:scale-110 transition-all ease-in-out duration-300">
+                <img src="/testkine.png" className="w-full h-full " />
+                <div className="absolute inset-0 bg-amber-600 bg-opacity-50"></div>
+              </div>
+
               <Link
                 href="/kinesitherapie"
                 className=" text-xs hover:bg-newblue shadow-2xl text-sky-900 rounded-full py-2 px-3 mt-5 cursor-pointer bg-sky-50 border-1 border-sky-900 transition-colors"

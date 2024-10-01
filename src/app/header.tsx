@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faNotesMedical } from "@fortawesome/free-solid-svg-icons";
+import { faNotesMedical, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
@@ -96,7 +96,7 @@ export default function Header() {
     >
       <div
         className={`lg:pl-8 lg:px-10  w-full h-full flex transition-all duration-1000 lg:justify-between justify-evenly items-center lg:flex-row flex-col ${
-          isVisible ? "  bg-sky-50" : "lg:bg-transparent bg-sky-50"
+          isVisible ? "  bg-white" : "lg:bg-transparent bg-white"
         }`}
       >
         <div className="flex lg:flex-row flex-col items-center lg:pt-0 pt-5 h-1/5 lg:h-full">
@@ -114,11 +114,25 @@ export default function Header() {
         </div>
         <div className="flex lg:justify-between justify-start lg:flex-row flex-col items-center w-fit lg:h-full h-2/3  font-semibold ">
           <div className="duration-title transition-all flex items-center justify-center ease-in-out delay-500 ">
-            <Link
-              href="https://www.doctolib.fr/osteopathe/marseillan/cyril-portal"
-              className={` text-sky-50 bg-sky-600 py-2 px-4 rounded-full w-fit transition-all 2xl:text-md  lg:text-sm  flex font-thin justify-center items-center cursor-pointer  hover:bg-sky-50 hover:border-sky-600 hover:text-sky-600 border-solid border-2 border-sky-600 mt-10 lg:mt-0`}
-            >
-              Rendez-vous en ligne
+            <Link href="tel:0975965230" passHref>
+              <div className="mt-8 lg:mt-0 text-sky-50 group bg-sky-600 py-2 px-4 rounded-full flex font-thin justify-center  items-center cursor-pointer transition-all hover:bg-sky-50 w-fit relative duration-300 overflow-hidden ">
+                {/* <span className="translate-y-5 absolute -translate-x-10">
+                      09 75 96 52 30{" "}
+                      <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                    </span> */}
+                <span className="hover-group: hover:text-sky-600  opacity-0 translate-">
+                  09 75 96 52 30{" "}
+                  <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                </span>
+                <span className="transition-all group-hover:text-sky-600 duration-300 absolute group-hover:-translate-y-10 group-hover:translate-x-20">
+                  09 75 96 52 30{" "}
+                  <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                </span>
+                <span className="transition-all group-hover:text-sky-600  duration-300 absolute translate-y-10  group-hover:-translate-y-0 group-hover:translate-x-0 -translate-x-20">
+                  09 75 96 52 30{" "}
+                  <FontAwesomeIcon className="ml-3 " icon={faPhone} />
+                </span>
+              </div>
             </Link>
           </div>
           <Link

@@ -41,7 +41,7 @@ const Equipe = () => {
     };
   }, []);
   return (
-    <div className="w-full bg-[url('/bc.jpg')] bg-center bg-fixed lg:bg-fixed bg-cover">
+    <div className="w-full bg-[url('/covermain.JPG')] bg-center bg-fixed lg:bg-fixed bg-cover">
       <div className="w-full  border-t-4  border-sky-50  font-Straw relative z-34 overflow-hidden h-48  ">
         {/* <img
           src="/bc.jpg"
@@ -126,38 +126,38 @@ const Equipe = () => {
                 src="/laureen.png"
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
-              <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
+              <div className="text-white bg-zinc-500 w-full text-3xl  absolute z-30 bottom-0 left-0 py-2 px-3 bg-opacity-50 flex items-center justify-center">
                 Laureen Pépin
               </div>
             </div>
             <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
               {" "}
               <img
-                src="/laureen.png"
+                src="/mart2.webp"
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
-              <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
+              <div className="text-white bg-zinc-500 w-full text-3xl  absolute z-30 bottom-0 left-0 py-2 px-3 bg-opacity-50 flex items-center justify-center">
                 Martin Larivière
               </div>
             </div>
             <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
               {" "}
               <img
-                src="/laureen.png"
+                src="/mart.webp"
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
-              <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
+              <div className="text-white bg-zinc-500 w-full text-3xl  absolute z-30 bottom-0 left-0 py-2 px-3 bg-opacity-50 flex items-center justify-center">
                 Cyril Portal
               </div>
             </div>
             <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
               {" "}
               <img
-                src="/laureen.png"
+                src="/marcelo.webp"
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
-              <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
-                Marcelo Cianti
+              <div className="text-white bg-zinc-500 w-full text-3xl  absolute z-30 bottom-0 left-0 py-2 px-3 bg-opacity-50 flex items-center justify-center">
+                Marcelo Ramirez
               </div>
             </div>
             <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
@@ -166,8 +166,8 @@ const Equipe = () => {
                 src="/laureen.png"
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
-              <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
-                Yann Martez
+              <div className="text-white bg-zinc-500 w-full text-3xl  absolute z-30 bottom-0 left-0 py-2 px-3 bg-opacity-50 flex items-center justify-center">
+                Ewen Gbick
               </div>
             </div>
             <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64 overflow-hidden rounded-tl-xl rounded-br-xl relative">
@@ -176,8 +176,8 @@ const Equipe = () => {
                 src="/laureen.png"
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
-              <div className="text-sky-900 text-3xl  absolute z-30 bottom-5 left-5">
-                Sophie Faudin
+              <div className="text-white bg-zinc-500 w-full text-2xl  absolute z-30 bottom-0 left-0 py-2 px-3 bg-opacity-50 flex items-center justify-center">
+                Vanessa Amadieu
               </div>
             </div>
           </div>

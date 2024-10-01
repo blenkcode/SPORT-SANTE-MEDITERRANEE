@@ -34,10 +34,7 @@ const Bikefiting = () => {
             Avis Google : 4,7/5{" "}
             <FontAwesomeIcon className="ml-3" icon={faStar} />
           </div>
-          <div className="2xl:px-20 lg:px-10 px-10">
-            Remboursement mutuelle{" "}
-            <FontAwesomeIcon className="ml-3" icon={faEuroSign} />
-          </div>
+
           <div className="2xl:px-20 lg:px-10 px-10">
             Spécialiste du sport{" "}
             <FontAwesomeIcon className="ml-3" icon={faPersonRunning} />

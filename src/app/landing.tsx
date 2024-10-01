@@ -134,7 +134,7 @@ const Landing = () => {
 
   return (
     <main className="lg:h-auto h-lvh lg:min-h-lvh w-full flex flex-col">
-      <div className="bg-[url('/bc.jpg')] bg-center lg:bg-fixed bg-scroll w-full bg-cover h-lvh  text-white ">
+      <div className="bg-[url('/covermain.JPG')] bg-center lg:bg-fixed bg-scroll w-full bg-cover h-lvh  text-white ">
         <div
           ref={mainRef}
           className="w-full relative  items-center justify-center lg:h-4/6  font-Straw flex flex-col bg-gradient-to-r from-sky-700/80 to-sky-700/0"
