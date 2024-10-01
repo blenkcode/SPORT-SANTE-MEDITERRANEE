@@ -162,7 +162,7 @@ const Equipe = () => {
             <div className="xl:w-64 xl:h-72 lg:w-56 lg:h-64   overflow-hidden rounded-tl-xl rounded-br-xl relative">
               {" "}
               <img
-                src="/laureen.png"
+                src="/laureen.webp"
                 className=" grayscale hover:scale-110 transition-all duration-300 "
               ></img>
               <div className="text-white bg-zinc-500 w-full text-3xl  absolute z-30 bottom-0 left-0 py-2 px-3 bg-opacity-50 flex items-center justify-center">
