@@ -103,7 +103,7 @@ const Presta = () => {
               }`}
             >
               {" "}
-              <h3 className="lg:text-xl text-2xl text-sky-900 mt-10 lg:mt-0 font-StrawBold py-3 mb-0 lg:mb-5 px-3 ">
+              <h3 className="lg:text-xl text-2xl text-sky-900 mt-10 lg:mt-0 font-StrawBold py-3 mb-0 lg:mb-0 px-3 ">
                 Bike-Fitting
               </h3>
               <img
@@ -180,7 +180,7 @@ const Presta = () => {
                 : " -translate-x-full opacity-0"
             }`}
           >
-            <h3 className="lg:text-xl text-2xl text-sky-900 z-20 font-StrawBold py-3 px-5 mb-0 lg;mb-5 mt-10 lg:mt-0">
+            <h3 className="lg:text-xl text-2xl text-sky-900 z-20 font-StrawBold py-3 px-5 mb-0 lg:mb-0 mt-10 lg:mt-0">
               Massage
             </h3>
             <img
