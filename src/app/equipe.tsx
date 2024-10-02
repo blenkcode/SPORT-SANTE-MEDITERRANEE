@@ -43,7 +43,7 @@ const Equipe = () => {
     };
   }, []);
   return (
-    <div className="w-full bg-[url('/covermain.JPG')] bg-center bg-fixed lg:bg-fixed bg-cover">
+    <div className="w-full bg-[url('/covermain.JPG')] bg-center bg-fixed bg-[length:100%_100%]">
       <div className="w-full  border-t-4  border-sky-50  font-Straw relative z-34 overflow-hidden h-48  ">
         {/* <img
           src="/bc.jpg"
