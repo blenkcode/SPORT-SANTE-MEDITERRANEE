@@ -145,14 +145,33 @@ const Kinesitherapie = () => {
         <h2 className="xl:text-4xl text-sky-900 lg:text-4xl text-3xl mt-20 lg:mt-32 font-StrawBold w-fit  bg-orange-200 py-2 px-5  lg:mb-20 mb-10 rounded-full">
           Analyse de Course
         </h2>
-        <div className="text-sky-900 2xl:w-1/2 lg:w-2/3 px-10 xl:text-xl lg:text-lg lg:mb-10 ">
-          L’analyse de course permet d’identifier les anomalies dans la
-          technique de course qui peuvent être à l’origine de douleurs ou de
-          blessures à long terme. Que vous soyez un coureur occasionnel ou un
-          athlète confirmé, cette analyse détaillée de votre foulée vous aidera
-          à courir plus efficacement tout en minimisant les risques de blessure.
+        <div className="flex xl:space-x-32 lg:flex-row flex-col lg:px-0 px-10 lg:space-x-10 items-center justify-center">
+          <div className="text-sky-900  2xl:w-1/3 xl:w-2/5 lg:w-3/5 xl:text-xl lg:text-lg lg:mb-10 ">
+            <span className="font-bold">
+              Des questions sur ta foulée pour optimiser tes objectifs et
+              prévenir au mieux des blessures ?
+            </span>
+            <br></br>
+            <br></br> Formé auprès de la <b>clinique du coureur </b>nous vous
+            proposons d’analyser votre schéma de course afin d’en améliorer la
+            qualité en fonction de tes antécédents et des objectifs que tu t’es
+            fixé. <br></br> <br></br>Après un <b>bilan détaillé </b>(évaluation
+            du contexte, tests de mobilité, de force, course sur tapis,
+            chaussures...), nous discuterons des différents outils pouvant vous
+            aider à optimiser votre <b>schéma de course</b>.
+          </div>
+          <div className="text-sky-900 lg:w-fit p-5 border-2 border-sky-900 rounded-xl xl:text-xl lg:text-lg lg:mb-10 flex-col flex items-center justify-center space-y-2 lg:mt-0 mt-10">
+            <p className="font-bold mb-2">Modalités de prise en charge: </p>
+            <p>
+              {" "}
+              Séance déconventionnée <br></br>(ordonnance non requise).
+            </p>
+            <p> Durée : 1 heure </p>
+            <p> Prix : 70€</p>
+          </div>
         </div>
-        <div className="w-full h-1 translate-y-24 invisible lg:visible  bg-orange-300 bg-opacity-50 absolute"></div>
+
+        <div className="w-full h-1 translate-y-64 invisible lg:visible  bg-orange-300 bg-opacity-50 absolute"></div>
         <div className="flex lg:flex-row flex-col items-center justify-around w-full space-y-10 lg:space-y-0 lg:space-x-0 text-sky-900 mt-20 pb-20">
           {/* Section 1: Analyse de la Posture et des Mouvements */}
           <div className="flex flex-col items-center justify-center w-full lg:w-1/3">

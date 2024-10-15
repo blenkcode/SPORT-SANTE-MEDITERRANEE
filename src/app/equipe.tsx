@@ -225,6 +225,10 @@ const Equipe = () => {
             </div>
           </div>
         </div>
+        <div className="w-full items-center  flex justify-center flex-col mt-20">
+          <p className="text-lg ">Partenaire </p>
+          <img src="/agde.png" className="w-40 h-auto"></img>
+        </div>
       </div>
     </div>
   );
