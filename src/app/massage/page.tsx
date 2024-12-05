@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faLeaf } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
-
+import Image from "next/image";
 import {
   faEuroSign,
   faStar,
@@ -110,7 +110,7 @@ const Massage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full  bg-slate-50 flex flex-col items-center justify-center lg:py-20 py-10">
+      <div className="w-full  bg-slate-50 flex flex-col items-center justify-center lg:pt-20 pt-10">
         <div className="flex lg:flex-row flex-col-reverse lg:items-start items-center justify-center  ">
           <img
             src="masso.webp"
@@ -316,6 +316,24 @@ const Massage = () => {
               }`}
             ></span>
           </div>
+        </div>
+      </div>
+      <div className="w-full flex items-center justify-center bg-slate-50">
+        <div className="lg:w-1/3 px-5  flex items-center justify-center pb-32 rounded-xl relative">
+          <h3 className="2xl:text-5xl xl:text-4xl lg:text-3xl  bg-slate-50 py-2 px-10 text-nowrap rounded-full text-3xl  lg:-translate-x-56 absolute top-[10%] text-sky-900 font-StrawBold  w-fit">
+            Notre salon de massage
+            <FontAwesomeIcon
+              className="lg:ml-5 lg:text-3xl lg:visible invisible text-xl"
+              icon={faLeaf}
+            />
+          </h3>{" "}
+          <Image
+            width={1600}
+            height={1200}
+            alt="salon de massage"
+            className="rounded-xl"
+            src="/salon.webp"
+          ></Image>
         </div>
       </div>
     </div>

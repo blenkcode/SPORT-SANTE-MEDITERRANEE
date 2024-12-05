@@ -115,7 +115,7 @@ const Bikefiting = () => {
           <h2 className="xl:text-4xl  text-white bg-violet-900 bg-opacity-50 lg:text-2xl text-3xl mt-10 font-StrawBold w-fit  py-2 px-5 mb-20 rounded-full">
             Notre processus
           </h2>
-          <div className="w-full h-1 invisible lg:visible bg-sky-900 absolute"></div>
+          <div className="w-full h-1 translate-y-[1vw] invisible lg:visible bg-purple-900 absolute"></div>
           <div className="flex lg:flex-row flex-col items-center justify-around w-full space-y-0 lg:space-y-0 xl:space-x-32 lg:space-x-10 text-sky-900">
             {/* Section 1: Analyse de la Posture et des Mouvements */}
             <div className="flex flex-col items-center justify-center w-full lg:w-1/3 mt-10 lg:mt-0">

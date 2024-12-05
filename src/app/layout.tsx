@@ -7,6 +7,7 @@ import Footer from "./footer";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import BurgerMenu from "./components/BurgerMenu";
+
 config.autoAddCss = false;
 
 const geistSans = localFont({
@@ -40,6 +41,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <ClientProvider>
+          {" "}
           <Header></Header>
           <BurgerMenu></BurgerMenu>
           {children}
