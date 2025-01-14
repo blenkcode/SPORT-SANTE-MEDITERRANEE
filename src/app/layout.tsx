@@ -24,10 +24,22 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Sport-Santé Méditerranée",
   description: "Kinésithérapie & Ostéopathie à Marseillan",
-  icons: {
-    icon: "/logokinemedwhite.png", // Chemin vers ton favicon dans le dossier public
-    apple: "/logokinemedwhite.png", // Optionnel, icône spécifique pour Apple devices
-  },
+  icons: [
+    { rel: "icon", url: "/favicon.ico" },
+    {
+      rel: "icon",
+      url: "/logokinemedwhite.png",
+      type: "image/png",
+      sizes: "32x32",
+    },
+    {
+      rel: "icon",
+      url: "/logokinemedwhite.png",
+      type: "image/png",
+      sizes: "16x16",
+    },
+    { rel: "apple-touch-icon", url: "/logokinemedwhite.png", sizes: "180x180" },
+  ],
 };
 
 export default function RootLayout({
@@ -37,31 +49,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {" "}
-        <meta
-          name="google-site-verification"
-          content="JhcDQRNOafCoiUJZyyKzTng8ZcVU4v7Dxdb7-dIvdAI"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/logokinemedwhite.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/logokinemedwhite.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/logokinemedwhite.png"
-        />
-      </head>
-
+      <meta
+        name="google-site-verification"
+        content="JhcDQRNOafCoiUJZyyKzTng8ZcVU4v7Dxdb7-dIvdAI"
+      />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
