@@ -24,6 +24,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Sport-Santé Méditerranée",
   description: "Kinésithérapie & Ostéopathie à Marseillan",
+  verification: {
+    google: "JhcDQRNOafCoiUJZyyKzTng8ZcVU4v7Dxdb7-dIvdAI",
+  },
   icons: [
     { rel: "icon", url: "/favicon.ico" },
     {
@@ -49,12 +52,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta
-          name="google-site-verification"
-          content="JhcDQRNOafCoiUJZyyKzTng8ZcVU4v7Dxdb7-dIvdAI"
-        />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
