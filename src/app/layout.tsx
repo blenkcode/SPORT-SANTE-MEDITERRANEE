@@ -27,21 +27,26 @@ export const metadata: Metadata = {
   verification: {
     google: "JhcDQRNOafCoiUJZyyKzTng8ZcVU4v7Dxdb7-dIvdAI",
   },
+
   icons: [
     { rel: "icon", url: "/favicon.ico" },
     {
       rel: "icon",
-      url: "/logokinemedwhite.png",
+      url: "/logokinemedwhite.png?v=2",
       type: "image/png",
       sizes: "32x32",
     },
     {
       rel: "icon",
-      url: "/logokinemedwhite.png",
+      url: "/logokinemedwhite.png?v=2",
       type: "image/png",
       sizes: "16x16",
     },
-    { rel: "apple-touch-icon", url: "/logokinemedwhite.png", sizes: "180x180" },
+    {
+      rel: "apple-touch-icon",
+      url: "/logokinemedwhite.png?v=2",
+      sizes: "180x180",
+    },
   ],
 };
 
